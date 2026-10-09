@@ -1058,6 +1058,32 @@ main { overflow-x: clip; }
   .m-fig figcaption { font-size: 0.875rem; }
 }
 
+/* ---------- Artifacts: the list with its stacks, and one live iframe ---------- */
+.art-layout { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 40px clamp(28px, 4vw, 56px); align-items: start; }
+.art-group + .art-group { margin-top: 32px; }
+.art-list ul { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 2px; }
+.art-item { display: grid; gap: 6px; padding: 14px 16px; border-radius: var(--radius); color: var(--ink); transition: background-color 120ms var(--ease-out); }
+.art-item:hover { background: var(--tile); }
+.art-item[aria-current="true"] { background: var(--surface); }
+.art-name { font-size: var(--step-body); font-weight: 500; letter-spacing: -0.01em; }
+.art-desc { font-size: var(--step-small); line-height: 1.5; color: var(--ink-2); }
+.art-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.art-stack span { font-size: 0.75rem; line-height: 1.4; padding: 3px 9px; border-radius: var(--pill); background: color-mix(in oklab, var(--ink) 7%, var(--bg)); color: var(--ink-2); }
+.art-viewer { position: sticky; top: calc(var(--header-h) + 12px); }
+.art-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+.art-now { font-size: var(--step-h3); font-weight: 500; letter-spacing: -0.015em; }
+.art-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.art-links .btn { min-height: 44px; padding: 0 16px; }
+.art-links .btn svg { width: 14px; height: 14px; }
+.art-frame { height: min(76vh, 880px); border-radius: var(--radius); overflow: hidden; background: #FFFFFF; }
+.art-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.art-note { margin-top: 12px; max-width: 60ch; }
+@media (max-width: 900px) {
+  .art-layout { grid-template-columns: 1fr; }
+  .art-viewer { position: static; scroll-margin-top: calc(var(--header-h) + 8px); }
+  .art-frame { height: 72vh; }
+}
+
 /* ---------- Process ----------
    Why write it down (a quote and the cost curve), the three documents with a step rail that follows
    the scroll, four rules, and what it changes. The rail echoes the interactive guide that ships with

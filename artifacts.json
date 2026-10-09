@@ -1,0 +1,440 @@
+[
+ {
+  "title": "Ships",
+  "group": "portfolio",
+  "repo": "design-ships",
+  "repo_url": "https://github.com/oliveira-teixeira/design-ships",
+  "pages_url": "https://oliveira-teixeira.github.io/design-ships/",
+  "stack": [
+   "Python static generator",
+   "HTML, CSS, vanilla JS",
+   "GSAP 3.12.5",
+   "Decap CMS content",
+   "Inter"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "This portfolio as a working prototype in three languages, built from one template set.",
+   "pt": "Este portfólio como protótipo funcional em três idiomas, gerado a partir de um só conjunto de templates.",
+   "es": "Este portafolio como prototipo funcional en tres idiomas, generado desde un solo conjunto de plantillas."
+  }
+ },
+ {
+  "title": "lucastexr.com, canvas",
+  "group": "portfolio",
+  "repo": "design-lucastexr-com",
+  "repo_url": "https://github.com/oliveira-teixeira/design-lucastexr-com",
+  "pages_url": "https://oliveira-teixeira.github.io/design-lucastexr-com/",
+  "stack": [
+   "Design canvas",
+   "HTML, CSS",
+   "Lucide icons",
+   "Inter"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "Eleven artboards for the first design of this portfolio: home, work, a case study, writing, photography, about, contact and phone screens.",
+   "pt": "Onze pranchetas do primeiro design deste portfólio: home, trabalhos, estudo de caso, textos, fotografia, sobre, contato e telas de celular.",
+   "es": "Once mesas de trabajo del primer diseño de este portafolio: inicio, trabajos, caso de estudio, textos, fotografía, sobre mí, contacto y pantallas de móvil."
+  }
+ },
+ {
+  "title": "The Working Drawing",
+  "group": "portfolio",
+  "repo": "design-the-working-drawing",
+  "repo_url": "https://github.com/oliveira-teixeira/design-the-working-drawing",
+  "pages_url": "https://oliveira-teixeira.github.io/design-the-working-drawing/",
+  "stack": [
+   "HTML, CSS, no JavaScript",
+   "Inline SVG",
+   "Inter"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "The design system reference for this portfolio: color tokens, nine type sizes, layout, shapes, live components and do and don't rules.",
+   "pt": "A referência do sistema de design deste portfólio: tokens de cor, nove tamanhos de tipo, layout, formas, componentes ao vivo e regras de faça e não faça.",
+   "es": "La referencia del sistema de diseño de este portafolio: tokens de color, nueve tamaños de tipo, layout, formas, componentes en vivo y reglas de hacer y no hacer."
+  }
+ },
+ {
+  "title": "Sobrado do Alpendre",
+  "group": "portfolio",
+  "repo": "design-sobrado-do-alpendre",
+  "repo_url": "https://github.com/oliveira-teixeira/design-sobrado-do-alpendre",
+  "pages_url": "https://oliveira-teixeira.github.io/design-sobrado-do-alpendre/",
+  "stack": [
+   "HTML, CSS, JavaScript",
+   "three.js r186",
+   "Inline SVG drawings",
+   "Fraunces, Inter, JetBrains Mono"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A preliminary architectural study of a three story house on a 10 by 20 m lot in Brasília, with interactive plans, sections, a daylight map and a 3D model.",
+   "pt": "Um estudo arquitetônico preliminar de um sobrado de três pavimentos num lote de 10 por 20 m em Brasília, com plantas interativas, cortes, mapa de luz natural e modelo 3D.",
+   "es": "Un estudio arquitectónico preliminar de una casa de tres pisos en un lote de 10 por 20 m en Brasilia, con plantas interactivas, cortes, mapa de luz natural y modelo 3D."
+  }
+ },
+ {
+  "title": "Fetchly Supply",
+  "group": "showcase",
+  "repo": "design-fetchly-supply",
+  "repo_url": "https://github.com/oliveira-teixeira/design-fetchly-supply",
+  "pages_url": "https://oliveira-teixeira.github.io/design-fetchly-supply/",
+  "stack": [
+   "HTML, CSS, vanilla JS",
+   "WebP images",
+   "Inter, Geist Mono",
+   "claude.ai shared storage"
+  ],
+  "uses_claude_runtime": true,
+  "description": {
+   "en": "A storefront prototype for Fetchly merchandise, with a catalog of apparel, accessories, bags and desk goods, a lookbook and a shopping bag.",
+   "pt": "Um protótipo de loja para o merch da Fetchly, com catálogo de roupas, acessórios, bolsas e objetos de mesa, um lookbook e uma sacola de compras.",
+   "es": "Un prototipo de tienda para el merch de Fetchly, con catálogo de ropa, accesorios, bolsos y objetos de escritorio, un lookbook y una bolsa de compras."
+  }
+ },
+ {
+  "title": "Nomad Motion Flow",
+  "group": "showcase",
+  "repo": "design-nomad-motion-flow",
+  "repo_url": "https://github.com/oliveira-teixeira/design-nomad-motion-flow",
+  "pages_url": "https://oliveira-teixeira.github.io/design-nomad-motion-flow/",
+  "stack": [
+   "HTML, CSS, vanilla JS",
+   "CSS keyframe animation",
+   "Satoshi"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A clickable motion prototype of NOMAD, a home swapping service for remote workers, from the landing page through sign up into the app.",
+   "pt": "Um protótipo clicável com motion do NOMAD, um serviço de troca de casas para quem trabalha remoto, da landing page ao cadastro e ao app.",
+   "es": "Un prototipo clicable con motion de NOMAD, un servicio de intercambio de casas para trabajo remoto, desde la landing hasta el registro y la app."
+  }
+ },
+ {
+  "title": "Fetchly Logo Clouds",
+  "group": "showcase",
+  "repo": "design-fetchly-logo-clouds",
+  "repo_url": "https://github.com/oliveira-teixeira/design-fetchly-logo-clouds",
+  "pages_url": "https://oliveira-teixeira.github.io/design-fetchly-logo-clouds/",
+  "stack": [
+   "HTML, CSS, vanilla JS",
+   "Inline SVG",
+   "Inter"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "An interactive card that arranges the tool logos behind each Fetchly service in arc, radial, fall or grid layouts.",
+   "pt": "Um card interativo que organiza os logos das ferramentas de cada serviço da Fetchly em arco, radial, queda ou grade.",
+   "es": "Una tarjeta interactiva que ordena los logos de las herramientas de cada servicio de Fetchly en arco, radial, caída o cuadrícula."
+  }
+ },
+ {
+  "title": "Spyderco 2.0 Roadmap",
+  "group": "client",
+  "repo": "design-spyderco-2-roadmap",
+  "repo_url": "https://github.com/oliveira-teixeira/design-spyderco-2-roadmap",
+  "pages_url": "https://oliveira-teixeira.github.io/design-spyderco-2-roadmap/",
+  "stack": [
+   "HTML, CSS, vanilla JS",
+   "Light and dark themes",
+   "Fredoka, Nunito, Geist Mono"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A design timeline for the Spyderco 2.0 store in two week sprints, from MVP pages in October 2026 to final design approval in March 2027.",
+   "pt": "Uma linha do tempo de design para a loja Spyderco 2.0 em sprints de duas semanas, das páginas de MVP em outubro de 2026 à aprovação final em março de 2027.",
+   "es": "Una línea de tiempo de diseño para la tienda Spyderco 2.0 en sprints de dos semanas, desde las páginas MVP en octubre de 2026 hasta la aprobación final en marzo de 2027."
+  }
+ },
+ {
+  "title": "HIVE Design Mandate",
+  "group": "client",
+  "repo": "design-hive-design-mandate",
+  "repo_url": "https://github.com/oliveira-teixeira/design-hive-design-mandate",
+  "pages_url": "https://oliveira-teixeira.github.io/design-hive-design-mandate/",
+  "stack": [
+   "HTML, CSS, no JavaScript",
+   "Light and dark themes",
+   "Instrument Serif, Inter"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A proposal for a full time strategic designer on the HIVE v2 engagement, with the mandate, deliverables and an eighteen week sprint plan.",
+   "pt": "Uma proposta de designer estratégico em tempo integral para o projeto HIVE v2, com o mandato, as entregas e um plano de dezoito semanas.",
+   "es": "Una propuesta de diseñador estratégico a tiempo completo para el proyecto HIVE v2, con el mandato, los entregables y un plan de dieciocho semanas."
+  }
+ },
+ {
+  "title": "Hive Access Model",
+  "group": "client",
+  "repo": "design-hive-access-model",
+  "repo_url": "https://github.com/oliveira-teixeira/design-hive-access-model",
+  "pages_url": "https://oliveira-teixeira.github.io/design-hive-access-model/",
+  "stack": [
+   "HTML, CSS, no JavaScript",
+   "Inline SVG diagrams",
+   "Plus Jakarta Sans, IBM Plex Mono"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "The HIVE platform's access architecture: tenant scoped login, three verticals and a permissions matrix for nine roles.",
+   "pt": "A arquitetura de acesso da plataforma HIVE: login por tenant, três verticais e uma matriz de permissões para nove papéis.",
+   "es": "La arquitectura de acceso de la plataforma HIVE: login por tenant, tres verticales y una matriz de permisos para nueve roles."
+  }
+ },
+ {
+  "title": "Qorably v3",
+  "group": "client",
+  "repo": "design-qorably-v3",
+  "repo_url": "https://github.com/oliveira-teixeira/design-qorably-v3",
+  "pages_url": "https://oliveira-teixeira.github.io/design-qorably-v3/",
+  "stack": [
+   "Claude design canvas",
+   "React 19",
+   "Tailwind CSS 4",
+   "Inter"
+  ],
+  "uses_claude_runtime": true,
+  "description": {
+   "en": "A design canvas for Qorably v3, an AI assisted QA test case tool: project overview, test generation, team and sidebar screens.",
+   "pt": "Um canvas de design do Qorably v3, uma ferramenta de casos de teste de QA com IA: visão do projeto, geração de testes, time e menu lateral.",
+   "es": "Un canvas de diseño de Qorably v3, una herramienta de casos de prueba de QA con IA: vista del proyecto, generación de pruebas, equipo y menú lateral."
+  }
+ },
+ {
+  "title": "Qorably Redesign",
+  "group": "client",
+  "repo": "design-qorably-redesign",
+  "repo_url": "https://github.com/oliveira-teixeira/design-qorably-redesign",
+  "pages_url": "https://oliveira-teixeira.github.io/design-qorably-redesign/",
+  "stack": [
+   "Claude design canvas",
+   "React 19",
+   "Tailwind CSS 4",
+   "Inter"
+  ],
+  "uses_claude_runtime": true,
+  "description": {
+   "en": "A project first redesign of Qorably, with run preflight, form validation, a mobile drawer and a first run screen.",
+   "pt": "Um redesign do Qorably centrado no projeto, com checagem antes de rodar, validação de formulário, menu mobile e tela de primeiro uso.",
+   "es": "Un rediseño de Qorably centrado en el proyecto, con verificación antes de ejecutar, validación de formularios, menú móvil y pantalla de primer uso."
+  }
+ },
+ {
+  "title": "Qorably UX Audit",
+  "group": "client",
+  "repo": "design-qorably-ux-audit",
+  "repo_url": "https://github.com/oliveira-teixeira/design-qorably-ux-audit",
+  "pages_url": "https://oliveira-teixeira.github.io/design-qorably-ux-audit/",
+  "stack": [
+   "HTML, CSS, no JavaScript",
+   "Light and dark themes",
+   "Instrument Sans, IBM Plex Mono"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A first time user UX audit of Qorably that ranks findings by severity, with fixes and quick wins.",
+   "pt": "Uma auditoria de UX do Qorably pelo olhar de quem usa pela primeira vez, com achados por gravidade, correções e ganhos rápidos.",
+   "es": "Una auditoría de UX de Qorably desde la mirada de quien lo usa por primera vez, con hallazgos por gravedad, correcciones y mejoras rápidas."
+  }
+ },
+ {
+  "title": "Froogle kickoff, filled board",
+  "group": "client",
+  "repo": "design-froogle-filled-kickoff",
+  "repo_url": "https://github.com/oliveira-teixeira/design-froogle-filled-kickoff",
+  "pages_url": "https://oliveira-teixeira.github.io/design-froogle-filled-kickoff/",
+  "stack": [
+   "Markdown",
+   "Jekyll on GitHub Pages"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "Kickoff board answers for Froogle, a local deals app, researched from its public website and scored in a confidence matrix.",
+   "pt": "Respostas do quadro de kickoff do Froogle, um app de ofertas locais, pesquisadas no site público e pontuadas numa matriz de confiança.",
+   "es": "Respuestas del tablero de kickoff de Froogle, una app de ofertas locales, investigadas en su sitio público y puntuadas en una matriz de confianza."
+  }
+ },
+ {
+  "title": "Froogle kickoff answers",
+  "group": "client",
+  "repo": "design-froogle-kickoff-answers",
+  "repo_url": "https://github.com/oliveira-teixeira/design-froogle-kickoff-answers",
+  "pages_url": "https://oliveira-teixeira.github.io/design-froogle-kickoff-answers/",
+  "stack": [
+   "Markdown",
+   "Jekyll on GitHub Pages"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "Answers to the Froogle kickoff questions from public research, with a confidence matrix and recommended next steps.",
+   "pt": "Respostas às perguntas de kickoff do Froogle a partir de pesquisa pública, com matriz de confiança e próximos passos.",
+   "es": "Respuestas a las preguntas de kickoff de Froogle desde investigación pública, con matriz de confianza y próximos pasos."
+  }
+ },
+ {
+  "title": "Meneses 1998, prototype",
+  "group": "client",
+  "repo": "design-meneses-1998",
+  "repo_url": "https://github.com/oliveira-teixeira/design-meneses-1998",
+  "pages_url": "https://oliveira-teixeira.github.io/design-meneses-1998/",
+  "stack": [
+   "HTML, CSS, vanilla JS",
+   "WebGL, no library",
+   "Newsreader, Courier Prime",
+   "Hash router"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A navigable prototype of the portfolio site for Ana Luíza Meneses, a director, cinematographer and visual artist in Brasília.",
+   "pt": "Um protótipo navegável do site de portfólio de Ana Luíza Meneses, diretora, diretora de fotografia e artista visual em Brasília.",
+   "es": "Un prototipo navegable del sitio de portafolio de Ana Luíza Meneses, directora, directora de fotografía y artista visual en Brasilia."
+  }
+ },
+ {
+  "title": "Meneses 1998, canvas",
+  "group": "client",
+  "repo": "design-meneses-1998-2",
+  "repo_url": "https://github.com/oliveira-teixeira/design-meneses-1998-2",
+  "pages_url": "https://oliveira-teixeira.github.io/design-meneses-1998-2/",
+  "stack": [
+   "Design canvas",
+   "HTML, CSS",
+   "Newsreader, Courier Prime"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "Six artboards in the Meneses 1998 direction: home, visual art, reel, about, a work page and the phone home screen.",
+   "pt": "Seis pranchetas na direção Meneses 1998: home, artes visuais, reel, sobre, uma página de obra e a home no celular.",
+   "es": "Seis mesas de trabajo en la dirección Meneses 1998: inicio, artes visuales, reel, sobre mí, una página de obra y el inicio en móvil."
+  }
+ },
+ {
+  "title": "Meneses Small Web",
+  "group": "client",
+  "repo": "design-meneses-small-web",
+  "repo_url": "https://github.com/oliveira-teixeira/design-meneses-small-web",
+  "pages_url": "https://oliveira-teixeira.github.io/design-meneses-small-web/",
+  "stack": [
+   "Design canvas",
+   "HTML, CSS keyframes",
+   "Newsreader, Plus Jakarta Sans"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "Two small web directions for the Meneses site, a lighter one and a stronger one, plus the reusable pieces they share.",
+   "pt": "Duas direções de small web para o site Meneses, uma mais leve e uma mais forte, e as peças reutilizáveis que elas dividem.",
+   "es": "Dos direcciones de small web para el sitio Meneses, una más liviana y una más fuerte, y las piezas reutilizables que comparten."
+  }
+ },
+ {
+  "title": "Meneses Site Architecture",
+  "group": "client",
+  "repo": "design-meneses-site-architecture",
+  "repo_url": "https://github.com/oliveira-teixeira/design-meneses-site-architecture",
+  "pages_url": "https://oliveira-teixeira.github.io/design-meneses-site-architecture/",
+  "stack": [
+   "HTML, CSS",
+   "Light and dark themes",
+   "IBM Plex Mono, Plus Jakarta Sans"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "The specification for the Meneses photography site: information architecture, CMS schema, concept of operations and the acquisition flow.",
+   "pt": "A especificação do site de fotografia Meneses: arquitetura de informação, schema do CMS, conceito de operações e fluxo de aquisição.",
+   "es": "La especificación del sitio de fotografía Meneses: arquitectura de información, esquema del CMS, concepto de operaciones y flujo de adquisición."
+  }
+ },
+ {
+  "title": "Fetchly Design Offerings",
+  "group": "internal",
+  "repo": "design-fetchly-design-offerings",
+  "repo_url": "https://github.com/oliveira-teixeira/design-fetchly-design-offerings",
+  "pages_url": "https://oliveira-teixeira.github.io/design-fetchly-design-offerings/",
+  "stack": [
+   "Markdown",
+   "Jekyll on GitHub Pages",
+   "From a Claude Docs document"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A proposal for selling Fetchly design work on its own: a priced catalog of one off services, free diagnostics and an agency price benchmark.",
+   "pt": "Uma proposta para vender o design da Fetchly como serviço avulso: catálogo de serviços com preço, diagnósticos gratuitos e benchmark de preços de agências.",
+   "es": "Una propuesta para vender el diseño de Fetchly por separado: catálogo de servicios con precio, diagnósticos gratuitos y benchmark de precios de agencias."
+  }
+ },
+ {
+  "title": "Design Sale: $5K Product Design",
+  "group": "internal",
+  "repo": "design-design-sale",
+  "repo_url": "https://github.com/oliveira-teixeira/design-design-sale",
+  "pages_url": "https://oliveira-teixeira.github.io/design-design-sale/",
+  "stack": [
+   "Markdown",
+   "Jekyll on GitHub Pages",
+   "From a Claude Docs document"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A sales package for a fixed price, three week product design sprint, with deliverables by week, terms and staffing.",
+   "pt": "Um pacote de vendas para um sprint de design de produto de três semanas a preço fechado, com entregas por semana, termos e equipe.",
+   "es": "Un paquete de ventas para un sprint de diseño de producto de tres semanas a precio fijo, con entregables por semana, términos y equipo."
+  }
+ },
+ {
+  "title": "Fetchly Design Half Year, canvas",
+  "group": "internal",
+  "repo": "design-fetchly-design-half-year",
+  "repo_url": "https://github.com/oliveira-teixeira/design-fetchly-design-half-year",
+  "pages_url": "https://oliveira-teixeira.github.io/design-fetchly-design-half-year/",
+  "stack": [
+   "Design canvas",
+   "HTML, CSS",
+   "Fraunces, Inter, Geist Mono"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "Desktop and mobile artboards for a page that records what Fetchly's design and DesignOps practice shipped from April to September 2026.",
+   "pt": "Pranchetas desktop e mobile de uma página que registra o que o design e a DesignOps da Fetchly entregaram de abril a setembro de 2026.",
+   "es": "Mesas de trabajo desktop y móvil de una página que registra lo que el diseño y DesignOps de Fetchly entregaron de abril a septiembre de 2026."
+  }
+ },
+ {
+  "title": "Fetchly Design Half Year, page",
+  "group": "internal",
+  "repo": "design-fetchly-design-half-year-2",
+  "repo_url": "https://github.com/oliveira-teixeira/design-fetchly-design-half-year-2",
+  "pages_url": "https://oliveira-teixeira.github.io/design-fetchly-design-half-year-2/",
+  "stack": [
+   "HTML, CSS, no JavaScript",
+   "Light and dark themes",
+   "Fraunces, Inter, Geist Mono"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "The same half year as one responsive page, with a monthly timeline, milestones and the work carried into the next quarter.",
+   "pt": "O mesmo semestre numa página responsiva, com linha do tempo mensal, marcos e o trabalho que segue para o próximo trimestre.",
+   "es": "El mismo semestre en una página responsiva, con línea de tiempo mensual, hitos y el trabajo que pasa al siguiente trimestre."
+  }
+ },
+ {
+  "title": "Fetchly Onboarding Guide",
+  "group": "internal",
+  "repo": "design-fetchly-onboarding-guide",
+  "repo_url": "https://github.com/oliveira-teixeira/design-fetchly-onboarding-guide",
+  "pages_url": "https://oliveira-teixeira.github.io/design-fetchly-onboarding-guide/",
+  "stack": [
+   "HTML, CSS, vanilla JS",
+   "Scroll snapped chapters",
+   "Inter, Geist Mono"
+  ],
+  "uses_claude_runtime": false,
+  "description": {
+   "en": "A twelve section quick start that walks new Fetchly team members through accounts, tools, hours, time logging, time off and payments.",
+   "pt": "Um guia de início rápido em doze seções que leva quem chega à Fetchly por contas, ferramentas, horários, registro de horas, folgas e pagamentos.",
+   "es": "Una guía rápida en doce secciones que lleva a quien llega a Fetchly por cuentas, herramientas, horarios, registro de horas, vacaciones y pagos."
+  }
+ }
+]

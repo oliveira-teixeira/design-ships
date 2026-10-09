@@ -32,7 +32,7 @@ LANGS = [
     {"code": "es", "html": "es-419", "dir": "es/", "short": "ES", "name": "Español", "region": "Latinoamérica", "full": "Español (Latinoamérica)", "t": es.T},
 ]
 
-NAV = [("work", "work.html"), ("merch", "merch.html"), ("process", "process.html"), ("writing", "writing.html"), ("photography", "photography.html"),
+NAV = [("work", "work.html"), ("merch", "merch.html"), ("artifacts", "artifacts.html"), ("process", "process.html"), ("writing", "writing.html"), ("photography", "photography.html"),
        ("about", "about.html"), ("contact", "contact.html")]
 
 # Nav icons. Outline when the page is not current; filled when it is. Shapes (class s) take the
@@ -48,6 +48,7 @@ NAV_ICONS = {
                    '<circle class="d" cx="12" cy="13" r="3.25"/>',
     "about": '<circle class="s" cx="12" cy="8" r="3.75"/><path class="s" d="M4.75 20.25c.7-3.9 3.6-6 7.25-6s6.55 2.1 7.25 6Z"/>',
     "contact": '<rect class="s" x="3" y="5.5" width="18" height="13" rx="2"/><path class="d" d="m3.75 7.5 8.25 5.75 8.25-5.75"/>',
+    "artifacts": '<rect class="s" x="3" y="4.5" width="18" height="15" rx="2"/><path class="d" d="M3.5 8.5h17M6.5 6.5h.01M9 6.5h.01"/>',
     "merch": '<path class="s" d="M8.5 3.5 4 5.75 2.75 10l3 1.25V20.5h12.5V11.25l3-1.25L20 5.75 15.5 3.5c-.6 1.5-1.9 2.4-3.5 2.4s-2.9-.9-3.5-2.4Z"/>',
 }
 # The Lucas Teixeira monogram, seven paths, in the order the mark is built.
@@ -1002,7 +1003,7 @@ def tile_wall(label, word="LUCAS", cols=16, rows=5):
 # tiles as the About wall, in the page's own ink. Each page turns the pattern its own way, so
 # every page has a slightly different wall. Decorative and pointer only (motion.js).
 RIBBON_TURN = {"index.html": 0, "process.html": 1, "work.html": 2, "case-fetchly-website.html": 1, "writing.html": 3,
-               "essay-on-thinking-systems.html": 2, "photography.html": 1, "contact.html": 3, "merch.html": 2}
+               "essay-on-thinking-systems.html": 2, "photography.html": 1, "contact.html": 3, "merch.html": 2, "artifacts.html": 1}
 
 
 def ribbon(c, cols=48):
@@ -1414,10 +1415,65 @@ def merch(c):
     write_page(c, t["merch_title"], t["merch_desc"], main)
 
 
+# ---------------------------------------------------------------- Artifacts
+# Every claude.ai artifact Lucas built, each exported to its own public repo (design-<name>) and served
+# with GitHub Pages; artifacts.json holds the list. The page lists them by group with their stack and
+# opens the chosen one in an iframe; without JavaScript each entry is a plain link to the live page.
+ART_GROUPS = ["portfolio", "showcase", "client", "internal"]
+
+
+def load_artifacts():
+    f = ROOT / "artifacts.json"
+    return json.loads(f.read_text()) if f.exists() else []
+
+
+def artifacts(c):
+    t = c.t
+    items = load_artifacts()
+    code = c.L["code"]
+    groups = []
+    for g in ART_GROUPS:
+        rows = [x for x in items if x["group"] == g]
+        if not rows:
+            continue
+        lis = "".join(
+            f'<li><a class="art-item" href="{x["pages_url"]}" target="_blank" rel="noopener" data-art="{x["pages_url"]}" '
+            f'data-repo="{x["repo_url"]}" data-title="{escape(x["title"])}">'
+            f'<span class="art-name">{escape(x["title"])}</span>'
+            f'<span class="art-desc">{escape(x["description"].get(code) or x["description"]["en"])}</span>'
+            f'<span class="art-stack">{"".join(f"<span>{escape(s)}</span>" for s in x["stack"])}</span></a></li>'
+            for x in rows)
+        groups.append(f'<div class="art-group"><h3 class="meta">{t["art_groups"][g]}</h3><ul>{lis}</ul></div>')
+    first = items[0] if items else None
+    viewer = (f'<div class="art-viewer" data-art-viewer data-frame-label="{escape(t["art_frame_label"])}">'
+              f'<div class="art-bar"><p class="art-now" data-art-now>{escape(first["title"]) if first else ""}</p>'
+              f'<div class="art-links"><a class="btn" data-art-open href="{first["pages_url"] if first else "#"}" target="_blank" rel="noopener">{t["art_open"]}{EXTERNAL}</a>'
+              f'<a class="btn" data-art-repo href="{first["repo_url"] if first else "#"}" target="_blank" rel="noopener">{t["art_repo"]}{EXTERNAL}</a></div></div>'
+              f'<div class="art-frame"><iframe data-art-frame title="{escape(t["art_frame_label"].format(title=first["title"])) if first else ""}" '
+              f'src="{first["pages_url"] if first else "about:blank"}" loading="lazy" referrerpolicy="no-referrer"></iframe></div>'
+              f'<p class="note art-note">{t["art_note"]}</p></div>')
+    main = f"""<section class="band page-head" data-tone="cobalt">
+  <div class="container">
+    <h1 class="display">{t['art_h1']}</h1>
+    <p class="lead">{t['art_lead']}</p>
+    <div class="row"><p class="meta">{t['art_count'].format(n=len(items))}</p><p class="note">{t['art_kinds']}</p></div>
+  </div>
+</section>
+<section class="band" data-tone="paper" aria-labelledby="art-list-title">
+  <div class="container">
+    <h2 class="sr" id="art-list-title">{t['art_list_h']}</h2>
+    <div class="art-layout"><nav class="art-list" aria-label="{t['art_list_h']}">{"".join(groups)}</nav>{viewer}</div>
+  </div>
+</section>
+{action(c, t['art_close'], t['art_close_lead'], btn(t['get_in_touch'], 'contact.html', solid=True) + btn(t['see_work'], 'work.html'))}"""
+    write_page(c, t["art_title"], t["art_desc"], main)
+
+
 PAGES = [
     ("index.html", "home", home),
     ("work.html", "work", work),
     ("merch.html", "merch", merch),
+    ("artifacts.html", "artifacts", artifacts),
     ("case-fetchly-website.html", "work", case),
     ("process.html", "process", process),
     ("writing.html", "writing", writing),

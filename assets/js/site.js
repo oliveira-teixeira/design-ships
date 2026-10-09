@@ -381,6 +381,32 @@
     addEventListener('scroll', () => live(420), { passive: true });
   }
 
+  // Artifacts: a choice in the list opens that artifact in the iframe (modified clicks still open a tab)
+  const viewer = document.querySelector('[data-art-viewer]');
+  if (viewer) {
+    const frame = viewer.querySelector('[data-art-frame]');
+    const now = viewer.querySelector('[data-art-now]');
+    const open = viewer.querySelector('[data-art-open]');
+    const repo = viewer.querySelector('[data-art-repo]');
+    const items = [...document.querySelectorAll('.art-item')];
+    const pick = (a, scroll) => {
+      items.forEach((i) => i.removeAttribute('aria-current'));
+      a.setAttribute('aria-current', 'true');
+      frame.src = a.dataset.art;
+      frame.title = (viewer.dataset.frameLabel || '{title}').replace('{title}', a.dataset.title);
+      now.textContent = a.dataset.title;
+      open.href = a.dataset.art;
+      repo.href = a.dataset.repo;
+      if (scroll && matchMedia('(max-width: 900px)').matches) viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    items.forEach((a) => a.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+      e.preventDefault();
+      pick(a, true);
+    }));
+    if (items[0]) items[0].setAttribute('aria-current', 'true');
+  }
+
   // Blocos pop in tile by tile, like pixels, the first time they come into view.
   document.querySelectorAll('.bloco').forEach((b) => {
     if (!('IntersectionObserver' in window)) { b.classList.add('is-in'); return; }
