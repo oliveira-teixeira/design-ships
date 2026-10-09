@@ -1,0 +1,195 @@
+{
+  "from": "2026-09-03",
+  "to": "2026-10-09",
+  "sessions": 35,
+  "active_days": 15,
+  "requests": 131,
+  "actions": 3122,
+  "daily": [
+    {
+      "date": "2026-09-03",
+      "actions": 387
+    },
+    {
+      "date": "2026-09-04",
+      "actions": 590
+    },
+    {
+      "date": "2026-09-05",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-06",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-07",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-08",
+      "actions": 427
+    },
+    {
+      "date": "2026-09-09",
+      "actions": 98
+    },
+    {
+      "date": "2026-09-10",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-11",
+      "actions": 147
+    },
+    {
+      "date": "2026-09-12",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-13",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-14",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-15",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-16",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-17",
+      "actions": 242
+    },
+    {
+      "date": "2026-09-18",
+      "actions": 65
+    },
+    {
+      "date": "2026-09-19",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-20",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-21",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-22",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-23",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-24",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-25",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-26",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-27",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-28",
+      "actions": 0
+    },
+    {
+      "date": "2026-09-29",
+      "actions": 248
+    },
+    {
+      "date": "2026-09-30",
+      "actions": 0
+    },
+    {
+      "date": "2026-10-01",
+      "actions": 1
+    },
+    {
+      "date": "2026-10-02",
+      "actions": 0
+    },
+    {
+      "date": "2026-10-03",
+      "actions": 0
+    },
+    {
+      "date": "2026-10-04",
+      "actions": 0
+    },
+    {
+      "date": "2026-10-05",
+      "actions": 80
+    },
+    {
+      "date": "2026-10-06",
+      "actions": 206
+    },
+    {
+      "date": "2026-10-07",
+      "actions": 0
+    },
+    {
+      "date": "2026-10-08",
+      "actions": 389
+    },
+    {
+      "date": "2026-10-09",
+      "actions": 242
+    }
+  ],
+  "tools": [
+    {
+      "name": "Terminal",
+      "actions": 989,
+      "share": 0.3168
+    },
+    {
+      "name": "Figma",
+      "actions": 593,
+      "share": 0.1899
+    },
+    {
+      "name": "Browser",
+      "actions": 519,
+      "share": 0.1662
+    },
+    {
+      "name": "Code and files",
+      "actions": 506,
+      "share": 0.1621
+    },
+    {
+      "name": "Google Workspace",
+      "actions": 114,
+      "share": 0.0365
+    },
+    {
+      "name": "Claude Docs",
+      "actions": 104,
+      "share": 0.0333
+    },
+    {
+      "name": "Webflow",
+      "actions": 84,
+      "share": 0.0269
+    }
+  ]
+}

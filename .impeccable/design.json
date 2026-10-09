@@ -1,0 +1,1614 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T16:30:00Z",
+  "title": "Design System: lucastexr.com",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#FCFCFC",
+        "oklch": "oklch(99.1% 0.000 90)",
+        "purpose": "Paper tone background; text on solid buttons in the pales. Also the footer field and tab. The ibis on the favicon.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#141414",
+        "oklch": "oklch(19.1% 0.000 90)",
+        "purpose": "Text, solid buttons and focus rings on Paper and the pales; the letters of the About wall. Also the footer type, Copy button and badge.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#4D4D4D",
+        "oklch": "oklch(42.0% 0.000 90)",
+        "purpose": "Secondary text, leads, labels, nav at rest on Paper and the pales.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Faint Ink",
+        "canonical": "#555555",
+        "oklch": "oklch(45.0% 0.000 90)",
+        "purpose": "Placeholders and unwritten answers on Paper; Soft Ink takes the role on the pales.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink-hover": {
+        "role": "neutral",
+        "displayName": "Ink Hover",
+        "canonical": "#2A2A2A",
+        "oklch": "oklch(28.5% 0.000 90)",
+        "purpose": "Solid button hover on Paper and the pales.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink-press": {
+        "role": "neutral",
+        "displayName": "Ink Press",
+        "canonical": "#000000",
+        "oklch": "oklch(0.0% 0.000 0)",
+        "purpose": "Solid button press on Paper and the pales.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#E4E4E4",
+        "oklch": "oklch(91.9% 0.000 90)",
+        "purpose": "Paper tone dividers, outline borders, ribbon grout.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "hairline-hover": {
+        "role": "neutral",
+        "displayName": "Hairline Hover",
+        "canonical": "#C9C9C9",
+        "oklch": "oklch(83.6% 0.000 90)",
+        "purpose": "Paper tone hover borders, scrollbar, missing image outline, Other in the Claude Code split bar.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Field Line",
+        "canonical": "#767676",
+        "oklch": "oklch(56.6% 0.000 90)",
+        "purpose": "Paper tone input borders.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "field-line-pale": {
+        "role": "neutral",
+        "displayName": "Pale Field Line",
+        "canonical": "#707070",
+        "oklch": "oklch(54.5% 0.000 90)",
+        "purpose": "Input borders on Mist and Cream.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "tile": {
+        "role": "neutral",
+        "displayName": "Tile",
+        "canonical": "#F2F2F2",
+        "oklch": "oklch(96.1% 0.000 90)",
+        "purpose": "Paper tone image slots, outline hover, language pill, surface cards.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Error",
+        "canonical": "#8F1F17",
+        "oklch": "oklch(42.7% 0.149 29)",
+        "purpose": "Field errors on Paper and the pales.",
+        "tonalRamp": [
+          "#210000",
+          "#4D0000",
+          "#7F0906",
+          "#A5352B",
+          "#CC594C",
+          "#F47D6D",
+          "#FDB4A8",
+          "#FFE9E5"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 90)",
+        "purpose": "Surface cards on the pales, business card, résumé, badge, pink email hover, the wall tile under the pointer.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "blush": {
+        "role": "secondary",
+        "displayName": "Blush",
+        "canonical": "#FDF3F6",
+        "oklch": "oklch(97.3% 0.011 357)",
+        "purpose": "Pale pink tone, black text.",
+        "tonalRamp": [
+          "#0F090B",
+          "#2A2325",
+          "#474042",
+          "#675F61",
+          "#888082",
+          "#ABA2A5",
+          "#D0C6C9",
+          "#F5EBEE"
+        ]
+      },
+      "blush-line": {
+        "role": "secondary",
+        "displayName": "Blush Line",
+        "canonical": "#EBD3DC",
+        "oklch": "oklch(88.9% 0.029 353)",
+        "purpose": "Blush tone dividers.",
+        "tonalRamp": [
+          "#14060C",
+          "#301F26",
+          "#4F3C43",
+          "#6F5B63",
+          "#917B84",
+          "#B59EA6",
+          "#D9C2CB",
+          "#FEE8F0"
+        ]
+      },
+      "blush-line-hover": {
+        "role": "secondary",
+        "displayName": "Blush Line Hover",
+        "canonical": "#D8B6C3",
+        "oklch": "oklch(81.0% 0.043 353)",
+        "purpose": "Blush tone hover borders.",
+        "tonalRamp": [
+          "#18040D",
+          "#351C27",
+          "#543944",
+          "#755763",
+          "#987884",
+          "#BB9BA7",
+          "#E1BECB",
+          "#FFE7F0"
+        ]
+      },
+      "blush-field-line": {
+        "role": "secondary",
+        "displayName": "Blush Field Line",
+        "canonical": "#7A6870",
+        "oklch": "oklch(53.7% 0.026 349)",
+        "purpose": "Blush tone input borders.",
+        "tonalRamp": [
+          "#13070D",
+          "#2F2027",
+          "#4D3D44",
+          "#6D5C63",
+          "#8F7C85",
+          "#B29FA7",
+          "#D7C3CC",
+          "#FDE8F1"
+        ]
+      },
+      "mist": {
+        "role": "secondary",
+        "displayName": "Mist",
+        "canonical": "#EFF5FD",
+        "oklch": "oklch(96.8% 0.012 256)",
+        "purpose": "Pale blue tone, black text.",
+        "tonalRamp": [
+          "#080B10",
+          "#21252B",
+          "#3E4249",
+          "#5D6268",
+          "#7D838A",
+          "#A0A6AD",
+          "#C4CAD1",
+          "#E9EFF7"
+        ]
+      },
+      "mist-line": {
+        "role": "secondary",
+        "displayName": "Mist Line",
+        "canonical": "#D3E0F2",
+        "oklch": "oklch(90.2% 0.028 256)",
+        "purpose": "Mist tone dividers.",
+        "tonalRamp": [
+          "#040B17",
+          "#1C2633",
+          "#384351",
+          "#576272",
+          "#788394",
+          "#9AA6B7",
+          "#BECADC",
+          "#E5EFFE"
+        ]
+      },
+      "mist-line-hover": {
+        "role": "secondary",
+        "displayName": "Mist Line Hover",
+        "canonical": "#B5C9E6",
+        "oklch": "oklch(83.0% 0.046 258)",
+        "purpose": "Mist tone hover borders.",
+        "tonalRamp": [
+          "#010A1E",
+          "#16253B",
+          "#32435B",
+          "#51627C",
+          "#71849E",
+          "#93A7C3",
+          "#B7CBE8",
+          "#E5EFFE"
+        ]
+      },
+      "cream": {
+        "role": "secondary",
+        "displayName": "Cream",
+        "canonical": "#FFF8E2",
+        "oklch": "oklch(97.9% 0.030 92)",
+        "purpose": "Pale yellow tone, black text; the stars on the share image.",
+        "tonalRamp": [
+          "#100B00",
+          "#2A2514",
+          "#484230",
+          "#67614E",
+          "#88826E",
+          "#ABA590",
+          "#D0C9B4",
+          "#F5EED9"
+        ]
+      },
+      "cream-line": {
+        "role": "secondary",
+        "displayName": "Cream Line",
+        "canonical": "#EDE2C0",
+        "oklch": "oklch(91.3% 0.046 92)",
+        "purpose": "Cream tone dividers.",
+        "tonalRamp": [
+          "#110A00",
+          "#2D2406",
+          "#4B4124",
+          "#6B6143",
+          "#8C8263",
+          "#AFA584",
+          "#D4C9A8",
+          "#F9EECC"
+        ]
+      },
+      "cream-line-hover": {
+        "role": "secondary",
+        "displayName": "Cream Line Hover",
+        "canonical": "#D9C99A",
+        "oklch": "oklch(83.8% 0.065 91)",
+        "purpose": "Cream tone hover borders.",
+        "tonalRamp": [
+          "#120A00",
+          "#2F2300",
+          "#4F4114",
+          "#6F6034",
+          "#908155",
+          "#B4A476",
+          "#D8C899",
+          "#FEEEBE"
+        ]
+      },
+      "field-green": {
+        "role": "primary",
+        "displayName": "Field Green",
+        "canonical": "#2C5846",
+        "oklch": "oklch(42.3% 0.058 165)",
+        "purpose": "Deep green tone, white text. Default Action close, Home opening, résumé stage, card sun and copied state, PDF badge, favicon ground, share image ground.",
+        "tonalRamp": [
+          "#001007",
+          "#002E1E",
+          "#1F4C3A",
+          "#406C59",
+          "#618E7A",
+          "#83B19C",
+          "#A6D6C0",
+          "#CBFCE5"
+        ]
+      },
+      "green-raised": {
+        "role": "primary",
+        "displayName": "Green Raised",
+        "canonical": "#1F4334",
+        "oklch": "oklch(35.1% 0.050 165)",
+        "purpose": "Surface cards on Field.",
+        "tonalRamp": [
+          "#001007",
+          "#062D1F",
+          "#264A3B",
+          "#466A5A",
+          "#668C7B",
+          "#89AF9D",
+          "#ACD4C1",
+          "#D1FAE6"
+        ]
+      },
+      "on-field": {
+        "role": "neutral",
+        "displayName": "On Field",
+        "canonical": "#F1F4F9",
+        "oklch": "oklch(96.6% 0.007 261)",
+        "purpose": "Soft ink on Field (7.35:1).",
+        "tonalRamp": [
+          "#090B0E",
+          "#232529",
+          "#404246",
+          "#5F6166",
+          "#808287",
+          "#A2A5AA",
+          "#C6C9CE",
+          "#ECEFF4"
+        ]
+      },
+      "green-line": {
+        "role": "primary",
+        "displayName": "Green Line",
+        "canonical": "#7F9A91",
+        "oklch": "oklch(66.3% 0.033 173)",
+        "purpose": "Field tone dividers.",
+        "tonalRamp": [
+          "#000F0A",
+          "#122A23",
+          "#2F4840",
+          "#4E685F",
+          "#6F8980",
+          "#91ACA3",
+          "#B4D1C7",
+          "#D9F6EC"
+        ]
+      },
+      "green-line-hover": {
+        "role": "primary",
+        "displayName": "Green Line Hover",
+        "canonical": "#A9BDB5",
+        "oklch": "oklch(78.1% 0.025 170)",
+        "purpose": "Field tone hover borders and input borders.",
+        "tonalRamp": [
+          "#020E09",
+          "#192923",
+          "#354640",
+          "#54665F",
+          "#748780",
+          "#97AAA2",
+          "#BACFC6",
+          "#DFF4EC"
+        ]
+      },
+      "green-press": {
+        "role": "neutral",
+        "displayName": "Green Press",
+        "canonical": "#E6ECEA",
+        "oklch": "oklch(93.8% 0.007 174)",
+        "purpose": "Solid button press on Field.",
+        "tonalRamp": [
+          "#080C0B",
+          "#222625",
+          "#3E4342",
+          "#5D6361",
+          "#7E8482",
+          "#A1A6A5",
+          "#C5CBC9",
+          "#EAF0EE"
+        ]
+      },
+      "berry": {
+        "role": "secondary",
+        "displayName": "Berry",
+        "canonical": "#8C1F50",
+        "oklch": "oklch(43.4% 0.149 358)",
+        "purpose": "Deep pink tone, white text. Opens About, closes Writing. Also the footer email on Paper (8.4:1).",
+        "tonalRamp": [
+          "#20000B",
+          "#4A0024",
+          "#7A0641",
+          "#9F3360",
+          "#C65681",
+          "#EE7AA4",
+          "#FEAFC8",
+          "#FEE8EE"
+        ]
+      },
+      "berry-raised": {
+        "role": "secondary",
+        "displayName": "Berry Raised",
+        "canonical": "#6E173E",
+        "oklch": "oklch(36.6% 0.125 358)",
+        "purpose": "Surface cards on Berry.",
+        "tonalRamp": [
+          "#20000B",
+          "#4B0024",
+          "#721B41",
+          "#973E60",
+          "#BD6082",
+          "#E382A4",
+          "#FBB1C8",
+          "#FEE8EE"
+        ]
+      },
+      "on-berry": {
+        "role": "neutral",
+        "displayName": "On Berry",
+        "canonical": "#F7EEF2",
+        "oklch": "oklch(95.7% 0.011 348)",
+        "purpose": "Soft ink on Berry (7.6:1).",
+        "tonalRamp": [
+          "#0F090C",
+          "#292326",
+          "#474043",
+          "#665F62",
+          "#888083",
+          "#ABA2A6",
+          "#CFC6CA",
+          "#F5ECF0"
+        ]
+      },
+      "berry-line": {
+        "role": "secondary",
+        "displayName": "Berry Line",
+        "canonical": "#BA7996",
+        "oklch": "oklch(65.2% 0.089 352)",
+        "purpose": "Berry tone dividers.",
+        "tonalRamp": [
+          "#1F000E",
+          "#430C2A",
+          "#642B47",
+          "#874B67",
+          "#AB6C88",
+          "#D18EAB",
+          "#F7B2D0",
+          "#FEE7F1"
+        ]
+      },
+      "berry-line-hover": {
+        "role": "secondary",
+        "displayName": "Berry Line Hover",
+        "canonical": "#D1A5B9",
+        "oklch": "oklch(76.8% 0.058 350)",
+        "purpose": "Berry tone hover borders and input borders.",
+        "tonalRamp": [
+          "#1B010F",
+          "#391829",
+          "#593547",
+          "#7B5466",
+          "#9E7487",
+          "#C297AA",
+          "#E7BACF",
+          "#FEE7F1"
+        ]
+      },
+      "berry-press": {
+        "role": "neutral",
+        "displayName": "Berry Press",
+        "canonical": "#F2E4EA",
+        "oklch": "oklch(93.2% 0.017 350)",
+        "purpose": "Solid button press on Berry.",
+        "tonalRamp": [
+          "#11080C",
+          "#2C2226",
+          "#493E43",
+          "#695D63",
+          "#8B7E84",
+          "#AEA1A7",
+          "#D2C5CB",
+          "#F8EAF0"
+        ]
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Cobalt",
+        "canonical": "#1D4A99",
+        "oklch": "oklch(42.6% 0.139 261)",
+        "purpose": "Deep blue tone, white text. Opens Process, closes Photography.",
+        "tonalRamp": [
+          "#000039",
+          "#001F5A",
+          "#0F3C8A",
+          "#305EAF",
+          "#5080D5",
+          "#72A4FB",
+          "#AECAFA",
+          "#E6EFFF"
+        ]
+      },
+      "cobalt-raised": {
+        "role": "secondary",
+        "displayName": "Cobalt Raised",
+        "canonical": "#153A7C",
+        "oklch": "oklch(36.4% 0.120 261)",
+        "purpose": "Surface cards and document chip abbreviations on Cobalt.",
+        "tonalRamp": [
+          "#000037",
+          "#001E5E",
+          "#193E81",
+          "#385FA5",
+          "#5881CA",
+          "#7AA5F0",
+          "#ACCAFD",
+          "#E6EFFE"
+        ]
+      },
+      "on-cobalt": {
+        "role": "neutral",
+        "displayName": "On Cobalt",
+        "canonical": "#EEF2FA",
+        "oklch": "oklch(96.0% 0.012 265)",
+        "purpose": "Soft ink on Cobalt (7.5:1).",
+        "tonalRamp": [
+          "#090B10",
+          "#22252B",
+          "#3F4248",
+          "#5E6168",
+          "#7F8289",
+          "#A1A5AD",
+          "#C5C9D1",
+          "#EBEFF7"
+        ]
+      },
+      "cobalt-line": {
+        "role": "secondary",
+        "displayName": "Cobalt Line",
+        "canonical": "#7792C2",
+        "oklch": "oklch(65.8% 0.078 262)",
+        "purpose": "Cobalt tone dividers.",
+        "tonalRamp": [
+          "#00062B",
+          "#0E234A",
+          "#2A416B",
+          "#48618E",
+          "#6883B2",
+          "#8AA6D7",
+          "#ADCAFD",
+          "#E6EFFE"
+        ]
+      },
+      "cobalt-line-hover": {
+        "role": "secondary",
+        "displayName": "Cobalt Line Hover",
+        "canonical": "#A5B7D6",
+        "oklch": "oklch(77.6% 0.049 261)",
+        "purpose": "Cobalt tone hover borders and input borders.",
+        "tonalRamp": [
+          "#020A1F",
+          "#17253D",
+          "#33425C",
+          "#52627D",
+          "#7283A0",
+          "#94A6C4",
+          "#B8CAEA",
+          "#E6EFFF"
+        ]
+      },
+      "cobalt-press": {
+        "role": "neutral",
+        "displayName": "Cobalt Press",
+        "canonical": "#E2E9F5",
+        "oklch": "oklch(93.2% 0.018 261)",
+        "purpose": "Solid button press on Cobalt.",
+        "tonalRamp": [
+          "#070B13",
+          "#20252E",
+          "#3D424C",
+          "#5C626C",
+          "#7C838D",
+          "#9FA5B1",
+          "#C3CAD5",
+          "#E8EFFB"
+        ]
+      },
+      "deep-ink": {
+        "role": "neutral",
+        "displayName": "Deep Ink",
+        "canonical": "#FCFCFC",
+        "oklch": "oklch(99.1% 0.000 90)",
+        "purpose": "Ink on the three deeps (Field 7.9:1, Berry 8.4:1, Cobalt 8.2:1); solid button fill on them.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "deep-error": {
+        "role": "error",
+        "displayName": "Deep Error",
+        "canonical": "#FFE9E6",
+        "oklch": "oklch(95.1% 0.024 27)",
+        "purpose": "Field errors on the three deeps.",
+        "tonalRamp": [
+          "#140706",
+          "#30211F",
+          "#4E3D3B",
+          "#6F5C5A",
+          "#917D7A",
+          "#B4A09D",
+          "#D9C4C1",
+          "#FFE9E6"
+        ]
+      },
+      "tile-ground": {
+        "role": "neutral",
+        "displayName": "Tile Ground",
+        "canonical": "#FCFCFC",
+        "oklch": "oklch(99.1% 0.000 90)",
+        "purpose": "About wall tile faces.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "tile-grout": {
+        "role": "neutral",
+        "displayName": "Tile Grout",
+        "canonical": "#D9D9D6",
+        "oklch": "oklch(88.4% 0.004 106)",
+        "purpose": "About wall grout.",
+        "tonalRamp": [
+          "#0B0B09",
+          "#252523",
+          "#424240",
+          "#61615F",
+          "#828280",
+          "#A5A5A2",
+          "#C9C9C6",
+          "#EFEFEC"
+        ]
+      },
+      "tile-faint": {
+        "role": "neutral",
+        "displayName": "Tile Faint",
+        "canonical": "#DEDEDB",
+        "oklch": "oklch(90.0% 0.004 106)",
+        "purpose": "Every About wall tile that is not a letter; scrambled, all tiles go to Ink.",
+        "tonalRamp": [
+          "#0B0B09",
+          "#252523",
+          "#424240",
+          "#61615F",
+          "#828280",
+          "#A5A5A2",
+          "#C9C9C6",
+          "#EFEFEC"
+        ]
+      },
+      "sky-arc": {
+        "role": "neutral",
+        "displayName": "Sky Arc",
+        "canonical": "#9A9A9A",
+        "oklch": "oklch(68.6% 0.000 90)",
+        "purpose": "The dotted arc the sun and moon ride on the Home business card. Decorative, on White only.",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "control-fill": {
+        "role": "neutral",
+        "displayName": "Control Fill",
+        "canonical": "color-mix(in oklab, var(--ink) 9%, var(--bg))",
+        "purpose": "Filled header controls (language trigger, Menu button). #E4E4E4 is its Paper value; it follows every tone.",
+        "tonalRamp": [
+          "#1B1B1B",
+          "#333333",
+          "#4E4E4E",
+          "#6A6A6A",
+          "#888888",
+          "#A7A7A7",
+          "#C6C6C6",
+          "#E4E4E4"
+        ]
+      },
+      "control-fill-hover": {
+        "role": "neutral",
+        "displayName": "Control Fill Hover",
+        "canonical": "color-mix(in oklab, var(--ink) 15%, var(--bg))",
+        "purpose": "Language trigger on hover and while open, and the Menu button on hover. #D4D4D4 is its Paper value.",
+        "tonalRamp": [
+          "#1B1B1B",
+          "#333333",
+          "#4E4E4E",
+          "#6A6A6A",
+          "#888888",
+          "#A7A7A7",
+          "#C6C6C6",
+          "#D4D4D4"
+        ]
+      },
+      "watermark": {
+        "role": "neutral",
+        "displayName": "Watermark",
+        "canonical": "color-mix(in oklab, var(--bg), #141414 3.5%) on the pales; color-mix(in oklab, var(--bg), #000 16%) on the deeps",
+        "purpose": "The ibis burst (--wm). Blush #F4EAED, Mist #E6ECF4, Cream #F6EFDA; Field #214436, Berry #6E163E, Cobalt #153978. Soft Ink stays at 7.1:1 or more over it.",
+        "tonalRamp": [
+          "#F4EAED",
+          "#E6ECF4",
+          "#F6EFDA",
+          "#214436",
+          "#6E163E",
+          "#153978"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page title and the closing call at the Action stage; at most two per page."
+      },
+      "document-mark": {
+        "displayName": "Document Mark",
+        "purpose": "The abbreviation heading each Process document (BRS, SRS, SDD); decorative, hidden from assistive tech."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, ledger and GitHub figures, the About action title, Next link."
+      },
+      "menu": {
+        "displayName": "Menu",
+        "purpose": "Links in the phone menu."
+      },
+      "title-large": {
+        "displayName": "Title Large",
+        "purpose": "Featured case title, business card name, prose subheads, Process document names, cost figure multipliers."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "A single thesis paragraph beside a heading, standfirsts, pull quotes."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card, step, milestone and role titles, FAQ questions, card clock, carousel captions, step rail abbreviations, document questions."
+      },
+      "footer-line": {
+        "displayName": "Footer Line",
+        "purpose": "The footer tab sentence; the email in it is 700 at 20px."
+      },
+      "footer-line-phone": {
+        "displayName": "Footer Line Phone",
+        "purpose": "The footer tab sentence at 760px and below."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Intros and long prose in Soft Ink."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Lists, notes, captions, checks, button labels."
+      },
+      "corner": {
+        "displayName": "Corner",
+        "purpose": "LUCAS TEIXEIRA and LATIN AMERICA in the footer corners."
+      },
+      "corner-phone": {
+        "displayName": "Corner Phone",
+        "purpose": "Footer corners at 760px and below."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav, languages, menu button, years, field names. Never a sentence."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Header nav words (after scrolling), the Menu button and the language rows; sentence case."
+      }
+    },
+    "tones": {
+      "mechanism": "Each section is <section class=\"band\" data-tone=\"...\">; the footer is the last stop (paper). site.js sets :root[data-tone] from a trigger line that starts under the header and slides to mid screen over the first half screen of scroll, with a 32px dead band either side (hysteresis), and mirrors the tone into the theme-color meta. The head script sets the first tone before paint; the blend switches on (.tone-ready) two frames later.",
+      "registeredProperties": [
+        "--bg",
+        "--ink",
+        "--ink-2",
+        "--ink-3",
+        "--line",
+        "--line-hover",
+        "--tile",
+        "--surface"
+      ],
+      "blend": "Surfaces transition over --tone (800ms, cubic-bezier(0.4, 0, 0.2, 1)); --ink, --ink-2 and --ink-3 switch in one step after 42% of --tone.",
+      "values": {
+        "paper": {
+          "bg": "#FCFCFC",
+          "ink": "#141414",
+          "ink-2": "#4D4D4D",
+          "ink-3": "#555555",
+          "line": "#E4E4E4",
+          "line-hover": "#C9C9C9",
+          "tile": "#F2F2F2",
+          "surface": "#F2F2F2",
+          "field-line": "#767676",
+          "error": "#8F1F17",
+          "contrast": "Ink 18:1, Soft Ink 8.2:1, Faint Ink 7.3:1"
+        },
+        "blush": {
+          "bg": "#FDF3F6",
+          "ink": "#141414",
+          "ink-2": "#4D4D4D",
+          "ink-3": "#4D4D4D",
+          "line": "#EBD3DC",
+          "line-hover": "#D8B6C3",
+          "tile": "#FFFFFF",
+          "surface": "#FFFFFF",
+          "field-line": "#7A6870",
+          "error": "#8F1F17",
+          "contrast": "Soft Ink 7.8:1"
+        },
+        "mist": {
+          "bg": "#EFF5FD",
+          "ink": "#141414",
+          "ink-2": "#4D4D4D",
+          "ink-3": "#4D4D4D",
+          "line": "#D3E0F2",
+          "line-hover": "#B5C9E6",
+          "tile": "#FFFFFF",
+          "surface": "#FFFFFF",
+          "field-line": "#707070",
+          "error": "#8F1F17",
+          "contrast": "Soft Ink 7.7:1"
+        },
+        "cream": {
+          "bg": "#FFF8E2",
+          "ink": "#141414",
+          "ink-2": "#4D4D4D",
+          "ink-3": "#4D4D4D",
+          "line": "#EDE2C0",
+          "line-hover": "#D9C99A",
+          "tile": "#FFFFFF",
+          "surface": "#FFFFFF",
+          "field-line": "#707070",
+          "error": "#8F1F17",
+          "contrast": "Soft Ink 8:1"
+        },
+        "field": {
+          "bg": "#2C5846",
+          "ink": "#FCFCFC",
+          "ink-2": "#F1F4F9",
+          "ink-3": "#F1F4F9",
+          "line": "#7F9A91",
+          "line-hover": "#A9BDB5",
+          "tile": "#1F4334",
+          "surface": "#1F4334",
+          "field-line": "#A9BDB5",
+          "error": "#FFE9E6",
+          "ink-hover": "#FFFFFF",
+          "ink-press": "#E6ECEA",
+          "contrast": "Ink 7.9:1, On Field 7.35:1"
+        },
+        "berry": {
+          "bg": "#8C1F50",
+          "ink": "#FCFCFC",
+          "ink-2": "#F7EEF2",
+          "ink-3": "#F7EEF2",
+          "line": "#BA7996",
+          "line-hover": "#D1A5B9",
+          "tile": "#6E173E",
+          "surface": "#6E173E",
+          "field-line": "#D1A5B9",
+          "error": "#FFE9E6",
+          "ink-hover": "#FFFFFF",
+          "ink-press": "#F2E4EA",
+          "contrast": "Ink 8.4:1, On Berry 7.6:1"
+        },
+        "cobalt": {
+          "bg": "#1D4A99",
+          "ink": "#FCFCFC",
+          "ink-2": "#EEF2FA",
+          "ink-3": "#EEF2FA",
+          "line": "#7792C2",
+          "line-hover": "#A5B7D6",
+          "tile": "#153A7C",
+          "surface": "#153A7C",
+          "field-line": "#A5B7D6",
+          "error": "#FFE9E6",
+          "ink-hover": "#FFFFFF",
+          "ink-press": "#E2E9F5",
+          "contrast": "Ink 8.2:1, On Cobalt 7.5:1"
+        }
+      },
+      "families": {
+        "pale": [
+          "blush",
+          "mist",
+          "cream"
+        ],
+        "deep": [
+          "field",
+          "berry",
+          "cobalt"
+        ],
+        "rule": "Pink and blue are very light with black text or deep with white text; nothing in between. Green as a page tone is only Field."
+      },
+      "sequences": {
+        "index.html": [
+          "field",
+          "mist",
+          "cream",
+          "blush",
+          "field"
+        ],
+        "about.html": [
+          "berry",
+          "blush",
+          "blush",
+          "mist",
+          "mist",
+          "cream",
+          "field",
+          "blush"
+        ],
+        "work.html": [
+          "mist",
+          "paper",
+          "blush",
+          "field"
+        ],
+        "case-fetchly-website.html": [
+          "cream",
+          "paper",
+          "mist",
+          "field"
+        ],
+        "process.html": [
+          "cobalt",
+          "mist",
+          "paper",
+          "cream",
+          "blush",
+          "field"
+        ],
+        "writing.html": [
+          "cream",
+          "paper",
+          "blush",
+          "berry"
+        ],
+        "essay-on-thinking-systems.html": [
+          "blush",
+          "paper",
+          "field"
+        ],
+        "photography.html": [
+          "mist",
+          "paper",
+          "cream",
+          "cobalt"
+        ],
+        "contact.html": [
+          "blush",
+          "mist",
+          "cream",
+          "paper",
+          "paper"
+        ]
+      }
+    },
+    "shadows": [
+      {
+        "name": "language-panel",
+        "value": "0 18px 40px rgba(15, 15, 20, 0.14), 0 2px 8px rgba(15, 15, 20, 0.06)",
+        "purpose": "The open language panel, the one surface that floats. No border."
+      },
+      {
+        "name": "step-rail-hairline",
+        "value": "0 1px 0 var(--line)",
+        "purpose": "The Process step rail when it sticks under the header below 900px. A rule, not elevation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Every CSS state transition (ease-out-quart)."
+      },
+      {
+        "name": "ease-tone",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "The page blending between tones."
+      },
+      {
+        "name": "press",
+        "value": "80ms",
+        "purpose": "Scale on :active (0.98 buttons, 0.97 Copy)."
+      },
+      {
+        "name": "fast",
+        "value": "140ms",
+        "purpose": "Hover, press and color feedback."
+      },
+      {
+        "name": "base",
+        "value": "220ms",
+        "purpose": "Icons, menu entrance (25ms stagger), disclosure, paper objects straightening."
+      },
+      {
+        "name": "slow",
+        "value": "420ms",
+        "purpose": "Image hover scale only."
+      },
+      {
+        "name": "tone",
+        "value": "800ms (320ms with reduced motion)",
+        "purpose": "Surface tokens blending to a new tone; ink steps at 42%."
+      },
+      {
+        "name": "ribbon",
+        "value": "GSAP: turn 0.55s back.out(1.7); settle 0.7s power3.inOut, 18ms per column (28ms on arrival); idle 1800ms, 900ms after leave, 2400ms after a click; a turning tile lights from 0.28 to full ink opacity, 120ms in, 600ms out",
+        "purpose": "Tile ribbon at the foot of each opening section. Static under reduced motion or without GSAP."
+      },
+      {
+        "name": "badge",
+        "value": "GSAP 3.12.5 + ScrollTrigger: start top 95%, end bottom 96%, scrub 0.8; strokes draw (stagger 0.12) then fill, letters back.out(2) from center; hover wave 0.22s up, elastic.out(1, 0.45) back",
+        "purpose": "Footer badge. Finished and still under reduced motion or without GSAP."
+      },
+      {
+        "name": "tile-wall",
+        "value": "220ms per tile, 45ms per column, 650ms after arrival",
+        "purpose": "About wall spelling LUCAS."
+      },
+      {
+        "name": "stats-bars",
+        "value": "700ms, 9ms stagger, once in view; split bar 900ms from the left, 80ms apart",
+        "purpose": "About stats: Claude Code daily bars and tool split, GitHub weekly bars."
+      },
+      {
+        "name": "sky",
+        "value": "1.2s",
+        "purpose": "Sun or moon moving on the business card arc (updated each minute)."
+      },
+      {
+        "name": "carousel-advance",
+        "value": "6s linear (--show-time), the indicator fill; its animationend advances the slide",
+        "purpose": "Home showcase. Held by hover or focus, stopped by the pause button; starts paused under reduced motion."
+      },
+      {
+        "name": "carousel-crossfade",
+        "value": "700ms ease-out",
+        "purpose": "Home showcase slides fading between projects. Cut under reduced motion."
+      },
+      {
+        "name": "carousel-settle",
+        "value": "1600ms ease-out, scale 1.04 to 1",
+        "purpose": "The arriving showcase image coming to rest. Removed under reduced motion."
+      },
+      {
+        "name": "marquee",
+        "value": "70s linear infinite, two tracks translating -100%",
+        "purpose": "Home tools marquee. Hover holds it, the button stops it; a still scrollable row under reduced motion."
+      },
+      {
+        "name": "cost-rise",
+        "value": "900ms ease-out, 140ms stagger, once at 40% visible ([data-rise] gets .is-in)",
+        "purpose": "Process cost bars rising from the baseline. No transition under reduced motion."
+      },
+      {
+        "name": "step-rail",
+        "value": "scroll linked, no duration: --p = share of the document above a line at 40% of the viewport",
+        "purpose": "Process step rail line fill and aria-current=\"step\"."
+      },
+      {
+        "name": "Language picker",
+        "purpose": "Pill to panel clip-path morph, split flap codes, highlight on transform only; instant under reduced motion.",
+        "value": "clip-path 520ms cubic-bezier(0.32, 0.72, 0, 1); highlight transform 520ms cubic-bezier(0.22, 1, 0.36, 1); rows 45ms stagger; fold 360ms"
+      },
+      {
+        "name": "grain",
+        "value": "noise-jitter 0.2s infinite, ten translate steps; live 3s after arrival and while scrolling (420ms after each scroll event)",
+        "purpose": "The grain layer. Still otherwise; never with reduced motion. Its opacity follows the tone over --tone."
+      },
+      {
+        "name": "brand-ibis",
+        "value": "transform 480ms cubic-bezier(0.22, 1, 0.36, 1), opacity 240ms ease-out; scale 2.8 (2.5 at 1100px and below and on phones) to 0.7 and fading at .is-scrolled (scrollY > 8); 60ms delay on the way back",
+        "purpose": "The ibis giving way on the first scroll. Only after .tone-ready, so arriving mid page does not play it; instant with reduced motion."
+      },
+      {
+        "name": "brand-texr",
+        "value": "transform 420ms cubic-bezier(0.22, 1, 0.36, 1), opacity 260ms ease-out; from 8px low and hidden to rest, 120ms delay at .is-scrolled",
+        "purpose": "The texr wordmark rising into the brand cell as the ibis leaves, so the two are never at full strength together. Instant with reduced motion."
+      },
+      {
+        "name": "nav-crossover",
+        "value": "opacity 200ms ease-out, transform 260ms cubic-bezier(0.22, 1, 0.36, 1), 6px lift, word 40ms behind",
+        "purpose": "Nav icons giving way to words at .is-scrolled, in one grid cell, no layout shift."
+      },
+      {
+        "name": "bloco-reveal",
+        "value": "steps(1), 80ms plus a seeded 34ms slot per dove, once half the strip is in view",
+        "purpose": "Dove strips appearing; then they run the ribbon's GSAP behavior. Cut under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "760px"
+      },
+      {
+        "name": "rail",
+        "value": "900px"
+      },
+      {
+        "name": "menu",
+        "value": "1080px"
+      },
+      {
+        "name": "tablet",
+        "value": "1100px"
+      }
+    ],
+    "i18n": {
+      "languages": [
+        {
+          "code": "en",
+          "path": "/"
+        },
+        {
+          "code": "pt-BR",
+          "path": "pt-br/"
+        },
+        {
+          "code": "es-419",
+          "path": "es/"
+        }
+      ],
+      "copy": "locales/en.py, pt.py, es.py",
+      "notes": "hreflang alternates on every page; the language and tone script is the first thing in the head."
+    },
+    "accessibility": {
+      "target": "WCAG 2.1 AAA",
+      "contrastText": "7:1 (4.5:1 large) on every tone",
+      "targetSize": "44px",
+      "lineSpacing": "1.5 in running text, 1.5em paragraph spacing",
+      "abbreviations": "expanded in a title on first use per page, no visible underline",
+      "links": "no underlines; hover shifts color or moves an arrow",
+      "menu": "page behind is inert while the phone menu is open; Escape closes it from anywhere",
+      "status": "copy results spoken through a role=status region",
+      "motion": "reduced motion: tone blend 320ms, transforms removed, the brand swaps instantly, CSS animations cut, GSAP moments skipped, carousel starts paused, marquee becomes a still scrollable row, cost bars stand without rising, the grain holds still",
+      "autoplay": "the carousel and the marquee hold on hover and keyboard focus and each has a 44px pause button (WCAG 2.2.2); inactive slides are inert; aria-roledescription carousel and slide",
+      "steps": "the Process rail marks the current document with aria-current=\"step\"",
+      "header": "transparent, no fill, grain or rule of its own; no strokes, borders, dividers or rules in the header; keyboard focus rings remain (2px Ink, 3px outside)"
+    },
+    "content": {
+      "source": "content/work/*.md, the Decap CMS collection shared with the Astro site",
+      "fields": [
+        "title",
+        "client",
+        "year",
+        "services",
+        "summary",
+        "cover",
+        "order",
+        "draft",
+        "featured",
+        "thumbnail",
+        "kind",
+        "slides"
+      ],
+      "notes": "Drafts are skipped and items sort by order. featured marks the Home carousel (first three); thumbnail falls back to cover. Images live in images/work/<slug>/ and assets/img. Entries with kind: presentation (five, each with slides: N) render as their own Presentations section on Work after the case study grid and do not count as case studies or reach Home. Their 4:3 covers at images/work/<slug>/cover.jpg were composed locally from slide renders; the same layouts are in Figma file ZrwVuagVrhgJdR3s6K7xJG, page \"Portfolio thumbnails\", frames 5:3, 5:7, 5:11, 5:15, 5:19.",
+      "merch": "The Merch page reads its images from images/merch/<slug>.jpg (assets Lucas sent on 9 Oct 2026); the slugs and the campaign's wide and full shots are the MERCH constants in build.py, the captions live in the locales."
+    },
+    "shareImage": {
+      "url": "https://lucastexr.com/assets/img/og.png",
+      "size": "1200x630",
+      "pages": "og:image on every page",
+      "figma": {
+        "file": "lucastexr.com Open Graph",
+        "key": "zz6Nty7K3s8dkgoZHLUxle",
+        "frame": "1:2"
+      },
+      "composition": "Field Green ground; the monogram large, cropped off the right and bottom edges at 7% white as texture; the icon, the wordmark and the role line; five pale avatars with client initials, Cream stars, \"30+ clients · 5 countries\"."
+    },
+    "marks": {
+      "source": "marks.py (from the files Lucas sent on 9 Oct 2026)",
+      "sprite": "build.py SPRITE: symbols m-ibis and m-texr, once per page, drawn with <use> via mark()",
+      "ibis": "from yawara.svg, the same ibis as the Yawará logomark; header (top of the page), business card, favicon (#FCFCFC on Field)",
+      "texr": "the header wordmark once the page scrolls, 20px tall (18px on phones), sharing the brand's grid cell with the ibis"
+    }
+  },
+  "components": [
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "The one primary action in a view; drawn from the tone tokens, so it inverts on the three deeps.",
+      "html": "<div class=\"ds-tones\"><div class=\"ds-paper\"><button class=\"ds-btn ds-btn--solid\" type=\"button\">See the work<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button> <button class=\"ds-btn ds-btn--solid\" type=\"button\" disabled>Sending</button></div><div class=\"ds-green\"><button class=\"ds-btn ds-btn--solid\" type=\"button\">Get in touch<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button></div><div class=\"ds-berry\"><button class=\"ds-btn ds-btn--solid\" type=\"button\">Get in touch</button></div></div>",
+      "css": ".ds-tones { display: grid; gap: 0; } .ds-paper { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-green { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-berry { --bg: #8C1F50; --ink: #FCFCFC; --ink-2: #F7EEF2; --ink-3: #F7EEF2; --line: #BA7996; --line-hover: #D1A5B9; --tile: #6E173E; --surface: #6E173E; --field-line: #D1A5B9; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #F2E4EA; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-btn { font-family: Inter, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 28px; border-radius: 999px; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; cursor: pointer; border: 1px solid var(--line); color: var(--ink); background: transparent; transition: background-color 140ms cubic-bezier(0.25,1,0.5,1), border-color 140ms cubic-bezier(0.25,1,0.5,1), transform 80ms cubic-bezier(0.25,1,0.5,1); } .ds-btn svg { transition: transform 220ms cubic-bezier(0.25,1,0.5,1); } .ds-btn:hover { border-color: var(--line-hover); background: var(--tile); } .ds-btn:hover svg { transform: translateX(3px); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-btn--solid { background: var(--ink); border-color: var(--ink); color: var(--bg); } .ds-btn--solid:hover { background: var(--ink-hover); border-color: var(--ink-hover); } .ds-btn--solid:active { background: var(--ink-press); border-color: var(--ink-press); } .ds-btn:disabled { background: var(--tile); border-color: var(--line); color: var(--ink-2); cursor: not-allowed; transform: none; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Every secondary action; hover fills with the tone's tile.",
+      "html": "<div class=\"ds-tones\"><div class=\"ds-paper\"><button class=\"ds-btn\" type=\"button\">Get in touch</button></div><div class=\"ds-green\"><button class=\"ds-btn\" type=\"button\">See the résumé<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button></div></div>",
+      "css": ".ds-tones { display: grid; } .ds-paper { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; background: var(--bg); padding: 20px; } .ds-green { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; background: var(--bg); padding: 20px; } .ds-btn { font-family: Inter, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 28px; border-radius: 999px; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; cursor: pointer; border: 1px solid var(--line); color: var(--ink); background: transparent; transition: background-color 140ms cubic-bezier(0.25,1,0.5,1), border-color 140ms cubic-bezier(0.25,1,0.5,1), transform 80ms cubic-bezier(0.25,1,0.5,1); } .ds-btn svg { transition: transform 220ms cubic-bezier(0.25,1,0.5,1); } .ds-btn:hover { border-color: var(--line-hover); background: var(--tile); } .ds-btn:hover svg { transform: translateX(3px); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-btn--solid { background: var(--ink); border-color: var(--ink); color: var(--bg); } .ds-btn--solid:hover { background: var(--ink-hover); border-color: var(--ink-hover); } .ds-btn--solid:active { background: var(--ink-press); border-color: var(--ink-press); } .ds-btn:disabled { background: var(--tile); border-color: var(--line); color: var(--ink-2); cursor: not-allowed; transform: none; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled field on the tone's background with an inline error written as the fix.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Email</label><input id=\"ds-email\" type=\"email\" placeholder=\"you@company.com\" aria-invalid=\"true\" aria-describedby=\"ds-email-err\"><p class=\"ds-error\" id=\"ds-email-err\">Add an email I can reply to, like you@company.com.</p></div>",
+      "css": ".ds-field { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; font-family: Inter, system-ui, sans-serif; display: grid; gap: 8px; max-width: 360px; background: var(--surface); padding: 24px; border-radius: 10px; } .ds-field label { font-size: 15px; font-weight: 500; color: var(--ink); } .ds-field input { font: inherit; font-size: 16px; color: var(--ink); background: var(--bg); border: 1px solid var(--field-line); border-radius: 8px; padding: 13px 14px; min-height: 48px; transition: border-color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-field input::placeholder { color: var(--ink-3); } .ds-field input:hover { border-color: var(--ink-2); } .ds-field input:focus { outline: 2px solid var(--ink); outline-offset: 2px; border-color: var(--ink); } .ds-field input[aria-invalid=\"true\"] { border: 2px solid var(--error); padding: 12px 13px; } .ds-error { margin: 0; font-size: 15px; font-weight: 500; color: var(--error); }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header nav: seven items (Merch after Work, with a t-shirt icon), icons only before the page scrolls and words only after (hover the strip to see the scrolled state). Icon and word share one grid cell and cross over in about 200ms with no layout shift; the word stays in the DOM. Outline icons at rest, filled for the current page. No strokes, borders or rules in the header; hover is the only color change.",
+      "html": "<div class=\"ds-nav-wrap\"><nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg><span class=\"ds-nl\">Work</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M8.5 3.5 4 5.75 2.75 10l3 1.25V20.5h12.5V11.25l3-1.25L20 5.75 15.5 3.5c-.6 1.5-1.9 2.4-3.5 2.4s-2.9-.9-3.5-2.4Z\"/></svg><span class=\"ds-nl\">Merch</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"3.5\" y=\"3.5\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13.5\" y=\"13.5\" width=\"7\" height=\"7\" rx=\"1.5\"/><path d=\"M7 10.5v3a3 3 0 0 0 3 3h3.5\"/></svg><span class=\"ds-nl\">Process</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M6.5 3h7.5l4 4v13.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V3.5a.5.5 0 0 1 .5-.5Z\"/><path class=\"d\" d=\"M14 3v4h4M9 11.5h6M9 15h6M9 18.5h3.5\"/></svg><span class=\"ds-nl\">Writing</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M3.5 8.5A1.5 1.5 0 0 1 5 7h2.2l1.6-2.2h6.4L16.8 7H19a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5Z\"/><circle class=\"d\" cx=\"12\" cy=\"13\" r=\"3.25\"/></svg><span class=\"ds-nl\">Photography</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle class=\"s\" cx=\"12\" cy=\"8\" r=\"3.75\"/><path class=\"s\" d=\"M4.75 20.25c.7-3.9 3.6-6 7.25-6s6.55 2.1 7.25 6Z\"/></svg><span class=\"ds-nl\">About</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"3\" y=\"5.5\" width=\"18\" height=\"13\" rx=\"2\"/><path class=\"d\" d=\"m3.75 7.5 8.25 5.75 8.25-5.75\"/></svg><span class=\"ds-nl\">Contact</span></a></nav><button class=\"ds-menu\" type=\"button\">Menu</button></div>",
+      "css": ".ds-nav-wrap { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --line: #E4E4E4; --tile: #F2F2F2; --surface: #F2F2F2; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); display: flex; align-items: center; gap: 16px; padding: 12px 20px; } .ds-nav { display: flex; align-items: center; gap: 0; } .ds-nav a { display: inline-grid; place-items: center; min-height: 44px; min-width: 44px; padding: 0 8px; border-radius: 999px; font-size: 15px; letter-spacing: -0.01em; font-weight: 500; color: var(--ink-2); text-decoration: none; transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--ink); } .ds-nav a:focus-visible, .ds-menu:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-nav a > .ds-ni, .ds-nav a > .ds-nl { grid-area: 1 / 1; transition: opacity 200ms cubic-bezier(0.25,1,0.5,1), transform 260ms cubic-bezier(0.22,1,0.36,1); } .ds-nl { opacity: 0; transform: translateY(6px); white-space: nowrap; } .ds-nav-wrap:hover .ds-ni { opacity: 0; transform: translateY(-6px) scale(0.9); } .ds-nav-wrap:hover .ds-nl { opacity: 1; transform: none; transition-delay: 40ms; } .ds-ni { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-ni .s { fill: transparent; transition: fill 140ms cubic-bezier(0.25,1,0.5,1); } [aria-current=\"page\"] > .ds-ni .s { fill: currentColor; } [aria-current=\"page\"] > .ds-ni .d { stroke: var(--bg); } .ds-menu { appearance: none; border: 0; height: 44px; padding: 0 18px; border-radius: 999px; background: color-mix(in oklab, var(--ink) 9%, var(--bg)); color: var(--ink); font: inherit; font-size: 15px; letter-spacing: -0.01em; font-weight: 500; cursor: pointer; transition: background 140ms cubic-bezier(0.25,1,0.5,1); } .ds-menu:hover { background: color-mix(in oklab, var(--ink) 15%, var(--bg)); }"
+    },
+    {
+      "name": "Header Brand",
+      "kind": "nav",
+      "description": "Lucas's ibis and the texr wordmark in one grid cell of a transparent header, in Ink, from the per page sprite. At the top of the page the ibis stands at scale 2.8 (2.5 at 1100px and below and on phones) on a 34px base (30px on phones); at .is-scrolled it shrinks to 0.7 and fades (480ms transform, 240ms fade) while texr rises in from 8px low at 20px tall (18px on phones; 420ms, 260ms fade, 120ms behind). Hover the stage to see the scrolled state; hover the brand to see its only color change, Soft Ink. Instant with reduced motion. The ibis is also on the business card (44px) and the favicon (#FCFCFC on Field).",
+      "html": "<div class=\"ds-ibis-stage\"><a class=\"ds-brand\" href=\"#\" aria-label=\"Lucas Teixeira, home\"><svg class=\"ds-ibis\" viewBox=\"-12 -4 524 518\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M379.13 375.699C376.821 375.361 372.024 381.326 373.058 383.599C373.228 383.974 378.096 388.806 378.452 388.958C380.664 389.644 380.039 385.008 380.681 384.509C384.141 386.078 386.307 387.531 387.957 391.026C388.43 392.025 389.366 398.828 391.354 396.982C393.226 395.244 391.996 388.744 390.828 386.381C389.508 383.688 381.894 376.101 379.13 375.699Z\"/><path fill=\"currentColor\" d=\"M123.889 510.217C126.626 510.163 127.535 506.962 130.076 506.16C132.707 505.331 135.417 506.008 138.065 505.679L139.938 497.761C131.539 494.926 122.168 500.712 123.889 510.217Z\"/><path fill=\"currentColor\" d=\"M354.013 391.731C354.031 396.733 343.599 398.721 352.025 400.673C352.881 402.002 351.517 406.032 350.634 407.441C349.564 409.144 347.398 408.983 347.683 411.248C358.721 411.801 360.807 399.96 356.492 391.748L354.013 391.722V391.731Z\"/><path fill=\"currentColor\" d=\"M293.286 403.669V402.359L286.171 397.883C281.418 407.013 285.547 418.31 296.852 417.489L290.807 409.723C289.291 403.857 292.59 405.185 293.286 403.669Z\"/><path fill=\"currentColor\" d=\"M228.234 496.441C229.375 486.384 221.779 486.634 213.932 487.053L214.833 495.068C219.799 493.82 227.101 492.251 226.424 499.526C228.047 499.188 228.082 497.77 228.234 496.441Z\"/><path fill=\"currentColor\" d=\"M218.39 501.319L221.591 508.514C224.239 508.229 225.604 506.472 228.528 506.686C231.889 506.936 234.109 509.477 237.105 510.226C237.533 509.789 235.643 505.785 235.055 505.152C231.524 501.336 223.339 499.286 218.381 501.327L218.39 501.319Z\"/><path fill=\"currentColor\" d=\"M136.817 352.411C141.542 351.876 144.61 348.274 148.907 349.219C151.653 351.207 147.909 366.667 148.854 367.568H151.52C152.402 366.748 153.205 349.379 154.64 347.061C155.193 346.169 155.871 346.009 156.869 346.169L155.095 364.002H158.635L164.448 340.802L166.695 341.292C166.713 341.872 166.73 342.451 166.695 343.031C166.409 346.963 161.604 360.087 162.308 362.548C162.825 364.367 166.418 364.376 167.881 363.859C171.064 362.744 175.067 345.688 177.376 342.148C179.641 338.68 193.434 330.129 197.018 332.323C200.924 340.855 200.202 350.957 205.079 359.508L207.745 359.133C210.045 357.484 205.239 345.884 205.926 342.603L208.609 343.191C210.054 347.444 208.921 354.907 213.487 356.904C219.309 356.904 210.134 340.383 214.387 337.271L219.755 354.185L221.966 352.856V339.482C221.966 322.033 269.506 293.734 283.023 282.838C288.248 278.621 292.947 274.056 297.753 269.491C312.616 255.368 323.458 241.833 326.935 220.648C328.148 213.212 327.916 205.544 329.378 198.135C330.546 196.227 332.508 197.787 332.57 199.517L329.842 227.112L332.089 229.404C333.676 229.288 334.264 228.111 335.058 226.997C359.345 192.946 355.529 142.276 328.014 111.497C323.012 105.907 314.898 101.69 313.971 93.1569C313.124 85.3553 319.401 69.6451 329.2 71.6958C330.698 72.0079 331.696 73.6306 333.417 73.3274C335.281 71.2589 329.726 50.7964 327.631 48.3623C325.794 46.2225 315.023 48.5941 310.94 38.3139C304.484 22.0687 324.43 7.81186 336.93 18.5558C340.06 21.2395 340.889 25.6441 342.592 27.6056C344.223 29.4869 354.236 33.0445 356.171 36.7714C358.311 37.1904 357.571 35.0684 357.294 33.8647C355.012 23.9144 343.849 11.9935 335.236 6.87567C306.178 -10.3681 270.523 6.55469 262.347 38.3674C255.045 66.7741 267.295 88.0568 284.405 109.42C291.565 118.354 302.469 125.852 303.905 138.076C304.654 144.451 304.065 164.111 293.963 162.355C226.522 127.662 152.135 160.001 98.9145 204.831C89.8201 212.499 81.6618 221.255 73.0667 229.368C68.2966 233.871 64.4359 237.268 59.6747 241.387C51.2044 248.698 40.6299 259.968 33.3811 268.59C30.742 271.72 7.01618 303.39 8.87965 305.155C11.1711 305.565 11.9735 304.308 13.3645 302.962C21.2641 295.321 28.3881 284.006 36.056 275.723C49.5282 261.172 73.4055 241.12 90.0073 230.26C94.2068 227.514 99.0572 223.849 98.9234 231.151C95.1876 231.999 91.9154 234.513 88.8393 236.662C44.9453 267.297 9.12039 303.577 1.84484 359.214C1.24746 363.761 -1.30255 389.662 0.846237 391.641C2.34414 391.918 2.71862 391.312 3.30708 390.09C6.2494 383.983 8.14853 372.909 10.4132 365.99C20.2388 335.889 28.825 315.944 52.9787 294.429C55.0294 292.601 66.5936 283.115 68.1539 282.838C69.9372 282.508 70.5345 285.37 69.9996 286.422C69.4824 287.43 59.0595 294.795 56.9999 296.667C32.0972 319.35 12.776 355.273 10.6629 389.421C10.2884 395.404 10.4489 409.973 18.1702 399.604C28.076 386.283 30.0108 365.535 35.8241 350.396C44.3658 328.177 59.4964 311.013 79.0227 297.291C81.6173 295.472 89.9182 289.588 92.4503 289.231C94.7775 288.901 97.1581 290.979 95.4105 293.163C94.2603 294.59 82.0185 301.366 79.0227 303.532C67.0216 312.243 57.4011 322.087 49.5104 334.65C40.7369 348.621 33.7378 363.957 35.6191 380.933C37.117 381.156 38.2493 380.648 39.5065 379.926C55.7338 370.68 57.7132 352.919 66.0052 337.958C76.116 319.715 92.9764 304.121 110.586 293.19C112.824 291.808 121.954 285.665 123.88 287.323C124.201 288.892 123.068 289.525 122.114 290.453C115.24 297.113 102.133 303.515 94.0374 310.532C80.4403 322.301 69.9461 338.537 63.1253 354.55C62.4744 356.057 58.899 363.226 59.6926 363.993C66.3796 361.915 72.1929 357.787 79.0851 355.308C102.552 346.865 115.347 354.836 136.817 352.411ZM75.1174 229.948C78.6036 230.67 82.3751 230.304 86.0307 230.206C82.3751 230.304 78.5947 230.67 75.1174 229.948ZM321.389 198.162C325.535 197.172 323.083 208.121 323.592 210.02C323.823 210.912 327.675 211.893 326.275 213.31C324.456 215.156 324.849 210.216 322.718 211.536C320.819 225.918 313.053 240.255 304.716 251.935C301.257 256.785 295.506 264.409 291.503 268.599C291.404 268.706 290.424 268.448 290.022 268.867C287.606 271.363 286.296 275.75 281.704 274.832C281.311 272.219 282.042 271.247 283.478 269.491C296.219 253.861 311.769 239.328 316.958 218.705C317.769 215.468 319.044 198.724 321.389 198.162ZM297.753 33.2139C299.563 31.3682 307.56 40.8995 308.844 42.6471C310.173 45.3219 322.994 53.0165 322.709 54.1489C322.049 56.8148 317.252 56.1104 315.139 54.6125C312.75 52.9095 299.037 38.8488 298.234 36.7357C297.788 35.5499 297.557 34.4799 297.753 33.2139ZM293.758 40.3467C297.173 39.3749 310.815 55.6825 314.747 57.7064C316.539 58.8477 314.435 61.469 313.231 61.683C311.483 61.9951 296.451 46.1957 292.831 44.8137C291.895 43.619 292.278 40.7658 293.758 40.3467ZM290.584 51.4919L291.948 49.2807C293.794 49.1648 308.969 61.7008 310.271 63.9209C311.92 66.7206 311.394 68.7356 308.889 70.6437C304.734 62.2982 295.916 58.3573 290.584 51.4919ZM301.087 206.409C302.077 202.584 302.701 191.377 304.154 188.969C305.715 186.393 307.988 186.651 307.881 189.923C307.4 204.35 301.827 221.941 291.092 232.07C289.791 233.3 289.113 234.192 287.053 233.817C284.682 231.267 295.06 220.024 296.692 217.171C298.573 213.89 300.142 210.074 301.087 206.409ZM285.689 218.66C288.007 213.408 292.046 210.457 293.767 203.538C294.24 201.621 294.926 187.373 298.635 191.029C300.124 197.03 295.122 217.492 290.227 220.506C287.909 221.932 284.423 221.54 285.689 218.66ZM287.419 248.467C295.122 238.793 302.692 229.689 307.427 218.098C311.278 208.665 310.155 201.345 313.4 192.821C314.791 189.166 316.298 191.617 317.359 194.167C315.451 219.73 301.194 242.359 283.032 259.665L280.883 256.687C283.086 253.968 285.252 251.195 287.419 248.467ZM215.234 184.743C246.744 183.049 266.225 209.057 258.076 239.176C255.383 249.126 250.364 256.553 244.22 264.56C243.213 265.889 242.08 266.513 242.464 268.599C239.245 269.116 233.806 276.329 230.891 278.862C211.32 295.865 186.221 312.671 163.931 326.028C161.408 327.544 153.24 333.027 151.083 332.84C148.399 332.599 148.078 329.888 150.155 328.301C178.946 310.532 209.76 292.806 233.548 268.599C241.109 260.905 246.004 256.268 250.649 246.015C252.815 241.245 255.597 233.006 255.874 228.066C256.248 221.397 255.214 216.734 252.708 210.653C247.822 198.822 234.341 190.128 221.502 189.264C215.065 188.827 209.537 191.011 203.233 191.02C201.86 185.1 210.874 184.975 215.234 184.743ZM172.918 269.491C175.049 266.522 180.666 262.233 183.118 258.729C184.5 256.767 185.722 254.003 186.31 251.659C191.107 252.22 189.618 256.117 188.111 259.273C187.211 261.172 183.27 266.789 181.834 268.599C181.71 268.751 180.149 268.777 179.605 269.446C175.745 274.172 173.248 279.227 170.618 284.693C163.895 284.764 170.841 272.388 172.918 269.491ZM196.466 279.272C196.733 278.309 201.94 270.926 203.233 268.599C206.318 263.062 208.797 258.916 209.465 252.087C209.742 249.198 208.226 239.007 211.721 238.284L213.932 239.622V256.562C213.932 257.195 210.651 268.037 210.366 268.599C210.33 268.679 209.1 268.421 208.583 269.232C206.746 272.157 201.236 282.428 198.338 282.892C196.466 283.195 196.127 280.502 196.466 279.272ZM239.798 215.102C245.692 212.401 247.787 228.182 246.021 229.359C245.531 229.689 243.347 229.484 242.901 228.494L239.798 215.102ZM199.622 241.45C201.664 248.253 198.561 262.295 195.209 268.599C195.102 268.795 193.63 269.437 193.042 270.391C191.785 272.406 189.217 278.443 186.747 278.443C182.512 278.05 186.685 272.076 188.076 269.491C195.03 256.625 194.486 256.812 196.056 242.252C196.43 238.828 198.472 237.625 199.622 241.45ZM191.651 216.877L187.309 216.761L180.952 201.728C186.943 198.028 192.471 216.083 191.651 216.877ZM178.446 251.391C180.015 248.761 184.054 236.965 184.973 236.51C186.301 235.841 187.897 239.649 187.888 240.353C187.817 245.061 180.898 256.705 177.421 260.165C174.336 263.232 169.423 265.791 165.785 268.599C165.215 269.045 164.02 268.983 162.638 270.32C160.195 272.683 154.533 283.614 153.749 283.765C145.662 285.397 155.389 271.675 156.869 269.491C163.833 262.545 173.168 260.263 178.446 251.391ZM171.563 241.78C172.981 241.788 173.881 241.958 174.71 243.206C171.269 257.481 156.789 259.674 147.953 268.599C143.7 272.897 141.204 278.059 137.673 282.856C135.747 282.669 134.418 280.877 134.695 279.058C134.784 278.451 140.16 269.419 140.82 268.599C146.348 261.698 157.03 257.436 164.038 252.131C166.178 250.874 169.798 241.78 171.563 241.78ZM110.488 221.763C113.43 218.812 122.007 212.704 125.752 210.279C127.874 208.897 143.049 200.177 144.092 200.07C146.116 199.883 148.114 202.816 146.179 204.849C144.877 206.213 131.663 212.659 128.418 214.728C124.522 217.216 115.472 225.16 112.244 226.283C110.488 226.89 110.176 226.034 109.123 224.91C108.161 223.43 109.614 222.654 110.488 221.763ZM135.542 228.387C134.989 227.647 137.084 212.989 141.712 215.102C141.855 219.552 142.291 231.686 135.542 228.387ZM91.3626 267.734C86.9491 271.265 82.4732 278.157 76.6332 278.398C74.4844 276.249 84.9073 266.7 86.8599 265.006C93.5559 259.21 100.974 253.763 107.831 248.092C113.109 243.732 118.628 239.577 123.452 234.905C125.164 235.806 126.144 237.464 125.538 239.426C120.955 243.349 115.891 249.742 111.397 253.442C105.798 258.051 97.5058 262.822 91.3626 267.734ZM99.4138 281.126C97.8357 282.66 94.3941 282.33 94.4208 279.744C100.537 272.879 108.098 265.104 114.964 258.791C122.774 251.614 145.046 236.269 147.703 227.781C149.032 223.537 148.836 219.088 149.754 214.781C150.485 213.194 153.151 214.746 153.758 216.003C154.132 222.226 153.463 228.37 150.316 233.951C146.839 240.121 127.954 254.538 121.205 260.575C113.769 267.217 106.27 273.851 99.4138 281.126ZM118.129 281.126C116.711 281.955 115.73 282.205 114.081 281.973C113.136 277.123 114.91 278.05 117.219 275.777C120.643 272.433 124.085 268.135 127.446 265.033C129.345 263.285 131.307 261.359 133.268 259.71C144.271 250.482 161.131 244.954 162.665 228.477C168.754 225.017 166.329 234.994 164.698 238.534C160.257 248.181 141.587 259.014 132.796 266.816C129.149 270.052 121.071 279.405 118.129 281.126Z\"/><path fill=\"currentColor\" d=\"M421.838 128.01C408.009 98.9613 374.333 52.0982 347.433 34.792C346.524 34.2125 343.198 31.6892 342.342 32.3133C341.7 35.7906 340.657 39.3571 338.259 42.0586C336.948 43.5387 332.588 45.8123 332.481 46.3116C331.848 49.0667 336.547 59.4361 337.456 63.484C338.267 67.0951 338.107 72.4893 338.945 75.3692C339.56 77.4734 354.236 85.7832 357.41 88.1103C395.776 116.267 423.577 164.174 430.451 211.224C432.02 221.986 431.86 232.899 433.723 243.616L435.952 244.508C441.703 171.235 399.958 97.4098 339.676 57.7064L338.776 53.712C340.916 51.5721 351.865 60.1762 354.209 61.897C405.236 99.1842 438.155 164.504 440.446 227.095C440.651 232.801 439.296 238.374 440.419 243.625C443.424 245.863 444.797 231.392 444.904 229.85C447.196 195.701 436.389 158.565 421.847 128.01H421.838Z\"/><path fill=\"currentColor\" d=\"M366.442 367.969C352.712 360.676 323.386 351.679 308.095 353.391C299.295 354.381 288.783 359.276 280.964 362.102C264.496 368.058 248.349 375.031 231.444 379.819C226.665 379.337 221.217 361.345 219.273 356.86L209.581 362.316C208.387 364.215 216.42 379.132 218.016 381.754C220.37 385.632 225.577 394.111 230.427 394.388C234.992 394.655 255.615 383.341 261.473 380.773C269.872 377.099 279.056 373.381 286.813 370.555C290.174 369.333 307.034 360.489 304.716 368.709C304.101 370.876 294.632 382.101 292.555 386.006C291.654 387.701 290.076 390.473 289.898 392.292C289.496 396.322 293.526 401.895 297.485 398.498C300.41 395.993 304.217 385.543 307.569 381.406C317.734 368.852 326.623 374.424 336.547 383.59C339.623 386.426 346.185 396.964 350.402 393.924C354.744 387.21 347.54 381.522 342.734 377.402C340.425 375.414 326.873 366.971 327.167 365.348C327.532 363.333 329.369 364.715 330.243 364.911C337.527 366.578 348.762 371.776 355.877 374.951C361.646 377.527 367.156 384.214 372.612 376.912C376.321 371.955 370.793 370.287 366.425 367.96L366.442 367.969Z\"/><path fill=\"currentColor\" d=\"M205.025 503.975C203.322 498.555 211.177 498.43 212.033 495.318L209.804 488.889C199.827 487.971 190.652 510.832 181.852 499.963C174.086 490.37 162.308 444.576 160.552 431.211C159.187 420.851 159.499 410.347 158.67 400.103C157.681 387.932 161.622 379.07 165.857 368.103C161.042 364.358 152.215 368.665 149.977 373.595C148.809 376.172 144.841 392.569 144.467 395.725C141.293 422.527 158.902 462.079 165.545 488.631C166.401 492.055 169.708 501.631 165.803 503.539C158.84 506.936 149.897 496.682 144.627 499.259C140.802 501.131 140.954 509.165 143.95 512H217.062L218.408 509.816C216.117 502.54 211.721 502.415 205.025 503.975Z\"/><path fill=\"currentColor\" d=\"M323.36 20.0448C311.68 22.4432 311.252 41.8892 324.055 43.0216C327.497 43.3247 329.253 43.1732 332.071 41.2384C343.252 33.5527 336.591 17.3253 323.36 20.0448ZM328.825 35.7639L322.86 35.7371C316.254 24.7792 334.291 23.0852 328.825 35.7639Z\"/></svg><svg class=\"ds-texr\" viewBox=\"0 0 1362 611\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M213.276 597.902C185.933 597.902 164.059 589.699 147.653 573.293C131.854 556.888 123.955 535.013 123.955 507.67V227.859H0V148.564H123.955V0H217.833V148.564H351.814V227.859H217.833V491.264C217.833 509.493 226.34 518.607 243.353 518.607H337.231V597.902H213.276Z\"/><path fill=\"currentColor\" d=\"M524.467 610.662C478.896 610.662 439.096 601.244 405.069 582.408C371.042 562.964 344.307 535.924 324.863 501.29C306.027 466.048 296.608 425.337 296.608 379.157V368.22C296.608 321.433 306.027 280.722 324.863 246.088C343.699 210.846 369.827 183.806 403.246 164.97C437.273 145.526 476.465 135.804 520.822 135.804C563.963 135.804 601.636 145.526 633.84 164.97C666.652 183.806 692.172 210.238 710.401 244.265C728.629 278.292 737.744 318.091 737.744 363.663V399.209H392.309C393.524 438.705 406.588 470.301 431.501 493.998C457.021 517.088 488.618 528.633 526.29 528.633C561.533 528.633 587.964 520.734 605.585 504.936C623.814 489.137 637.789 470.909 647.511 450.25L724.983 490.353C716.477 507.366 704.02 525.291 687.615 544.127C671.816 562.964 650.853 578.762 624.725 591.522C598.598 604.282 565.178 610.662 524.467 610.662ZM393.221 327.206H642.043C639.612 293.179 627.46 266.747 605.585 247.911C583.711 228.467 555.152 218.745 519.91 218.745C484.668 218.745 455.806 228.467 433.324 247.911C411.449 266.747 398.082 293.179 393.221 327.206Z\"/><path fill=\"currentColor\" d=\"M655.494 597.902L826.844 370.955L659.139 148.564H769.423L886.998 309.888H901.581L1019.16 148.564H1130.35L961.736 370.955L1133.09 597.902H1020.98L901.581 432.932H886.998L767.6 597.902H655.494Z\"/><path fill=\"currentColor\" d=\"M1106.45 597.902V148.564H1198.5V201.427H1213.09C1220.38 182.591 1231.92 168.92 1247.72 160.413C1264.13 151.298 1284.18 146.741 1307.88 146.741H1361.65V231.505H1304.23C1273.85 231.505 1248.94 240.012 1229.49 257.025C1210.05 273.431 1200.33 298.951 1200.33 333.586V597.902H1106.45Z\"/></svg></a></div>",
+      "refersTo": "brand-ibis",
+      "css": ".ds-ibis-stage { background: #FCFCFC; height: 160px; padding: 12px 20px; } .ds-brand { display: inline-grid; align-items: center; justify-items: start; min-height: 44px; min-width: 44px; color: #141414; border-radius: 4px; } .ds-brand:focus-visible { outline: 2px solid #141414; outline-offset: 3px; } .ds-brand > svg { grid-area: 1 / 1; display: block; } .ds-ibis { height: 34px; width: auto; transform-origin: 0 18%; transform: scale(2.8); transition: transform 480ms cubic-bezier(0.22, 1, 0.36, 1) 60ms, opacity 240ms cubic-bezier(0.25,1,0.5,1) 60ms, color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-texr { height: 20px; width: auto; opacity: 0; transform: translateY(8px); transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1), opacity 260ms cubic-bezier(0.25,1,0.5,1), color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-ibis-stage:hover .ds-ibis { transform: scale(0.7); opacity: 0; transition-delay: 0ms; } .ds-ibis-stage:hover .ds-texr { opacity: 1; transform: none; transition-delay: 120ms; } .ds-brand:hover > svg { color: #4D4D4D; } @media (prefers-reduced-motion: reduce) { .ds-brand > svg { transition-duration: 0.01ms; transition-delay: 0s; } }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "image-frame",
+      "description": "Whole card is one link: frame, title, services note, year. No box, no underline.",
+      "html": "<a class=\"ds-card\" href=\"#\"><div class=\"ds-card-frame\"></div><div class=\"ds-card-row\"><div><h3>Container Alliance</h3><p>DesignOps, Website redesign</p></div><span>2025</span></div></a>",
+      "css": ".ds-card { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; font-family: Inter, system-ui, sans-serif; display: block; max-width: 420px; color: var(--ink); text-decoration: none; border-radius: 10px; } .ds-card-frame { aspect-ratio: 4 / 3; border-radius: 10px; background: var(--tile); outline: 1px dashed var(--line-hover); outline-offset: -12px; transition: transform 420ms cubic-bezier(0.25,1,0.5,1); } .ds-card:hover .ds-card-frame { transform: scale(1.015); } .ds-card h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.015em; transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-card:hover h3 { color: var(--ink-2); } .ds-card:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-card-row { margin-top: 20px; display: flex; justify-content: space-between; gap: 24px; } .ds-card p { margin: 6px 0 0; font-size: 15px; color: var(--ink-2); } .ds-card span { padding-top: 8px; font-size: 11px; letter-spacing: 0.14em; font-weight: 500; color: var(--ink-2); font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Presentation Card",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Work's Presentations section: CMS entries with kind: presentation and slides: N. Not a link. A 4:3 thumbnail (three slides cascading on a palette color) kept at 4:3 at every width, title, client · year, slide count as a Label, summary in Small Soft Ink at 52ch (four lines at 14px on phones).",
+      "html": "<article class=\"ds-deck\"><div class=\"ds-deck-frame\"><i></i><i></i><i></i></div><div class=\"ds-deck-row\"><div><h3>TAPP, investors round</h3><p class=\"ds-note\">TAPP · 2024</p></div><span class=\"ds-meta\">16 slides</span></div><p class=\"ds-deck-summary\">The 16 slide investors&#39; round pitch for TAPP, a private social network with shopping built in: the market, the problem with public feeds, the product, the revenue model and the team.</p></article>",
+      "css": ".ds-deck { font-family: Inter, system-ui, sans-serif; color: #141414; max-width: 420px; } .ds-deck-frame { position: relative; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #EFF5FD; } .ds-deck-frame i { position: absolute; width: 58%; aspect-ratio: 16 / 9; background: #FFFFFF; border-radius: 4px; outline: 1px solid #D3E0F2; } .ds-deck-frame i:nth-child(1) { left: 10%; top: 14%; } .ds-deck-frame i:nth-child(2) { left: 21%; top: 30%; } .ds-deck-frame i:nth-child(3) { left: 32%; top: 46%; } .ds-deck-row { margin-top: 20px; display: flex; justify-content: space-between; align-items: start; gap: 24px; } .ds-deck h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.25; } .ds-note { margin: 6px 0 0; font-size: 15px; color: #4D4D4D; } .ds-meta { padding-top: 8px; flex-shrink: 0; font-size: 11px; letter-spacing: 0.14em; font-weight: 500; text-transform: uppercase; color: #4D4D4D; } .ds-deck-summary { margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #4D4D4D; max-width: 52ch; }"
+    },
+    {
+      "name": "Tone Bands",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Signature: the seven tones, Paper, three pales and three deeps, each with its ink, soft ink, line and surface.",
+      "html": "<div class=\"ds-bands\"><div class=\"ds-band\" data-tone=\"paper\"><p class=\"ds-b-h\">Paper</p><p class=\"ds-b-s\">Under work, prose and forms</p><span class=\"ds-b-card\">Surface</span></div><div class=\"ds-band\" data-tone=\"blush\"><p class=\"ds-b-h\">Blush</p><p class=\"ds-b-s\">Pale, black text</p><span class=\"ds-b-card\">Surface</span></div><div class=\"ds-band\" data-tone=\"mist\"><p class=\"ds-b-h\">Mist</p><p class=\"ds-b-s\">Pale, black text</p><span class=\"ds-b-card\">Surface</span></div><div class=\"ds-band\" data-tone=\"cream\"><p class=\"ds-b-h\">Cream</p><p class=\"ds-b-s\">Pale, black text</p><span class=\"ds-b-card\">Surface</span></div><div class=\"ds-band\" data-tone=\"field\"><p class=\"ds-b-h\">Field</p><p class=\"ds-b-s\">Deep, white text; the default close</p><span class=\"ds-b-card\">Surface</span></div><div class=\"ds-band\" data-tone=\"berry\"><p class=\"ds-b-h\">Berry</p><p class=\"ds-b-s\">Deep, white text</p><span class=\"ds-b-card\">Surface</span></div><div class=\"ds-band\" data-tone=\"cobalt\"><p class=\"ds-b-h\">Cobalt</p><p class=\"ds-b-s\">Deep, white text</p><span class=\"ds-b-card\">Surface</span></div></div>",
+      "css": ".ds-bands { font-family: Inter, system-ui, sans-serif; display: grid; } .ds-band { background: var(--bg); color: var(--ink); padding: 20px 24px; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; align-items: center; } .ds-band[data-tone=\"paper\"] { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; } .ds-band[data-tone=\"blush\"] { --bg: #FDF3F6; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #4D4D4D; --line: #EBD3DC; --line-hover: #D8B6C3; --tile: #FFFFFF; --surface: #FFFFFF; --field-line: #7A6870; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; } .ds-band[data-tone=\"mist\"] { --bg: #EFF5FD; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #4D4D4D; --line: #D3E0F2; --line-hover: #B5C9E6; --tile: #FFFFFF; --surface: #FFFFFF; --field-line: #707070; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; } .ds-band[data-tone=\"cream\"] { --bg: #FFF8E2; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #4D4D4D; --line: #EDE2C0; --line-hover: #D9C99A; --tile: #FFFFFF; --surface: #FFFFFF; --field-line: #707070; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; } .ds-band[data-tone=\"field\"] { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; } .ds-band[data-tone=\"berry\"] { --bg: #8C1F50; --ink: #FCFCFC; --ink-2: #F7EEF2; --ink-3: #F7EEF2; --line: #BA7996; --line-hover: #D1A5B9; --tile: #6E173E; --surface: #6E173E; --field-line: #D1A5B9; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #F2E4EA; } .ds-band[data-tone=\"cobalt\"] { --bg: #1D4A99; --ink: #FCFCFC; --ink-2: #EEF2FA; --ink-3: #EEF2FA; --line: #7792C2; --line-hover: #A5B7D6; --tile: #153A7C; --surface: #153A7C; --field-line: #A5B7D6; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E2E9F5; } .ds-b-h { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.015em; } .ds-b-s { margin: 0; font-size: 15px; color: var(--ink-2); grid-column: 1; } .ds-b-card { grid-row: 1 / 3; grid-column: 2; background: var(--surface); border-radius: 10px; padding: 10px 16px; font-size: 15px; color: var(--ink-2); }"
+    },
+    {
+      "name": "Business Card",
+      "kind": "custom",
+      "refersTo": "business-card",
+      "description": "Signature (Home Action): White card with the ibis at 44px, on a turned sheet one step deeper than the page tone (color-mix(in oklab, var(--bg), #000 24%)); straightens on hover.",
+      "html": "<div class=\"ds-stack\"><div class=\"ds-biz\"><svg class=\"ds-biz-ibis\" viewBox=\"-12 -4 524 518\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M379.13 375.699C376.821 375.361 372.024 381.326 373.058 383.599C373.228 383.974 378.096 388.806 378.452 388.958C380.664 389.644 380.039 385.008 380.681 384.509C384.141 386.078 386.307 387.531 387.957 391.026C388.43 392.025 389.366 398.828 391.354 396.982C393.226 395.244 391.996 388.744 390.828 386.381C389.508 383.688 381.894 376.101 379.13 375.699Z\"/><path fill=\"currentColor\" d=\"M123.889 510.217C126.626 510.163 127.535 506.962 130.076 506.16C132.707 505.331 135.417 506.008 138.065 505.679L139.938 497.761C131.539 494.926 122.168 500.712 123.889 510.217Z\"/><path fill=\"currentColor\" d=\"M354.013 391.731C354.031 396.733 343.599 398.721 352.025 400.673C352.881 402.002 351.517 406.032 350.634 407.441C349.564 409.144 347.398 408.983 347.683 411.248C358.721 411.801 360.807 399.96 356.492 391.748L354.013 391.722V391.731Z\"/><path fill=\"currentColor\" d=\"M293.286 403.669V402.359L286.171 397.883C281.418 407.013 285.547 418.31 296.852 417.489L290.807 409.723C289.291 403.857 292.59 405.185 293.286 403.669Z\"/><path fill=\"currentColor\" d=\"M228.234 496.441C229.375 486.384 221.779 486.634 213.932 487.053L214.833 495.068C219.799 493.82 227.101 492.251 226.424 499.526C228.047 499.188 228.082 497.77 228.234 496.441Z\"/><path fill=\"currentColor\" d=\"M218.39 501.319L221.591 508.514C224.239 508.229 225.604 506.472 228.528 506.686C231.889 506.936 234.109 509.477 237.105 510.226C237.533 509.789 235.643 505.785 235.055 505.152C231.524 501.336 223.339 499.286 218.381 501.327L218.39 501.319Z\"/><path fill=\"currentColor\" d=\"M136.817 352.411C141.542 351.876 144.61 348.274 148.907 349.219C151.653 351.207 147.909 366.667 148.854 367.568H151.52C152.402 366.748 153.205 349.379 154.64 347.061C155.193 346.169 155.871 346.009 156.869 346.169L155.095 364.002H158.635L164.448 340.802L166.695 341.292C166.713 341.872 166.73 342.451 166.695 343.031C166.409 346.963 161.604 360.087 162.308 362.548C162.825 364.367 166.418 364.376 167.881 363.859C171.064 362.744 175.067 345.688 177.376 342.148C179.641 338.68 193.434 330.129 197.018 332.323C200.924 340.855 200.202 350.957 205.079 359.508L207.745 359.133C210.045 357.484 205.239 345.884 205.926 342.603L208.609 343.191C210.054 347.444 208.921 354.907 213.487 356.904C219.309 356.904 210.134 340.383 214.387 337.271L219.755 354.185L221.966 352.856V339.482C221.966 322.033 269.506 293.734 283.023 282.838C288.248 278.621 292.947 274.056 297.753 269.491C312.616 255.368 323.458 241.833 326.935 220.648C328.148 213.212 327.916 205.544 329.378 198.135C330.546 196.227 332.508 197.787 332.57 199.517L329.842 227.112L332.089 229.404C333.676 229.288 334.264 228.111 335.058 226.997C359.345 192.946 355.529 142.276 328.014 111.497C323.012 105.907 314.898 101.69 313.971 93.1569C313.124 85.3553 319.401 69.6451 329.2 71.6958C330.698 72.0079 331.696 73.6306 333.417 73.3274C335.281 71.2589 329.726 50.7964 327.631 48.3623C325.794 46.2225 315.023 48.5941 310.94 38.3139C304.484 22.0687 324.43 7.81186 336.93 18.5558C340.06 21.2395 340.889 25.6441 342.592 27.6056C344.223 29.4869 354.236 33.0445 356.171 36.7714C358.311 37.1904 357.571 35.0684 357.294 33.8647C355.012 23.9144 343.849 11.9935 335.236 6.87567C306.178 -10.3681 270.523 6.55469 262.347 38.3674C255.045 66.7741 267.295 88.0568 284.405 109.42C291.565 118.354 302.469 125.852 303.905 138.076C304.654 144.451 304.065 164.111 293.963 162.355C226.522 127.662 152.135 160.001 98.9145 204.831C89.8201 212.499 81.6618 221.255 73.0667 229.368C68.2966 233.871 64.4359 237.268 59.6747 241.387C51.2044 248.698 40.6299 259.968 33.3811 268.59C30.742 271.72 7.01618 303.39 8.87965 305.155C11.1711 305.565 11.9735 304.308 13.3645 302.962C21.2641 295.321 28.3881 284.006 36.056 275.723C49.5282 261.172 73.4055 241.12 90.0073 230.26C94.2068 227.514 99.0572 223.849 98.9234 231.151C95.1876 231.999 91.9154 234.513 88.8393 236.662C44.9453 267.297 9.12039 303.577 1.84484 359.214C1.24746 363.761 -1.30255 389.662 0.846237 391.641C2.34414 391.918 2.71862 391.312 3.30708 390.09C6.2494 383.983 8.14853 372.909 10.4132 365.99C20.2388 335.889 28.825 315.944 52.9787 294.429C55.0294 292.601 66.5936 283.115 68.1539 282.838C69.9372 282.508 70.5345 285.37 69.9996 286.422C69.4824 287.43 59.0595 294.795 56.9999 296.667C32.0972 319.35 12.776 355.273 10.6629 389.421C10.2884 395.404 10.4489 409.973 18.1702 399.604C28.076 386.283 30.0108 365.535 35.8241 350.396C44.3658 328.177 59.4964 311.013 79.0227 297.291C81.6173 295.472 89.9182 289.588 92.4503 289.231C94.7775 288.901 97.1581 290.979 95.4105 293.163C94.2603 294.59 82.0185 301.366 79.0227 303.532C67.0216 312.243 57.4011 322.087 49.5104 334.65C40.7369 348.621 33.7378 363.957 35.6191 380.933C37.117 381.156 38.2493 380.648 39.5065 379.926C55.7338 370.68 57.7132 352.919 66.0052 337.958C76.116 319.715 92.9764 304.121 110.586 293.19C112.824 291.808 121.954 285.665 123.88 287.323C124.201 288.892 123.068 289.525 122.114 290.453C115.24 297.113 102.133 303.515 94.0374 310.532C80.4403 322.301 69.9461 338.537 63.1253 354.55C62.4744 356.057 58.899 363.226 59.6926 363.993C66.3796 361.915 72.1929 357.787 79.0851 355.308C102.552 346.865 115.347 354.836 136.817 352.411ZM75.1174 229.948C78.6036 230.67 82.3751 230.304 86.0307 230.206C82.3751 230.304 78.5947 230.67 75.1174 229.948ZM321.389 198.162C325.535 197.172 323.083 208.121 323.592 210.02C323.823 210.912 327.675 211.893 326.275 213.31C324.456 215.156 324.849 210.216 322.718 211.536C320.819 225.918 313.053 240.255 304.716 251.935C301.257 256.785 295.506 264.409 291.503 268.599C291.404 268.706 290.424 268.448 290.022 268.867C287.606 271.363 286.296 275.75 281.704 274.832C281.311 272.219 282.042 271.247 283.478 269.491C296.219 253.861 311.769 239.328 316.958 218.705C317.769 215.468 319.044 198.724 321.389 198.162ZM297.753 33.2139C299.563 31.3682 307.56 40.8995 308.844 42.6471C310.173 45.3219 322.994 53.0165 322.709 54.1489C322.049 56.8148 317.252 56.1104 315.139 54.6125C312.75 52.9095 299.037 38.8488 298.234 36.7357C297.788 35.5499 297.557 34.4799 297.753 33.2139ZM293.758 40.3467C297.173 39.3749 310.815 55.6825 314.747 57.7064C316.539 58.8477 314.435 61.469 313.231 61.683C311.483 61.9951 296.451 46.1957 292.831 44.8137C291.895 43.619 292.278 40.7658 293.758 40.3467ZM290.584 51.4919L291.948 49.2807C293.794 49.1648 308.969 61.7008 310.271 63.9209C311.92 66.7206 311.394 68.7356 308.889 70.6437C304.734 62.2982 295.916 58.3573 290.584 51.4919ZM301.087 206.409C302.077 202.584 302.701 191.377 304.154 188.969C305.715 186.393 307.988 186.651 307.881 189.923C307.4 204.35 301.827 221.941 291.092 232.07C289.791 233.3 289.113 234.192 287.053 233.817C284.682 231.267 295.06 220.024 296.692 217.171C298.573 213.89 300.142 210.074 301.087 206.409ZM285.689 218.66C288.007 213.408 292.046 210.457 293.767 203.538C294.24 201.621 294.926 187.373 298.635 191.029C300.124 197.03 295.122 217.492 290.227 220.506C287.909 221.932 284.423 221.54 285.689 218.66ZM287.419 248.467C295.122 238.793 302.692 229.689 307.427 218.098C311.278 208.665 310.155 201.345 313.4 192.821C314.791 189.166 316.298 191.617 317.359 194.167C315.451 219.73 301.194 242.359 283.032 259.665L280.883 256.687C283.086 253.968 285.252 251.195 287.419 248.467ZM215.234 184.743C246.744 183.049 266.225 209.057 258.076 239.176C255.383 249.126 250.364 256.553 244.22 264.56C243.213 265.889 242.08 266.513 242.464 268.599C239.245 269.116 233.806 276.329 230.891 278.862C211.32 295.865 186.221 312.671 163.931 326.028C161.408 327.544 153.24 333.027 151.083 332.84C148.399 332.599 148.078 329.888 150.155 328.301C178.946 310.532 209.76 292.806 233.548 268.599C241.109 260.905 246.004 256.268 250.649 246.015C252.815 241.245 255.597 233.006 255.874 228.066C256.248 221.397 255.214 216.734 252.708 210.653C247.822 198.822 234.341 190.128 221.502 189.264C215.065 188.827 209.537 191.011 203.233 191.02C201.86 185.1 210.874 184.975 215.234 184.743ZM172.918 269.491C175.049 266.522 180.666 262.233 183.118 258.729C184.5 256.767 185.722 254.003 186.31 251.659C191.107 252.22 189.618 256.117 188.111 259.273C187.211 261.172 183.27 266.789 181.834 268.599C181.71 268.751 180.149 268.777 179.605 269.446C175.745 274.172 173.248 279.227 170.618 284.693C163.895 284.764 170.841 272.388 172.918 269.491ZM196.466 279.272C196.733 278.309 201.94 270.926 203.233 268.599C206.318 263.062 208.797 258.916 209.465 252.087C209.742 249.198 208.226 239.007 211.721 238.284L213.932 239.622V256.562C213.932 257.195 210.651 268.037 210.366 268.599C210.33 268.679 209.1 268.421 208.583 269.232C206.746 272.157 201.236 282.428 198.338 282.892C196.466 283.195 196.127 280.502 196.466 279.272ZM239.798 215.102C245.692 212.401 247.787 228.182 246.021 229.359C245.531 229.689 243.347 229.484 242.901 228.494L239.798 215.102ZM199.622 241.45C201.664 248.253 198.561 262.295 195.209 268.599C195.102 268.795 193.63 269.437 193.042 270.391C191.785 272.406 189.217 278.443 186.747 278.443C182.512 278.05 186.685 272.076 188.076 269.491C195.03 256.625 194.486 256.812 196.056 242.252C196.43 238.828 198.472 237.625 199.622 241.45ZM191.651 216.877L187.309 216.761L180.952 201.728C186.943 198.028 192.471 216.083 191.651 216.877ZM178.446 251.391C180.015 248.761 184.054 236.965 184.973 236.51C186.301 235.841 187.897 239.649 187.888 240.353C187.817 245.061 180.898 256.705 177.421 260.165C174.336 263.232 169.423 265.791 165.785 268.599C165.215 269.045 164.02 268.983 162.638 270.32C160.195 272.683 154.533 283.614 153.749 283.765C145.662 285.397 155.389 271.675 156.869 269.491C163.833 262.545 173.168 260.263 178.446 251.391ZM171.563 241.78C172.981 241.788 173.881 241.958 174.71 243.206C171.269 257.481 156.789 259.674 147.953 268.599C143.7 272.897 141.204 278.059 137.673 282.856C135.747 282.669 134.418 280.877 134.695 279.058C134.784 278.451 140.16 269.419 140.82 268.599C146.348 261.698 157.03 257.436 164.038 252.131C166.178 250.874 169.798 241.78 171.563 241.78ZM110.488 221.763C113.43 218.812 122.007 212.704 125.752 210.279C127.874 208.897 143.049 200.177 144.092 200.07C146.116 199.883 148.114 202.816 146.179 204.849C144.877 206.213 131.663 212.659 128.418 214.728C124.522 217.216 115.472 225.16 112.244 226.283C110.488 226.89 110.176 226.034 109.123 224.91C108.161 223.43 109.614 222.654 110.488 221.763ZM135.542 228.387C134.989 227.647 137.084 212.989 141.712 215.102C141.855 219.552 142.291 231.686 135.542 228.387ZM91.3626 267.734C86.9491 271.265 82.4732 278.157 76.6332 278.398C74.4844 276.249 84.9073 266.7 86.8599 265.006C93.5559 259.21 100.974 253.763 107.831 248.092C113.109 243.732 118.628 239.577 123.452 234.905C125.164 235.806 126.144 237.464 125.538 239.426C120.955 243.349 115.891 249.742 111.397 253.442C105.798 258.051 97.5058 262.822 91.3626 267.734ZM99.4138 281.126C97.8357 282.66 94.3941 282.33 94.4208 279.744C100.537 272.879 108.098 265.104 114.964 258.791C122.774 251.614 145.046 236.269 147.703 227.781C149.032 223.537 148.836 219.088 149.754 214.781C150.485 213.194 153.151 214.746 153.758 216.003C154.132 222.226 153.463 228.37 150.316 233.951C146.839 240.121 127.954 254.538 121.205 260.575C113.769 267.217 106.27 273.851 99.4138 281.126ZM118.129 281.126C116.711 281.955 115.73 282.205 114.081 281.973C113.136 277.123 114.91 278.05 117.219 275.777C120.643 272.433 124.085 268.135 127.446 265.033C129.345 263.285 131.307 261.359 133.268 259.71C144.271 250.482 161.131 244.954 162.665 228.477C168.754 225.017 166.329 234.994 164.698 238.534C160.257 248.181 141.587 259.014 132.796 266.816C129.149 270.052 121.071 279.405 118.129 281.126Z\"/><path fill=\"currentColor\" d=\"M421.838 128.01C408.009 98.9613 374.333 52.0982 347.433 34.792C346.524 34.2125 343.198 31.6892 342.342 32.3133C341.7 35.7906 340.657 39.3571 338.259 42.0586C336.948 43.5387 332.588 45.8123 332.481 46.3116C331.848 49.0667 336.547 59.4361 337.456 63.484C338.267 67.0951 338.107 72.4893 338.945 75.3692C339.56 77.4734 354.236 85.7832 357.41 88.1103C395.776 116.267 423.577 164.174 430.451 211.224C432.02 221.986 431.86 232.899 433.723 243.616L435.952 244.508C441.703 171.235 399.958 97.4098 339.676 57.7064L338.776 53.712C340.916 51.5721 351.865 60.1762 354.209 61.897C405.236 99.1842 438.155 164.504 440.446 227.095C440.651 232.801 439.296 238.374 440.419 243.625C443.424 245.863 444.797 231.392 444.904 229.85C447.196 195.701 436.389 158.565 421.847 128.01H421.838Z\"/><path fill=\"currentColor\" d=\"M366.442 367.969C352.712 360.676 323.386 351.679 308.095 353.391C299.295 354.381 288.783 359.276 280.964 362.102C264.496 368.058 248.349 375.031 231.444 379.819C226.665 379.337 221.217 361.345 219.273 356.86L209.581 362.316C208.387 364.215 216.42 379.132 218.016 381.754C220.37 385.632 225.577 394.111 230.427 394.388C234.992 394.655 255.615 383.341 261.473 380.773C269.872 377.099 279.056 373.381 286.813 370.555C290.174 369.333 307.034 360.489 304.716 368.709C304.101 370.876 294.632 382.101 292.555 386.006C291.654 387.701 290.076 390.473 289.898 392.292C289.496 396.322 293.526 401.895 297.485 398.498C300.41 395.993 304.217 385.543 307.569 381.406C317.734 368.852 326.623 374.424 336.547 383.59C339.623 386.426 346.185 396.964 350.402 393.924C354.744 387.21 347.54 381.522 342.734 377.402C340.425 375.414 326.873 366.971 327.167 365.348C327.532 363.333 329.369 364.715 330.243 364.911C337.527 366.578 348.762 371.776 355.877 374.951C361.646 377.527 367.156 384.214 372.612 376.912C376.321 371.955 370.793 370.287 366.425 367.96L366.442 367.969Z\"/><path fill=\"currentColor\" d=\"M205.025 503.975C203.322 498.555 211.177 498.43 212.033 495.318L209.804 488.889C199.827 487.971 190.652 510.832 181.852 499.963C174.086 490.37 162.308 444.576 160.552 431.211C159.187 420.851 159.499 410.347 158.67 400.103C157.681 387.932 161.622 379.07 165.857 368.103C161.042 364.358 152.215 368.665 149.977 373.595C148.809 376.172 144.841 392.569 144.467 395.725C141.293 422.527 158.902 462.079 165.545 488.631C166.401 492.055 169.708 501.631 165.803 503.539C158.84 506.936 149.897 496.682 144.627 499.259C140.802 501.131 140.954 509.165 143.95 512H217.062L218.408 509.816C216.117 502.54 211.721 502.415 205.025 503.975Z\"/><path fill=\"currentColor\" d=\"M323.36 20.0448C311.68 22.4432 311.252 41.8892 324.055 43.0216C327.497 43.3247 329.253 43.1732 332.071 41.2384C343.252 33.5527 336.591 17.3253 323.36 20.0448ZM328.825 35.7639L322.86 35.7371C316.254 24.7792 334.291 23.0852 328.825 35.7639Z\"/></svg><p class=\"ds-biz-name\">Lucas Teixeira</p><p class=\"ds-biz-role\">Director of Design, Fetchly Labs</p><p class=\"ds-biz-time\"><b>3:42 PM</b><span>Afternoon in Brasília</span></p><p class=\"ds-biz-mail\"><a href=\"#\">lucastexr@gmail.com</a></p></div></div>",
+      "css": ".ds-stack { --bg: #2C5846; font-family: Inter, system-ui, sans-serif; position: relative; width: 360px; margin: 24px; } .ds-stack::before { content: \"\"; position: absolute; inset: 0; background: color-mix(in oklab, var(--bg), #000 24%); border-radius: 14px; transform: rotate(4deg) translate(10px, 12px); } .ds-biz { position: relative; display: grid; gap: 6px; aspect-ratio: 1.6; padding: 28px; background: #FFFFFF; color: #141414; border-radius: 14px; outline: 1px solid #E4E4E4; transform: rotate(-2deg); transition: transform 220ms cubic-bezier(0.25,1,0.5,1); align-content: space-between; } .ds-stack:hover .ds-biz { transform: rotate(0deg) translateY(-4px); } .ds-biz p { margin: 0; } .ds-biz-name { font-size: 28px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1; } .ds-biz-role { font-size: 15px; color: #4D4D4D; } .ds-biz-time { display: grid; padding-top: 12px; border-top: 1px solid #E4E4E4; } .ds-biz-time b { font-size: 22px; font-weight: 500; } .ds-biz-time span { font-size: 15px; color: #4D4D4D; } .ds-biz-mail a { font-size: 15px; font-weight: 500; color: #141414; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; } .ds-biz-mail a:hover { opacity: 0.72; } .ds-biz-ibis { height: 44px; width: auto; color: #141414; }"
+    },
+    {
+      "name": "Tile Ribbon",
+      "kind": "custom",
+      "refersTo": "tile-ribbon",
+      "description": "Signature: two rows of Bulcão arc tiles in one color, the page's own ink at 0.28 opacity on the page color with hairline grout; a turned tile lights to full ink. No glazes.",
+      "html": "<div class=\"ds-ribbon\" aria-hidden=\"true\"><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(0deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(90deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(0deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(90deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(0deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(90deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(0deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(90deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(0deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(90deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(0deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(90deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(270deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(180deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(270deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(180deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(270deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(180deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(270deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(180deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(270deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(180deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(270deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(180deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span></div>",
+      "css": ".ds-ribbon { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; display: grid; grid-template-columns: repeat(12, 36px); gap: 1px; padding: 1px; background: var(--line); border-radius: 6px; width: fit-content; } .ds-ribbon span { display: block; width: 36px; height: 36px; background: var(--bg); } .ds-ribbon svg { display: block; width: 100%; height: 100%; color: var(--ink); opacity: 0.28; transition: opacity 600ms cubic-bezier(0.25,1,0.5,1), transform 550ms cubic-bezier(0.34,1.56,0.64,1); } .ds-ribbon span:hover svg { opacity: 1; transition-duration: 120ms, 550ms; }"
+    },
+    {
+      "name": "Grain",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Animated static after CodePen iceable/yLBrZOd (MIT): assets/img/noise.png (seven grays, evenly mixed) in overlay on a fixed layer under the content, 0.42 on the pales and 0.12 on the deeps. Jitters only while scrolling and for 3s after arrival (.is-live; hover the sample), never with reduced motion. Overlay is symmetric, so average color and contrast hold.",
+      "html": "<div class=\"ds-grain-pair\"><div class=\"ds-grain-swatch\" style=\"--bg:#EFF5FD;--grain:0.42\"><i></i><span>Mist, 0.42</span></div><div class=\"ds-grain-swatch\" style=\"--bg:#1D4A99;--grain:0.12;color:#FCFCFC\"><i></i><span>Cobalt, 0.12</span></div></div>",
+      "css": ".ds-grain-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-family: Inter, system-ui, sans-serif; } .ds-grain-swatch { position: relative; overflow: hidden; isolation: isolate; height: 140px; border-radius: 10px; background: var(--bg); color: #141414; display: grid; align-items: end; padding: 14px; font-size: 15px; font-weight: 500; } .ds-grain-swatch i { position: absolute; inset: -50%; z-index: -1; pointer-events: none; mix-blend-mode: overlay; opacity: var(--grain); background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E\"); } .ds-grain-pair:hover .ds-grain-swatch i { animation: ds-jitter 0.2s infinite; } @keyframes ds-jitter { 0% { transform: translate(0,0); } 20% { transform: translate(-10%,5%); } 40% { transform: translate(-5%,15%); } 60% { transform: translate(15%,0); } 80% { transform: translate(-15%,0); } 100% { transform: translate(5%,0); } } @media (prefers-reduced-motion: reduce) { .ds-grain-pair:hover .ds-grain-swatch i { animation: none; } }"
+    },
+    {
+      "name": "Dove Strip",
+      "kind": "custom",
+      "refersTo": "bloco-tiles",
+      "description": "The bloco strip: 2 by 8 ribbon cells of Bulcão's dove as an unfilled line in the page's Ink at 0.5, upright and inverted, on the tone's Hairline grout. At the end of most sections, sides alternating; pops in tile by tile, then turns like the ribbon. Hover a dove to see it light. aria-hidden, pointer only.",
+      "html": "<div class=\"ds-bloco\" aria-hidden=\"true\"><div class=\"ds-bloco-row\"><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span></div><div class=\"ds-bloco-row\"><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(180deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span><span class=\"ds-bt\"><svg viewBox=\"0 0 100 100\" style=\"transform: rotate(0deg)\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></span></div></div>",
+      "css": ".ds-bloco { --bg: #EFF5FD; --ink: #141414; --line: #D3E0F2; display: grid; gap: 1px; padding: 1px; background: var(--line); border-radius: 4px; width: max-content; } .ds-bloco-row { display: flex; gap: 1px; } .ds-bt { width: 36px; height: 36px; background: var(--bg); position: relative; cursor: pointer; } .ds-bt svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--ink); stroke-width: 1.15px; stroke-linejoin: round; opacity: 0.5; transition: opacity 600ms cubic-bezier(0.25,1,0.5,1); } .ds-bt:hover svg { opacity: 1; transition-duration: 120ms; }"
+    },
+    {
+      "name": "Burst",
+      "kind": "custom",
+      "refersTo": "burst-dove",
+      "description": "On one or two sections a page, the motif blown up behind the content instead of a strip: the dove as an Ink line at 0.2, or the ibis as a watermark in --wm (3.5% Ink into the pales, 16% black into the deeps). clamp(560px, 66vw, 1040px) square, centered on a third or a golden section, hung from the section's top or bottom edge, z-index -1 under all content, cropped only by the sides of the page. Never on the opening section, Paper, or closing or action bands.",
+      "html": "<section class=\"ds-burst-band\"><div class=\"ds-burst ds-burst--dove\" aria-hidden=\"true\"><svg viewBox=\"0 0 100 100\"><path vector-effect=\"non-scaling-stroke\" d=\"M31 4 Q50 7.5 69 4 C64 15 57.5 26 57.5 36 C57.5 44 59.5 50 63.5 53.5 Q65.5 55 68 53 L95.5 34.5 Q98.5 33.5 97.6 37 C93 51 86.5 62 80.5 69 C74.5 75.5 63 78.5 54.2 81.6 C51.6 82.6 53.8 85.6 54.8 88 C56 91.5 53 94 50 97.5 C47 94 44 91.5 45.2 88 C46.2 85.6 48.4 82.6 45.8 81.6 C37 78.5 25.5 75.5 19.5 69 C13.5 62 7 51 2.4 37 Q1.5 33.5 4.5 34.5 L32 53 Q34.5 55 36.5 53.5 C40.5 50 42.5 44 42.5 36 C42.5 26 36 15 31 4 Z\"/></svg></div><div class=\"ds-burst ds-burst--ibis\" aria-hidden=\"true\"><svg viewBox=\"-12 -4 524 518\"><circle cx=\"250\" cy=\"255\" r=\"250\" fill=\"currentColor\"/></svg></div><h2>What I do</h2><p>Type over a burst keeps its contrast: Soft Ink stays above 7:1 on the watermark.</p></section>",
+      "css": ".ds-burst-band { --bg: #FFF8E2; --ink: #141414; --wm: color-mix(in oklab, var(--bg), #141414 3.5%); position: relative; isolation: isolate; overflow: hidden; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, sans-serif; padding: 48px 32px; min-height: 260px; } .ds-burst { position: absolute; z-index: -1; width: 420px; height: 420px; pointer-events: none; } .ds-burst svg { width: 100%; height: 100%; display: block; overflow: visible; } .ds-burst--dove { left: calc(66.667% - 210px); bottom: calc(420px * -0.44); } .ds-burst--dove svg { fill: none; stroke: var(--ink); stroke-width: 1.25px; opacity: 0.2; } .ds-burst--ibis { left: calc(33.333% - 210px); top: calc(420px * -0.3); color: var(--wm); } .ds-burst-band h2 { margin: 0; font-size: 40px; font-weight: 400; letter-spacing: -0.03em; line-height: 1; } .ds-burst-band p { margin: 16px 0 0; max-width: 34em; color: #4D4D4D; font-size: 17px; line-height: 1.6; }"
+    },
+    {
+      "name": "Tile Wall",
+      "kind": "custom",
+      "refersTo": "tile-wall",
+      "description": "Signature (About): Bulcão tiles turned to spell LUCAS in Ink on a light ceramic panel; every other tile Tile Faint, all Ink while scrambled. No glazes.",
+      "html": "<div class=\"ds-wall\" role=\"img\" aria-label=\"Four tiles\"><span><svg viewBox=\"0 0 100 100\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(90deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span class=\"ds-faint\"><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(270deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span><span class=\"ds-faint\"><svg viewBox=\"0 0 100 100\" style=\"transform:rotate(180deg)\"><path d=\"M39 100 L39 74.73 L74.73 39 L100 39 L100 61 A39 39 0 0 0 61 100 Z\" fill=\"currentColor\"/></svg></span></div>",
+      "css": ".ds-wall { display: grid; grid-template-columns: repeat(2, 96px); gap: 2px; padding: 2px; background: #D9D9D6; border-radius: 6px; width: fit-content; } .ds-wall span { display: block; background: #FCFCFC; aspect-ratio: 1; cursor: pointer; } .ds-wall svg { display: block; width: 100%; height: 100%; color: #141414; transition: transform 220ms cubic-bezier(0.25,1,0.5,1), color 220ms cubic-bezier(0.25,1,0.5,1); } .ds-wall .ds-faint svg { color: #DEDEDB; } .ds-wall span:hover { background: #FFFFFF; }"
+    },
+    {
+      "name": "About Stats",
+      "kind": "card",
+      "refersTo": "stats-card",
+      "description": "Signature (About, Mist band): two cards on the tone's surface in a 7fr/5fr grid, stacked at 900px and below. Claude Code: logo, name, span, three figures, daily bars with the peak labelled, a split bar by tool in steps of the page's ink. GitHub: figures, weekly bars, profile link.",
+      "html": "<div class=\"ds-stats\"><section class=\"ds-sc\"><header><span class=\"ds-mark\"></span><h3>Claude Code</h3><span class=\"ds-span\">Since 3 Sep</span></header><dl><div><dt>3,122</dt><dd>actions</dd></div><div><dt>35</dt><dd>sessions</dd></div><div><dt>15</dt><dd>days</dd></div></dl><ol class=\"ds-bars\" role=\"img\" aria-label=\"Actions per day\"><li style=\"--h:0.2\"></li><li style=\"--h:0.45\"></li><li style=\"--h:0.3\"></li><li style=\"--h:0.8\"></li><li style=\"--h:1\"></li><li style=\"--h:0.55\"></li><li style=\"--h:0.35\"></li><li style=\"--h:0.6\"></li><li style=\"--h:0.25\"></li><li style=\"--h:0.7\"></li></ol><div class=\"ds-split\" aria-hidden=\"true\"><span style=\"--w:.46;--k:var(--ink)\"></span><span style=\"--w:.24;--k:color-mix(in oklab, var(--ink) 62%, var(--surface))\"></span><span style=\"--w:.16;--k:color-mix(in oklab, var(--ink) 34%, var(--surface))\"></span><span style=\"--w:.14;--k:var(--line-hover)\"></span></div></section><section class=\"ds-sc\"><header><span class=\"ds-mark\"></span><h3>GitHub</h3><span class=\"ds-span\">Last 12 months</span></header><dl><div><dt>192</dt><dd>commits</dd></div><div><dt>36</dt><dd>pull requests</dd></div></dl><ol class=\"ds-bars\" role=\"img\" aria-label=\"Commits per week\"><li style=\"--h:0.2\"></li><li style=\"--h:0.45\"></li><li style=\"--h:0.3\"></li><li style=\"--h:0.8\"></li><li style=\"--h:1\"></li><li style=\"--h:0.55\"></li><li style=\"--h:0.35\"></li><li style=\"--h:0.6\"></li><li style=\"--h:0.25\"></li><li style=\"--h:0.7\"></li></ol><a class=\"ds-link\" href=\"#\">github.com/oliveira-teixeira</a></section></div>",
+      "css": ".ds-stats { --bg: #EFF5FD; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #4D4D4D; --line: #D3E0F2; --line-hover: #B5C9E6; --tile: #FFFFFF; --surface: #FFFFFF; --field-line: #707070; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); padding: 24px; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 20px; } .ds-sc { background: var(--surface); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 20px; min-width: 0; } .ds-sc header { display: flex; align-items: center; gap: 12px; } .ds-mark { width: 28px; height: 28px; border-radius: 50%; background: var(--ink); flex-shrink: 0; } .ds-sc h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.01em; } .ds-span { margin-left: auto; font-size: 15px; color: var(--ink-2); white-space: nowrap; } .ds-sc dl { display: flex; flex-wrap: wrap; gap: 12px 32px; margin: 0; } .ds-sc dt { font-size: 28px; line-height: 1; letter-spacing: -0.03em; font-weight: 500; font-variant-numeric: tabular-nums; } .ds-sc dd { margin: 6px 0 0; font-size: 15px; color: var(--ink-2); } .ds-bars { list-style: none; margin: 0; padding: 0; height: 96px; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 2px; align-items: end; border-bottom: 1px solid var(--line); } .ds-bars li { height: calc(var(--h) * 100%); background: var(--ink); border-radius: 2px 2px 0 0; } .ds-split { display: flex; gap: 2px; height: 10px; border-radius: 5px; overflow: hidden; } .ds-split span { flex: var(--w) 1 0; background: var(--k); } .ds-link { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 500; color: var(--ink); text-decoration: none; transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-link:hover { color: var(--ink-2); } .ds-link:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; } @media (max-width: 900px) { .ds-stats { grid-template-columns: 1fr; } }"
+    },
+    {
+      "name": "Footer Tab",
+      "kind": "custom",
+      "refersTo": "footer-tab",
+      "description": "Signature: the Paper tab and field after the closing band, Ink type, the email in Berry (8.4:1), a Copy button in Ink; the footer's tone stop is paper, so the page and the footer become one field. The badge below it is Ink.",
+      "html": "<div class=\"ds-tab\"><p>Have a project in mind? <strong>Shoot me an email</strong></p><p class=\"ds-reach\"><a href=\"#\">lucastexr@gmail.com</a><button type=\"button\" data-state=\"done\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg><span>Copied</span></button></p></div><div class=\"ds-field\"></div>",
+      "css": ".ds-tab { font-family: Inter, system-ui, sans-serif; width: fit-content; margin: 0 auto; background: #FCFCFC; border-radius: 48px 48px 0 0; padding: 14px 48px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0 14px; color: #141414; } .ds-tab p { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 20px; line-height: 1.5; } .ds-tab strong { font-weight: 600; } .ds-tab a { display: inline-flex; align-items: center; min-height: 44px; color: #8C1F50; font-weight: 700; font-size: 20px; text-decoration: none; transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-tab a:hover { color: #141414; } .ds-tab a:focus-visible, .ds-tab button:focus-visible { outline: 2px solid #141414; outline-offset: 3px; border-radius: 4px; } .ds-tab button { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 16px; border: 1px solid rgba(20,20,20,0.22); border-radius: 999px; background: transparent; color: #141414; font: inherit; font-size: 11px; letter-spacing: 0.14em; font-weight: 500; text-transform: uppercase; cursor: pointer; transition: border-color 140ms cubic-bezier(0.25,1,0.5,1), background-color 140ms cubic-bezier(0.25,1,0.5,1), transform 80ms cubic-bezier(0.25,1,0.5,1); } .ds-tab button:hover { border-color: #141414; } .ds-tab button:active { transform: scale(0.97); } .ds-tab button[data-state=\"done\"] { background: #141414; color: #FCFCFC; border-color: #141414; } .ds-field { height: 48px; background: #FCFCFC; margin-top: -1px; }"
+    },
+    {
+      "name": "Showcase Carousel",
+      "kind": "custom",
+      "refersTo": "carousel-indicator",
+      "description": "Home hero: three featured projects one at a time, crossfading 700ms; the current bar fills over 6s; 44px pause button; holds on hover or focus.",
+      "html": "<div class=\"ds-show\" role=\"region\" aria-roledescription=\"carousel\" aria-label=\"Featured work\"><a class=\"ds-slide\" href=\"#\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 3\"><div class=\"ds-frame\"></div><span class=\"ds-cap\"><span class=\"ds-t\">Fetchly Website</span><span class=\"ds-n\">Design Direction, Information Architecture</span><span class=\"ds-y\">2025</span></span></a><div class=\"ds-bar\"><div class=\"ds-dots\"><button class=\"ds-dot\" type=\"button\" aria-current=\"true\" aria-label=\"Show Fetchly Website\"><span></span></button><button class=\"ds-dot\" type=\"button\" aria-label=\"Show Container Alliance\"><span></span></button><button class=\"ds-dot\" type=\"button\" aria-label=\"Show La Marie Beauty\"><span></span></button></div><button class=\"ds-toggle\" type=\"button\" aria-label=\"Pause the slideshow\"><svg class=\"i-pause\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><rect x=\"6.5\" y=\"5\" width=\"3.5\" height=\"14\" rx=\"1\"/><rect x=\"14\" y=\"5\" width=\"3.5\" height=\"14\" rx=\"1\"/></svg></button></div></div>",
+      "css": ".ds-show { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); padding: 24px; max-width: 520px; } .ds-slide { display: block; color: var(--ink); text-decoration: none; border-radius: 10px; } .ds-slide:focus-visible, .ds-dot:focus-visible, .ds-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-frame { aspect-ratio: 3 / 2; border-radius: 10px; background: var(--tile); animation: ds-settle 1600ms cubic-bezier(0.25,1,0.5,1) both; } @keyframes ds-settle { from { transform: scale(1.04); opacity: 0; } } .ds-cap { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; margin-top: 18px; } .ds-t { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; } .ds-n { grid-column: 1; font-size: 15px; color: var(--ink-2); } .ds-y { grid-column: 2; grid-row: 1; padding-top: 6px; font-size: 11px; letter-spacing: 0.14em; font-weight: 500; color: var(--ink-2); } .ds-bar { display: flex; align-items: center; gap: 12px; margin-top: 18px; } .ds-dots { display: flex; gap: 8px; flex: 1; } .ds-dot { appearance: none; border: 0; background: none; padding: 0; cursor: pointer; flex: 1; height: 44px; display: grid; align-items: center; border-radius: 4px; } .ds-dot span { display: block; height: 3px; border-radius: 2px; background: var(--line); overflow: hidden; position: relative; } .ds-dot:hover span { background: var(--line-hover); } .ds-dot span::after { content: ''; position: absolute; inset: 0; background: var(--ink); transform: scaleX(0); transform-origin: left; } .ds-dot[aria-current=\"true\"] span::after { animation: ds-fill 6s linear infinite; } .ds-show:hover .ds-dot span::after, .ds-show:focus-within .ds-dot span::after { animation-play-state: paused; } @keyframes ds-fill { from { transform: scaleX(0); } to { transform: scaleX(1); } } .ds-toggle { appearance: none; width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; display: inline-grid; place-items: center; transition: border-color 140ms cubic-bezier(0.25,1,0.5,1), background-color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-toggle:hover { border-color: var(--line-hover); background: var(--tile); } .ds-toggle svg { width: 16px; height: 16px; }"
+    },
+    {
+      "name": "Tools Marquee",
+      "kind": "custom",
+      "refersTo": "pause-button",
+      "description": "Home hero foot: single color brand marks in currentColor, two tracks sliding 70s linear, edge fade mask, hover pause, 44px pause button.",
+      "html": "<div class=\"ds-tools\"><div class=\"ds-head\"><p>Platforms I work in</p><button class=\"ds-toggle\" type=\"button\" aria-label=\"Pause the logos\"><svg class=\"i-pause\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><rect x=\"6.5\" y=\"5\" width=\"3.5\" height=\"14\" rx=\"1\"/><rect x=\"14\" y=\"5\" width=\"3.5\" height=\"14\" rx=\"1\"/></svg></button></div><div class=\"ds-marquee\"><ul class=\"ds-track\" aria-label=\"Platforms I work in\"><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" role=\"img\" aria-label=\"Framer\"><path d=\"M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" role=\"img\" aria-label=\"Webflow\"><path d=\"m24 4.515-7.658 14.97H9.149l3.205-6.204h-.144C9.566 16.713 5.621 18.973 0 19.485v-6.118s3.596-.213 5.71-2.435H0V4.515h6.417v5.278l.144-.001 2.622-5.277h4.854v5.244h.144l2.72-5.244H24Z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" role=\"img\" aria-label=\"Miro\"><path d=\"M17.392 0H13.9L17 4.808 10.444 0H6.949l3.102 6.3L3.494 0H0l3.05 8.131L0 24h3.494L10.05 6.985 6.949 24h3.494L17 5.494 13.899 24h3.493L24 3.672 17.392 0z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" role=\"img\" aria-label=\"Framer\"><path d=\"M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" role=\"img\" aria-label=\"Webflow\"><path d=\"m24 4.515-7.658 14.97H9.149l3.205-6.204h-.144C9.566 16.713 5.621 18.973 0 19.485v-6.118s3.596-.213 5.71-2.435H0V4.515h6.417v5.278l.144-.001 2.622-5.277h4.854v5.244h.144l2.72-5.244H24Z\"/></svg></li></ul><ul class=\"ds-track\" aria-hidden=\"true\"><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"m24 4.515-7.658 14.97H9.149l3.205-6.204h-.144C9.566 16.713 5.621 18.973 0 19.485v-6.118s3.596-.213 5.71-2.435H0V4.515h6.417v5.278l.144-.001 2.622-5.277h4.854v5.244h.144l2.72-5.244H24Z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.392 0H13.9L17 4.808 10.444 0H6.949l3.102 6.3L3.494 0H0l3.05 8.131L0 24h3.494L10.05 6.985 6.949 24h3.494L17 5.494 13.899 24h3.493L24 3.672 17.392 0z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z\"/></svg></li><li><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"m24 4.515-7.658 14.97H9.149l3.205-6.204h-.144C9.566 16.713 5.621 18.973 0 19.485v-6.118s3.596-.213 5.71-2.435H0V4.515h6.417v5.278l.144-.001 2.622-5.277h4.854v5.244h.144l2.72-5.244H24Z\"/></svg></li></ul></div></div>",
+      "css": ".ds-tools { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); padding: 20px 0; } .ds-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 20px; } .ds-head p { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-2); } .ds-toggle { appearance: none; width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; display: inline-grid; place-items: center; transition: border-color 140ms cubic-bezier(0.25,1,0.5,1), background-color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-toggle:hover { border-color: var(--line-hover); background: var(--tile); } .ds-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-toggle svg { width: 13px; height: 13px; } .ds-marquee { --gap: clamp(40px, 4.5vw, 64px); display: flex; overflow: hidden; margin-top: 20px; padding: 6px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); } .ds-track { display: flex; align-items: center; gap: var(--gap); padding: 0 var(--gap) 0 0; margin: 0; list-style: none; flex-shrink: 0; min-width: 100%; animation: ds-marquee 70s linear infinite; } .ds-marquee:hover .ds-track { animation-play-state: paused; } .ds-track li { flex-shrink: 0; display: grid; place-items: center; } .ds-track svg { height: 26px; width: auto; display: block; } @keyframes ds-marquee { to { transform: translateX(-100%); } } @media (prefers-reduced-motion: reduce) { .ds-marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; } .ds-track { animation: none; } .ds-track[aria-hidden=\"true\"], .ds-toggle { display: none; } }"
+    },
+    {
+      "name": "Document Chips",
+      "kind": "chip",
+      "refersTo": "doc-chip",
+      "description": "Process head (Cobalt): one pill per document, the abbreviation as a Label on an inner pill in the tone's Tile (Cobalt Raised). Facts, not controls.",
+      "html": "<ul class=\"ds-chips\" aria-label=\"The three documents\"><li><span>BRS</span>Business Requirements Specification</li><li><span>SRS</span>System Requirements Specification</li><li><span>SDD</span>Software Design Description</li></ul>",
+      "css": ".ds-chips { --bg: #1D4A99; --ink: #FCFCFC; --ink-2: #EEF2FA; --ink-3: #EEF2FA; --line: #7792C2; --line-hover: #A5B7D6; --tile: #153A7C; --surface: #153A7C; --field-line: #A5B7D6; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E2E9F5; font-family: Inter, system-ui, sans-serif; background: var(--bg); list-style: none; margin: 0; padding: 24px; display: flex; flex-wrap: wrap; gap: 10px; } .ds-chips li { display: inline-flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 16px 0 6px; border: 1px solid var(--line); border-radius: 999px; font-size: 15px; color: var(--ink); } .ds-chips span { font-size: 11px; letter-spacing: 0.14em; font-weight: 500; line-height: 1.3; text-transform: uppercase; color: var(--ink); background: var(--tile); border-radius: 999px; padding: 7px 10px; }"
+    },
+    {
+      "name": "Cost Figure",
+      "kind": "custom",
+      "refersTo": "cost-bar",
+      "description": "Process: three Ink bars (1x, 10x, 100x) on an Ink baseline that rise once, 900ms with a 140ms stagger, when the figure is in view.",
+      "html": "<figure class=\"ds-cost\"><figcaption>What fixing one requirement defect costs</figcaption><ol><li style=\"--v:0.01;--i:0\"><span class=\"ds-cbar\"></span><strong>1×</strong><span>while it is still on paper</span></li><li style=\"--v:0.1;--i:1\"><span class=\"ds-cbar\"></span><strong>10×</strong><span>during development</span></li><li style=\"--v:1;--i:2\"><span class=\"ds-cbar\"></span><strong>100×</strong><span>with the system live</span></li></ol></figure>",
+      "css": ".ds-cost { --bg: #FDF3F6; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #EBD3DC; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); margin: 0; padding: 24px; max-width: 460px; } .ds-cost figcaption { font-size: 15px; font-weight: 500; } .ds-cost ol { list-style: none; margin: 20px 0 0; padding: 0; height: 240px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: end; border-bottom: 1px solid var(--ink); } .ds-cost li { display: grid; grid-template-rows: 1fr auto auto; align-items: end; height: 100%; gap: 6px; padding-bottom: 12px; } .ds-cbar { display: block; width: min(64px, 70%); height: max(3px, calc(var(--v) * 150px)); background: var(--ink); border-radius: 3px 3px 0 0; transform-origin: bottom; animation: ds-rise 900ms cubic-bezier(0.25,1,0.5,1) both; animation-delay: calc(var(--i) * 140ms); } @keyframes ds-rise { from { transform: scaleY(0); } } .ds-cost strong { font-size: 28px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; } .ds-cost li span:last-child { font-size: 15px; color: var(--ink-2); line-height: 1.4; } @media (prefers-reduced-motion: reduce) { .ds-cbar { animation: none; } }"
+    },
+    {
+      "name": "Step Rail and Document",
+      "kind": "nav",
+      "refersTo": "step-rail-link",
+      "description": "Process: a sticky rail of the three documents; each step's 2px line fills by how much of its document has been read, the current one marked aria-current=\"step\". Beside it, the document article.",
+      "html": "<div class=\"ds-docs\"><nav class=\"ds-rail\" aria-label=\"The three documents\"><ol><li><a href=\"#\" style=\"--p:1\"><span class=\"ds-num\">01</span><span class=\"ds-ab\">BRS</span><span class=\"ds-nm\">Business Requirements Specification</span><span class=\"ds-fill\"></span></a></li><li><a href=\"#\" aria-current=\"step\" style=\"--p:0.45\"><span class=\"ds-num\">02</span><span class=\"ds-ab\">SRS</span><span class=\"ds-nm\">System Requirements</span><span class=\"ds-fill\"></span></a></li><li><a href=\"#\" style=\"--p:0\"><span class=\"ds-num\">03</span><span class=\"ds-ab\">SDD</span><span class=\"ds-nm\">Software Design Description</span><span class=\"ds-fill\"></span></a></li></ol></nav><article class=\"ds-doc\"><p class=\"ds-mark\" aria-hidden=\"true\">SRS</p><h3>System Requirements Specification</h3><p class=\"ds-q\">What must the system do?</p><div class=\"ds-grid\"><div><h4>What goes in</h4><ul><li>Purpose, scope and definitions</li><li>Users, their roles and their permissions</li></ul></div><dl><div><dt>Done when</dt><dd>Every business requirement traces to at least one system requirement, and every system requirement can be tested.</dd></div></dl></div></article></div>",
+      "css": ".ds-docs { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); padding: 24px; display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: start; } .ds-rail ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; } .ds-rail a { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 2px 14px; align-items: baseline; padding: 14px 0 14px 18px; color: var(--ink-2); text-decoration: none; border-radius: 4px; transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-rail a::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px; background: var(--line); border-radius: 2px; } .ds-fill { position: absolute; left: 0; top: 8px; bottom: 8px; width: 2px; background: var(--ink); border-radius: 2px; transform-origin: top; transform: scaleY(var(--p, 0)); } .ds-rail a:hover, .ds-rail a[aria-current=\"step\"] { color: var(--ink); } .ds-rail a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-num { font-size: 11px; letter-spacing: 0.14em; grid-row: 1 / 3; } .ds-ab { font-size: 22px; font-weight: 500; letter-spacing: -0.01em; } .ds-nm { font-size: 15px; grid-column: 2; line-height: 1.4; } .ds-mark { margin: 0; font-size: 96px; line-height: 0.85; letter-spacing: -0.05em; } .ds-doc h3 { margin: 24px 0 0; font-size: 28px; font-weight: 500; line-height: 1.12; letter-spacing: -0.02em; } .ds-q { margin: 10px 0 0; font-size: 22px; color: var(--ink-2); } .ds-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 32px; margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--ink); } .ds-grid h4, .ds-grid dt { margin: 0; font-size: 11px; letter-spacing: 0.14em; font-weight: 500; text-transform: uppercase; color: var(--ink-2); } .ds-grid ul { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; } .ds-grid li { display: flex; gap: 12px; align-items: baseline; font-size: 15px; line-height: 1.6; } .ds-grid li::before { content: ''; flex-shrink: 0; width: 7px; height: 7px; background: currentColor; transform: rotate(45deg) translateY(-2px); } .ds-grid dl { margin: 0; } .ds-grid dd { margin: 10px 0 0; font-size: 15px; line-height: 1.6; }"
+    },
+    {
+      "name": "Language Picker",
+      "kind": "nav",
+      "description": "One 44px filled pill with the current code (Control Fill, no border; Control Fill Hover on hover and while open). Hover, focus or tap morphs it (clip-path, 520ms) into a 264px panel in the tone's surface with the language panel shadow and no border: three rows with a gliding highlight and split flap codes. Escape, arrows, outside click.",
+      "html": "<div class=\"ds-lp\"><button class=\"ds-lp-trigger\" type=\"button\" aria-expanded=\"true\">EN <svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m7 10 5 5 5-5\"/></svg></button><nav class=\"ds-lp-panel\" aria-label=\"Language\"><a href=\"#\" aria-current=\"true\"><b>EN</b><span>English<small>United States</small></span></a><a href=\"#\"><b>PT</b><span>Português<small>Brasil</small></span></a><a href=\"#\"><b>ES</b><span>Español<small>Latinoamérica</small></span></a></nav></div>",
+      "css": ".ds-lp { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --line: #E4E4E4; --tile: #F2F2F2; --surface: #F2F2F2; font-family: Inter, system-ui, sans-serif; display: inline-grid; justify-items: end; gap: 8px; padding: 12px; background: var(--bg); } .ds-lp-trigger { appearance: none; border: 0; display: inline-flex; align-items: center; gap: 6px; height: 44px; min-width: 64px; padding: 0 12px 0 16px; border-radius: 999px; background: color-mix(in oklab, var(--ink) 9%, var(--bg)); color: var(--ink); font: inherit; font-size: 13px; letter-spacing: 0.02em; font-weight: 500; cursor: pointer; transition: background-color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-lp-trigger:hover, .ds-lp-trigger[aria-expanded=\"true\"] { background: color-mix(in oklab, var(--ink) 15%, var(--bg)); } .ds-lp-trigger:focus-visible, .ds-lp-panel a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-lp-panel { width: 264px; padding: 8px; display: grid; background: var(--surface); border-radius: 22px; box-shadow: 0 18px 40px rgba(15, 15, 20, 0.14), 0 2px 8px rgba(15, 15, 20, 0.06); } .ds-lp-panel a { display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 8px; min-height: 52px; padding: 6px 12px; border-radius: 14px; color: var(--ink); text-decoration: none; transition: background-color 140ms; } .ds-lp-panel a:hover, .ds-lp-panel a[aria-current=\"true\"] { background: color-mix(in srgb, var(--ink) 9%, transparent); } .ds-lp-panel b { font-size: 13px; font-weight: 500; letter-spacing: 0.02em; color: var(--ink-2); } .ds-lp-panel a[aria-current=\"true\"] b { color: var(--ink); } .ds-lp-panel span { display: grid; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.25; } .ds-lp-panel small { font-size: 13px; font-weight: 400; color: var(--ink-2); }"
+    },
+    {
+      "name": "Hero Facts",
+      "kind": "content",
+      "description": "The close of the Home hero copy, 48px under the buttons: the three figures (years in design, designers led, clients served) in Title weight Ink over Small Soft Ink labels, then the companies Lucas worked at as their own marks in Soft Ink (Ink on hover), balanced by height; a PNG mark drawn through a CSS mask; a typeset name where no mark exists.",
+      "html": "<div class=\"ds-hf\"><ul class=\"ds-hf-figs\"><li><strong>12</strong> years in design</li><li><strong>14</strong> designers led</li><li><strong>40+</strong> clients served</li></ul><div class=\"ds-hf-worked\"><span>Worked at</span><ul><li>Fetchly</li><li>quarter.digital</li><li>Miscreants</li><li>SaaSMouth</li></ul></div></div>",
+      "css": ".ds-hf { --ink: #FCFCFC; --ink-2: #F1F4F9; background: #2C5846; color: var(--ink); font-family: Inter, system-ui, sans-serif; display: grid; gap: 22px; max-width: 36em; padding: 24px; } .ds-hf ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; } .ds-hf-figs { gap: 32px; } .ds-hf-figs li { display: flex; align-items: baseline; gap: 8px; font-size: 15px; color: var(--ink-2); } .ds-hf-figs strong { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.2; font-variant-numeric: tabular-nums; color: var(--ink); } .ds-hf-worked { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; } .ds-hf-worked > span { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); } .ds-hf-worked ul { gap: 12px 32px; } .ds-hf-worked li { font: 600 18px/1 Inter, system-ui, sans-serif; letter-spacing: -0.03em; color: var(--ink-2); transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-hf-worked li:hover { color: var(--ink); }"
+    },
+    {
+      "name": "Merch Grid",
+      "kind": "card",
+      "refersTo": "merch-frame",
+      "description": "The Merch page's image grids (.m-book 2 by 2 at 16:9, .m-mat four squares, .m-line four across at 4:5, .m-pairs three first and final pairs, .m-mosaic three columns with wide and full shots). Frames are nearly square, 2px, with a Small Soft Ink caption 10px below. Sample: the line, four across.",
+      "html": "<div class=\"ds-m-line\"><figure class=\"ds-m-fig\"><div class=\"ds-m-frame\"></div><figcaption>Beanie</figcaption></figure><figure class=\"ds-m-fig\"><div class=\"ds-m-frame\"></div><figcaption>Cap</figcaption></figure><figure class=\"ds-m-fig\"><div class=\"ds-m-frame\"></div><figcaption>Cardigan</figcaption></figure><figure class=\"ds-m-fig\"><div class=\"ds-m-frame\"></div><figcaption>Zip hoodie</figcaption></figure></div>",
+      "css": ".ds-m-line { background: #FCFCFC; padding: 20px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 20px; font-family: Inter, system-ui, sans-serif; } .ds-m-fig { margin: 0; min-width: 0; } .ds-m-frame { aspect-ratio: 4 / 5; background: #F2F2F2; border-radius: 2px; overflow: hidden; } .ds-m-fig figcaption { margin-top: 10px; font-size: 15px; line-height: 1.5; color: #4D4D4D; } @media (max-width: 760px) { .ds-m-line { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 12px; } .ds-m-fig figcaption { font-size: 14px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Portfolio",
+    "overview": "Ink on one color at a time, and the work. The interface is a grid that steps back so client screens, identities and photographs carry the detail, while the page itself changes tone as the reader moves through it: it opens on a deep tone or a pale one, settles into the pales (Blush, Mist, Cream) or Paper while it explains and proves, and closes deep, in Field unless the page names Berry or Cobalt, before the footer brings it back to Paper. Only one tone fills the screen at any moment. There are no colored blocks and no sheets laid over each other; the change is a slow blend of the whole page under a fine grain that moves only while the page does. The header is transparent, so the page shows through it. It carries Lucas's two marks in one place, the ibis at the top of the page and the texr wordmark once the page scrolls, and no lines at all. Type does the hierarchy alone: one large, tightly tracked display voice, a calm reading size, and small uppercase labels kept for short facts (a year, a field name). The nav reads in sentence case.\n\nThe components should feel mature and useful, and quietly show product and front end dexterity: every control is snappy, has all of its states, and meets WCAG 2.1 AAA on all seven tones. The craft is in what a visitor never has to think about: targets never smaller than a fingertip, contrast that holds while the page changes color, text that never fades through its own background, errors that name the fix, a phone menu that locks the page behind it, and copy results spoken to screen readers.\n\nTwo authored moments carry the personality. Athos Bulcão's tiles, the ones that line Brasília, appear as a full wall spelling LUCAS on About and as a two row ribbon on every other page (at the foot of the opening section, or of the closing one on Home), in one color only: Ink letters on a light ceramic panel on the wall, the page's own ink on the ribbon. The footer badge builds itself as it scrolls into view. Two quieter layers sit around them as texture. Blocos close most sections: a short strip of Bulcão's dove from the Igrejinha, drawn as a line in the page's own ink, and on one or two sections a page the dove or Lucas's ibis blown up behind the content. A grain of animated static, after the CodePen iceable/yLBrZOd, lies under the content on every tone and jitters only while the page scrolls and for a moment after arrival. Everything else is still: sections do not animate in. Two quieter movements live in the Home hero: a carousel that crossfades between three featured projects, and a slow marquee of the tools Lucas works in. Both are plain CSS, both hold on hover or focus, and both carry a pause button.\n\nThe Process page tells how the team works from three documents (BRS, SRS, SDD) through the same funnel of tones, with a step rail that follows the reader through the documents and a cost figure that rises once. The Merch page shows a Fetchly merch line from the brand book out, as image grids on Paper and the pales in nearly square frames.\n\nDensity is generous. Sections breathe at 72px to 128px, cards sit on a 32px gutter, and boxes appear only around images, the paper objects (business card, résumé), the surface cards (voices, the About stats cards, contact form), the document chips on Process and the footer tab. The site ships in English, Brazilian Portuguese and Latin American Spanish from one set of templates.",
+    "keyCharacteristics": [
+      "Scroll driven tone: seven tones (Paper, the pales Blush, Mist and Cream with black text, the deeps Field, Berry and Cobalt with white text), one at a time, blended over 800ms. Every page closes deep and ends on the Paper footer.",
+      "One typeface, Inter, with its optical size axis on so display sizes tighten and small sizes open.",
+      "Hairline rules instead of cards. A 1px Ink rule marks the top of an indexed column.",
+      "Pill buttons, 10px image frames (2px on Merch), 14px business card, a 48px footer tab.",
+      "No underlines on any link. The header has no strokes, borders, dividers or rules; its controls carry a fill and hover is its only color change. Elsewhere hover shifts color to Soft Ink or moves an arrow.",
+      "Lucas's marks share one cell in a transparent header: the ibis stands large at the top of the page and gives way on the first scroll to the texr wordmark at 20px. The ibis is also on the business card and the favicon.",
+      "WCAG 2.1 AAA as a floor: 7:1 text on every tone, 44px targets, 1.5 line spacing in running text, expanded abbreviations.",
+      "Snappy CSS motion (140ms hover and press, 220ms icons and menus); GSAP for the two authored moments and the blocos only.",
+      "An animated grain under the content on every tone: seven grays in overlay, 0.42 on the pales and 0.12 on the deeps, jittering only while scrolling and for 3s after arrival, never with reduced motion.",
+      "Blocos in outline: a 2 by 8 strip of Bulcão's dove in the page's ink at the end of most sections, and on one or two sections a page the dove or the ibis blown up behind the content.",
+      "Anything that moves on its own (the carousel, the marquee) holds on hover or focus and has a 44px pause button."
+    ],
+    "rules": [
+      {
+        "name": "The No Middle Tone Rule",
+        "body": "Pink and blue are either very light, with black text, or deep enough for white text. A mid pink or mid blue is too dark for black text and too light for white, so the palette has none (Lucas, 9 Oct 2026). Green as a page tone is only Field. A new tone joins the pales or the deeps, or it does not join.",
+        "section": "colors"
+      },
+      {
+        "name": "The Seven To One Rule",
+        "body": "Every piece of text on this site reads at 7:1 or better against what is behind it, on every tone it can appear on; large text (24px, or 18.66px bold) may drop to 4.5:1. A new color is not added until it passes on all tones, or the element keeps its own fixed colors the way the footer, the About wall and the paper objects do.",
+        "section": "colors"
+      },
+      {
+        "name": "The AIDA Tone Rule",
+        "body": "Every page runs the AIDA funnel in tones, and the colors vary by page. Attention is a deep tone or a pale one, chosen per page; Interest and Desire use the pales; Action is Field by default (the closing band, `action(..., tone=)`, takes Berry on Writing and Cobalt on Photography); and the Paper footer is always the last stop (the footer's own tone stop is `paper`). Paper stays under photographs, project grids, long prose and forms, so the work and the inputs sit on a neutral ground. A stage a page does not need is skipped, never filled with another color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Never Fades Rule",
+        "body": "Surfaces (`--bg`, `--line`, `--line-hover`, `--tile`, `--surface`) blend over the full tone time; the ink tokens hold, then cross in one step at 42% of the blend. A page turning from Field to light would otherwise carry the text through the background's own luminance and blank it. With reduced motion the blend shortens to 320ms and the same 42% rule applies.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Measure Rule",
+        "body": "Running text never runs wider than 80 characters, never justifies, and keeps line spacing at 1.5 or more with paragraph spacing of 1.5em (WCAG 1.4.8).",
+        "section": "typography"
+      },
+      {
+        "name": "The Abbreviation Rule",
+        "body": "The first use of an abbreviation on a page carries its expansion in a title (UML, CRM, QA, SEO, CMS, ConOps). There is no visible underline; the cursor turns to help on hover.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Up Rule",
+        "body": "On a phone (760px and below), nothing stacks one card per row. Project cards, About proofs, essays, photographs, the services index, every three up list, the contact steps, the Process rules, the Merch grids and the paired recommendations show two side by side (two `minmax(0, 1fr)` columns, 14px apart). A last item left alone on an odd count spans the full row, so a grid never ends on a hole; the lead photograph and the last card take a wider 16:10 frame, the others go 4:5. Inside the narrow columns titles drop to 17px and running text to 14px at 1.55 line spacing. Between 761 and 1100px the three up lists are two up as well. Set by the owner on 8 Oct 2026. The one exception is the About stats pair: its cards are dashboards, not list items, so they stack at 900px and below and the charts stay one per row on phones. Presentation thumbnails keep their own crop: they were composed at 4:3 and stay 4:3 at every width, while the other cards go 4:5.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Float Rule",
+        "body": "Only the open language panel casts a soft shadow. Everything else shows state with fill, color and position.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Even Grain Rule",
+        "body": "The grain blends in overlay from seven evenly mixed grays, so it lightens and darkens in equal measure and leaves the page's average color and every contrast ratio where they were. It runs at 0.42 on Paper and the pales and 0.12 on the deeps, because overlay barely moves a near white and moves a deep color a lot.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do give every section a tone and follow the AIDA order: a deep or pale opening, the pales for Interest and Desire, a deep close (Field by default), then the Paper footer.",
+      "Do put photographs, project grids, long prose and forms on Paper.",
+      "Do check every new text color on all seven tones: 7:1, or 4.5:1 for large text. If it cannot pass on all of them, give the element fixed colors of its own.",
+      "Do draw new chrome from the tone tokens (`--bg`, `--ink`, `--ink-2`, `--line`, `--tile`, `--surface`) so it changes with the page.",
+      "Do make every control at least 44 by 44px and give it hover, focus, active and disabled states before it ships.",
+      "Do keep hover and press feedback at 140ms or faster, and state motion under 420ms; the tone blend (800ms), the ribbon's dimming, the stats bars and split bar, the cost bars, the carousel's crossfade and settle, the sky on the card, the two GSAP moments, the brand swap (ibis 480ms, texr 420ms), the grain and the blocos are the exceptions.",
+      "Do give anything that moves on its own a 44px pause button, and hold it on hover and keyboard focus (WCAG 2.2.2).",
+      "Do honour reduced motion: the tone blend shortens to 320ms, transforms go, the brand swaps instantly, the tiles and badge stay still, the carousel starts paused, the marquee becomes a still row that scrolls, and the grain holds still.",
+      "Do write labels as two or three words; anything longer is a sentence case note.",
+      "Do expand an abbreviation the first time it appears on a page.",
+      "Do add copy to all three locale files together.",
+      "Do keep strips after a section's content and quieter than the type, and keep bursts under every piece of content, as a line or a watermark that leaves text at 7:1.",
+      "Do keep the grain under the content: anything that should cover it carries its own opaque fill."
+    ],
+    "donts": [
+      "Don't underline links or abbreviations. Hover is a color shift or a moving arrow.",
+      "Don't draw strokes, borders, dividers or rules anywhere in the header (Lucas, 9 Oct 2026). Its controls carry a fill, hover is its only color change, and keyboard focus rings stay.",
+      "Don't put a small uppercase label above a heading. The heading speaks for itself.",
+      "Don't repeat the same figures on one page.",
+      "Don't add icons to service lists or project cards; icons belong to the nav, contact facts and actions.",
+      "Don't add soft shadows beyond the open language panel, painted gradients or translucent blurred chrome. The header is transparent, with no fill or effect of its own. The marquee's edge fade is a mask on the row, not a color, and stays the only one.",
+      "Don't fade ink with the background; it crosses in one step.",
+      "Don't put a deep band (Field, Berry, Cobalt) in the middle of a page; the deeps open or close it. About's questions, after the Field résumé stage, are the one band past the close.",
+      "Don't add a mid pink, a mid blue or a second green page tone. Pink and blue are very light with black text or deep with white text; green is Field.",
+      "Don't glaze the ribbon, the blocos or the wall in palette colors. The ribbon and blocos are the page's own ink and the wall is Ink on its ceramic panel.",
+      "Don't put a burst on the opening section, on Paper, or on a closing or action band.",
+      "Don't animate section entrances. Stillness is what makes the badge and the tiles land."
+    ]
+  }
+}
