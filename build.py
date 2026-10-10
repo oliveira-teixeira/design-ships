@@ -334,8 +334,8 @@ LANG_SCRIPT = """<script>
 
 
 # Share image (designed in Figma, file "lucastexr.com Open Graph", frame 1:2). Social scrapers need an
-# absolute address, so it points at the production domain; it resolves once the site is deployed there.
-SITE_URL = "https://lucastexr.com/"
+# absolute address, so it points at the Netlify deploy (lucastexr-portfolio) until lucastexr.com moves over.
+SITE_URL = "https://lucastexr-portfolio.netlify.app/"
 
 
 # Lucas's marks (marks.py), defined once per page and drawn with <use>: the ibis and the texr wordmark.

@@ -20,43 +20,6 @@
   }
  },
  {
-  "title": "lucastexr.com, canvas",
-  "group": "portfolio",
-  "repo": "design-lucastexr-com",
-  "repo_url": "https://github.com/oliveira-teixeira/design-lucastexr-com",
-  "pages_url": "https://oliveira-teixeira.github.io/design-lucastexr-com/",
-  "stack": [
-   "Design canvas",
-   "HTML, CSS",
-   "Lucide icons",
-   "Inter"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "Eleven artboards for the first design of this portfolio: home, work, a case study, writing, photography, about, contact and phone screens.",
-   "pt": "Onze pranchetas do primeiro design deste portfólio: home, trabalhos, estudo de caso, textos, fotografia, sobre, contato e telas de celular.",
-   "es": "Once mesas de trabajo del primer diseño de este portafolio: inicio, trabajos, caso de estudio, textos, fotografía, sobre mí, contacto y pantallas de móvil."
-  }
- },
- {
-  "title": "The Working Drawing",
-  "group": "portfolio",
-  "repo": "design-the-working-drawing",
-  "repo_url": "https://github.com/oliveira-teixeira/design-the-working-drawing",
-  "pages_url": "https://oliveira-teixeira.github.io/design-the-working-drawing/",
-  "stack": [
-   "HTML, CSS, no JavaScript",
-   "Inline SVG",
-   "Inter"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "The design system reference for this portfolio: color tokens, nine type sizes, layout, shapes, live components and do and don't rules.",
-   "pt": "A referência do sistema de design deste portfólio: tokens de cor, nove tamanhos de tipo, layout, formas, componentes ao vivo e regras de faça e não faça.",
-   "es": "La referencia del sistema de diseño de este portafolio: tokens de color, nueve tamaños de tipo, layout, formas, componentes en vivo y reglas de hacer y no hacer."
-  }
- },
- {
   "title": "Sobrado do Alpendre",
   "group": "portfolio",
   "repo": "design-sobrado-do-alpendre",
@@ -113,24 +76,6 @@
   }
  },
  {
-  "title": "Fetchly Logo Clouds",
-  "group": "showcase",
-  "repo": "design-fetchly-logo-clouds",
-  "repo_url": "https://github.com/oliveira-teixeira/design-fetchly-logo-clouds",
-  "pages_url": "https://oliveira-teixeira.github.io/design-fetchly-logo-clouds/",
-  "stack": [
-   "HTML, CSS, vanilla JS",
-   "Inline SVG",
-   "Inter"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "An interactive card that arranges the tool logos behind each Fetchly service in arc, radial, fall or grid layouts.",
-   "pt": "Um card interativo que organiza os logos das ferramentas de cada serviço da Fetchly em arco, radial, queda ou grade.",
-   "es": "Una tarjeta interactiva que ordena los logos de las herramientas de cada servicio de Fetchly en arco, radial, caída o cuadrícula."
-  }
- },
- {
   "title": "Spyderco 2.0 Roadmap",
   "group": "client",
   "repo": "design-spyderco-2-roadmap",
@@ -149,24 +94,6 @@
   }
  },
  {
-  "title": "HIVE Design Mandate",
-  "group": "client",
-  "repo": "design-hive-design-mandate",
-  "repo_url": "https://github.com/oliveira-teixeira/design-hive-design-mandate",
-  "pages_url": "https://oliveira-teixeira.github.io/design-hive-design-mandate/",
-  "stack": [
-   "HTML, CSS, no JavaScript",
-   "Light and dark themes",
-   "Instrument Serif, Inter"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "A proposal for a full time strategic designer on the HIVE v2 engagement, with the mandate, deliverables and an eighteen week sprint plan.",
-   "pt": "Uma proposta de designer estratégico em tempo integral para o projeto HIVE v2, com o mandato, as entregas e um plano de dezoito semanas.",
-   "es": "Una propuesta de diseñador estratégico a tiempo completo para el proyecto HIVE v2, con el mandato, los entregables y un plan de dieciocho semanas."
-  }
- },
- {
   "title": "Hive Access Model",
   "group": "client",
   "repo": "design-hive-access-model",
@@ -182,25 +109,6 @@
    "en": "The HIVE platform's access architecture: tenant scoped login, three verticals and a permissions matrix for nine roles.",
    "pt": "A arquitetura de acesso da plataforma HIVE: login por tenant, três verticais e uma matriz de permissões para nove papéis.",
    "es": "La arquitectura de acceso de la plataforma HIVE: login por tenant, tres verticales y una matriz de permisos para nueve roles."
-  }
- },
- {
-  "title": "Qorably v3",
-  "group": "client",
-  "repo": "design-qorably-v3",
-  "repo_url": "https://github.com/oliveira-teixeira/design-qorably-v3",
-  "pages_url": "https://oliveira-teixeira.github.io/design-qorably-v3/",
-  "stack": [
-   "Claude design canvas",
-   "React 19",
-   "Tailwind CSS 4",
-   "Inter"
-  ],
-  "uses_claude_runtime": true,
-  "description": {
-   "en": "A design canvas for Qorably v3, an AI assisted QA test case tool: project overview, test generation, team and sidebar screens.",
-   "pt": "Um canvas de design do Qorably v3, uma ferramenta de casos de teste de QA com IA: visão do projeto, geração de testes, time e menu lateral.",
-   "es": "Un canvas de diseño de Qorably v3, una herramienta de casos de prueba de QA con IA: vista del proyecto, generación de pruebas, equipo y menú lateral."
   }
  },
  {
@@ -223,25 +131,7 @@
   }
  },
  {
-  "title": "Qorably UX Audit",
-  "group": "client",
-  "repo": "design-qorably-ux-audit",
-  "repo_url": "https://github.com/oliveira-teixeira/design-qorably-ux-audit",
-  "pages_url": "https://oliveira-teixeira.github.io/design-qorably-ux-audit/",
-  "stack": [
-   "HTML, CSS, no JavaScript",
-   "Light and dark themes",
-   "Instrument Sans, IBM Plex Mono"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "A first time user UX audit of Qorably that ranks findings by severity, with fixes and quick wins.",
-   "pt": "Uma auditoria de UX do Qorably pelo olhar de quem usa pela primeira vez, com achados por gravidade, correções e ganhos rápidos.",
-   "es": "Una auditoría de UX de Qorably desde la mirada de quien lo usa por primera vez, con hallazgos por gravedad, correcciones y mejoras rápidas."
-  }
- },
- {
-  "title": "Froogle kickoff, filled board",
+  "title": "Froogle kickoff",
   "group": "client",
   "repo": "design-froogle-filled-kickoff",
   "repo_url": "https://github.com/oliveira-teixeira/design-froogle-filled-kickoff",
@@ -258,24 +148,7 @@
   }
  },
  {
-  "title": "Froogle kickoff answers",
-  "group": "client",
-  "repo": "design-froogle-kickoff-answers",
-  "repo_url": "https://github.com/oliveira-teixeira/design-froogle-kickoff-answers",
-  "pages_url": "https://oliveira-teixeira.github.io/design-froogle-kickoff-answers/",
-  "stack": [
-   "Markdown",
-   "Jekyll on GitHub Pages"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "Answers to the Froogle kickoff questions from public research, with a confidence matrix and recommended next steps.",
-   "pt": "Respostas às perguntas de kickoff do Froogle a partir de pesquisa pública, com matriz de confiança e próximos passos.",
-   "es": "Respuestas a las preguntas de kickoff de Froogle desde investigación pública, con matriz de confianza y próximos pasos."
-  }
- },
- {
-  "title": "Meneses 1998, prototype",
+  "title": "Meneses 1998",
   "group": "client",
   "repo": "design-meneses-1998",
   "repo_url": "https://github.com/oliveira-teixeira/design-meneses-1998",
@@ -291,60 +164,6 @@
    "en": "A navigable prototype of the portfolio site for Ana Luíza Meneses, a director, cinematographer and visual artist in Brasília.",
    "pt": "Um protótipo navegável do site de portfólio de Ana Luíza Meneses, diretora, diretora de fotografia e artista visual em Brasília.",
    "es": "Un prototipo navegable del sitio de portafolio de Ana Luíza Meneses, directora, directora de fotografía y artista visual en Brasilia."
-  }
- },
- {
-  "title": "Meneses 1998, canvas",
-  "group": "client",
-  "repo": "design-meneses-1998-2",
-  "repo_url": "https://github.com/oliveira-teixeira/design-meneses-1998-2",
-  "pages_url": "https://oliveira-teixeira.github.io/design-meneses-1998-2/",
-  "stack": [
-   "Design canvas",
-   "HTML, CSS",
-   "Newsreader, Courier Prime"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "Six artboards in the Meneses 1998 direction: home, visual art, reel, about, a work page and the phone home screen.",
-   "pt": "Seis pranchetas na direção Meneses 1998: home, artes visuais, reel, sobre, uma página de obra e a home no celular.",
-   "es": "Seis mesas de trabajo en la dirección Meneses 1998: inicio, artes visuales, reel, sobre mí, una página de obra y el inicio en móvil."
-  }
- },
- {
-  "title": "Meneses Small Web",
-  "group": "client",
-  "repo": "design-meneses-small-web",
-  "repo_url": "https://github.com/oliveira-teixeira/design-meneses-small-web",
-  "pages_url": "https://oliveira-teixeira.github.io/design-meneses-small-web/",
-  "stack": [
-   "Design canvas",
-   "HTML, CSS keyframes",
-   "Newsreader, Plus Jakarta Sans"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "Two small web directions for the Meneses site, a lighter one and a stronger one, plus the reusable pieces they share.",
-   "pt": "Duas direções de small web para o site Meneses, uma mais leve e uma mais forte, e as peças reutilizáveis que elas dividem.",
-   "es": "Dos direcciones de small web para el sitio Meneses, una más liviana y una más fuerte, y las piezas reutilizables que comparten."
-  }
- },
- {
-  "title": "Meneses Site Architecture",
-  "group": "client",
-  "repo": "design-meneses-site-architecture",
-  "repo_url": "https://github.com/oliveira-teixeira/design-meneses-site-architecture",
-  "pages_url": "https://oliveira-teixeira.github.io/design-meneses-site-architecture/",
-  "stack": [
-   "HTML, CSS",
-   "Light and dark themes",
-   "IBM Plex Mono, Plus Jakarta Sans"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "The specification for the Meneses photography site: information architecture, CMS schema, concept of operations and the acquisition flow.",
-   "pt": "A especificação do site de fotografia Meneses: arquitetura de informação, schema do CMS, conceito de operações e fluxo de aquisição.",
-   "es": "La especificación del sitio de fotografía Meneses: arquitectura de información, esquema del CMS, concepto de operaciones y flujo de adquisición."
   }
  }
 ]

@@ -2,7 +2,7 @@
 
 The portfolio of Lucas Teixeira, Director of Design at Fetchly Labs, as a working prototype in English, Brazilian Portuguese and Latin American Spanish.
 
-Live: https://oliveira-teixeira.github.io/design-ships/
+Live: https://lucastexr-portfolio.netlify.app (also https://oliveira-teixeira.github.io/design-ships/)
 
 ## Stack
 
