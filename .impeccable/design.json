@@ -1328,7 +1328,7 @@
       "artifacts": "artifacts.json: nine entries, one per client, each {title, group (portfolio, showcase, client), repo design-<name>, repo_url, pages_url (GitHub Pages), stack[], uses_claude_runtime, description {en, pt, es}}. build.py artifacts() renders the list by group; site.js swaps the viewer iframe."
     },
     "shareImage": {
-      "url": "https://lucastexr-portfolio.netlify.app/assets/img/og.png",
+      "url": "https://lucastexr-portfolio.netlify.app/assets/img/og.jpg?v=3",
       "siteUrl": "SITE_URL in build.py (https://lucastexr-portfolio.netlify.app/), the Netlify deploy",
       "size": "1200x630",
       "pages": "og:image on every page, with og:image:alt from the locale",

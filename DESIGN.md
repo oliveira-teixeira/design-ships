@@ -708,7 +708,8 @@ A White card with fixed paper colors (it is an object, not part of the tone), on
 The ibis in Paper on a Field Green rounded square (`assets/img/favicon.svg`, written by `build.py`).
 
 ### Share Image (every page)
-- **Source:** every page sets `og:image` to the same 1200 by 630 image at `SITE_URL` (`https://lucastexr-portfolio.netlify.app/`, the Netlify deploy) plus `assets/img/og.png`. The PNG is a headless Chrome screenshot of `og-src/og.html` at a 1200 by 630 window.
+- **Source:** every page sets `og:image` to the same 1200 by 630 image at `SITE_URL` (`https://lucastexr-portfolio.netlify.app/`, the Netlify deploy) plus `assets/img/og.jpg?v=3` (`OG_IMAGE` in build.py; bump the version whenever the image changes, because WhatsApp caches by URL). `og.png` is a headless Chrome screenshot of `og-src/og.html` at a 1200 by 630 window; `og.jpg` is its JPEG at quality 92.
+- **Head order:** the title, description, canonical, `og:url`, the Open Graph and Twitter tags come first in the head, before any script, with absolute URLs and Facebook locale codes (`en_US`, `pt_BR`, `es_LA`, plus `og:locale:alternate`). WhatsApp reads only the start of a page and is the strictest scraper.
 - **Composition:** a Field Green ground; the monogram set 1100px wide from 700px across, cropped off the right and bottom edges at 7% Paper as texture; the monogram again as a 72px icon at the top left; the name in Inter 500 at 92px (tracking -0.03em) and the role line at 30px in On Field.
 - **Proof row:** five illustrated avatars (DiceBear Notionists by Zoish, CC0, in `og-src/av/`) in 64px pale circles (Blush, Cream, Mist, Paper, Blush) overlapping by 14px, each ringed 3px in Field Green; beside them five Cream stars and "30+ clients · 5 countries" at 26px, 500.
 

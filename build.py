@@ -342,32 +342,51 @@ def mark(name, cls):
     return f'<svg class="{cls}" viewBox="{vb}" aria-hidden="true" focusable="false"><use href="#m-{name}"/></svg>'
 
 
+OG_LOCALE = {"en": "en_US", "pt": "pt_BR", "es": "es_LA"}   # the forms Facebook and WhatsApp accept
+OG_IMAGE = "assets/img/og.jpg?v=3"                          # bump v= when the image changes: WhatsApp caches by URL
+
+
+def page_url(L, file):
+    """Absolute address of a page on the deployed site, folders without index.html."""
+    return SITE_URL + L["dir"] + ("" if file == "index.html" else file)
+
+
 def head(c, title, description, tone, css=(), js=(), body_class=""):
     R = c.R
     extra = "".join(f'<link rel="stylesheet" href="{R}{x}">\n' for x in css) + "".join(f'<script src="{R}{x}" defer></script>\n' for x in js)
-    alternates = "".join(f'<link rel="alternate" hreflang="{L["html"]}" href="{R}{L["dir"]}{c.file}">\n' for L in LANGS)
-    alternates += f'<link rel="alternate" hreflang="x-default" href="{R}{c.file}">\n'
+    alternates = "".join(f'<link rel="alternate" hreflang="{L["html"]}" href="{page_url(L, c.file)}">\n' for L in LANGS)
+    alternates += f'<link rel="alternate" hreflang="x-default" href="{page_url(LANGS[0], c.file)}">\n'
+    other_locales = "".join(f'<meta property="og:locale:alternate" content="{OG_LOCALE[L["code"]]}">\n' for L in LANGS if L["code"] != c.L["code"])
     script = LANG_SCRIPT % {"code": c.L["code"], "root": R, "file": c.file, "html": c.L["html"], "tone": tone}
     body_attr = f' class="{body_class}"' if body_class else ""
+    url = page_url(c.L, c.file)
+    # The share tags come first in the head, before any script, so the strictest scrapers (WhatsApp) find them.
     return f"""<!doctype html>
-<html lang="{c.L['html']}" data-tone="{tone}">
+<html lang="{c.L['html']}" data-tone="{tone}" prefix="og: https://ogp.me/ns#">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{script}
 <title>{escape(title)}</title>
 <meta name="description" content="{escape(description)}">
-<meta name="theme-color" content="{TONES[tone]}">
+<link rel="canonical" href="{url}">
 <meta property="og:type" content="website">
+<meta property="og:url" content="{url}">
 <meta property="og:site_name" content="Lucas Teixeira">
 <meta property="og:title" content="{escape(title)}">
 <meta property="og:description" content="{escape(description)}">
-<meta property="og:locale" content="{c.L['html'].replace('-', '_')}">
-<meta property="og:image" content="{SITE_URL}assets/img/og.png">
+<meta property="og:locale" content="{OG_LOCALE[c.L['code']]}">
+{other_locales}<meta property="og:image" content="{SITE_URL}{OG_IMAGE}">
+<meta property="og:image:secure_url" content="{SITE_URL}{OG_IMAGE}">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{escape(c.t['og_alt'])}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{escape(title)}">
+<meta name="twitter:description" content="{escape(description)}">
+<meta name="twitter:image" content="{SITE_URL}{OG_IMAGE}">
+<meta name="theme-color" content="{TONES[tone]}">
+{script}
 {alternates}<link rel="icon" href="{R}assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
