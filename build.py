@@ -271,13 +271,6 @@ def fmt_date(t, iso):
     return t["date"].format(d=d.day, month=t["months"][d.month - 1], y=d.year)
 
 
-def logo(label, decorative=False):
-    paths = "".join(f'<path d="{d}"/>' for d in LOGO_PATHS)
-    if decorative:
-        return f'<svg class="brand-mark" viewBox="0 45 329 234" fill="currentColor" aria-hidden="true" focusable="false">{paths}</svg>'
-    return f'<svg viewBox="0 45 329 234" fill="currentColor" role="img" aria-label="{escape(label)}">{paths}</svg>'
-
-
 def img(c, file, alt=None, eager=False):
     label = IMAGES[file][0]
     label = c.t["img"].get(label, label)
@@ -476,8 +469,8 @@ def badge(label):
 
 
 def footer(c):
-    # Adapted from the lucastexr.com (Framer) footer: a green field with a rounded tab rising into
-    # the page, the email line on the tab, the badge centered, name and region in the corners.
+    # Adapted from the lucastexr.com (Framer) footer, now in Paper: a field with a rounded tab rising
+    # into the page, the email line on the tab, the badge centered, name and region in the corners.
     # The footer is the last tone stop: every page ends on Paper (inverted from green on 9 Oct 2026).
     t = c.t
     return f"""<footer class="site-footer" data-tone="paper">

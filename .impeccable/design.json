@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T16:30:00Z",
+  "generatedAt": "2026-10-10T12:00:00Z",
   "title": "Design System: lucastexr.com",
   "extensions": {
     "colorMeta": {
@@ -803,36 +803,20 @@
           "#EEEEEE"
         ]
       },
-      "control-fill": {
+      "control-hover": {
         "role": "neutral",
-        "displayName": "Control Fill",
-        "canonical": "color-mix(in oklab, var(--ink) 9%, var(--bg))",
-        "purpose": "Filled header controls (language trigger, Menu button). #E4E4E4 is its Paper value; it follows every tone.",
+        "displayName": "Control Hover",
+        "canonical": "#F0F0F0",
+        "purpose": "Hover and open fill of the header's White pills (Menu button, language trigger). Fixed on every tone.",
         "tonalRamp": [
-          "#1B1B1B",
-          "#333333",
-          "#4E4E4E",
-          "#6A6A6A",
-          "#888888",
-          "#A7A7A7",
-          "#C6C6C6",
-          "#E4E4E4"
-        ]
-      },
-      "control-fill-hover": {
-        "role": "neutral",
-        "displayName": "Control Fill Hover",
-        "canonical": "color-mix(in oklab, var(--ink) 15%, var(--bg))",
-        "purpose": "Language trigger on hover and while open, and the Menu button on hover. #D4D4D4 is its Paper value.",
-        "tonalRamp": [
-          "#1B1B1B",
-          "#333333",
-          "#4E4E4E",
-          "#6A6A6A",
-          "#888888",
-          "#A7A7A7",
-          "#C6C6C6",
-          "#D4D4D4"
+          "#262626",
+          "#3D3D3D",
+          "#575757",
+          "#737373",
+          "#919191",
+          "#B0B0B0",
+          "#D0D0D0",
+          "#F0F0F0"
         ]
       },
       "watermark": {
@@ -914,6 +898,10 @@
       "nav": {
         "displayName": "Nav",
         "purpose": "Header nav words (after scrolling), the Menu button and the language rows; sentence case."
+      },
+      "chip": {
+        "displayName": "Chip",
+        "purpose": "Stack chips on the Artifacts list (12px, line height 1.4). Facts, not controls."
       }
     },
     "tones": {
@@ -926,9 +914,12 @@
         "--line",
         "--line-hover",
         "--tile",
-        "--surface"
+        "--surface",
+        "--bg-s",
+        "--line-s",
+        "--line-hover-s"
       ],
-      "blend": "Surfaces transition over --tone (800ms, cubic-bezier(0.4, 0, 0.2, 1)); --ink, --ink-2 and --ink-3 switch in one step after 42% of --tone.",
+      "blend": "Surfaces (--bg, --line, --line-hover, --tile, --surface) transition over --tone (800ms, cubic-bezier(0.4, 0, 0.2, 1)); --ink, --ink-2, --ink-3 and the snap copies --bg-s, --line-s, --line-hover-s switch in one step after 42% of --tone.",
       "values": {
         "paper": {
           "bg": "#FCFCFC",
@@ -941,7 +932,10 @@
           "surface": "#F2F2F2",
           "field-line": "#767676",
           "error": "#8F1F17",
-          "contrast": "Ink 18:1, Soft Ink 8.2:1, Faint Ink 7.3:1"
+          "contrast": "Ink 18:1, Soft Ink 8.2:1, Faint Ink 7.3:1",
+          "bg-s": "#FCFCFC",
+          "line-s": "#E4E4E4",
+          "line-hover-s": "#C9C9C9"
         },
         "blush": {
           "bg": "#FDF3F6",
@@ -954,7 +948,10 @@
           "surface": "#FFFFFF",
           "field-line": "#7A6870",
           "error": "#8F1F17",
-          "contrast": "Soft Ink 7.8:1"
+          "contrast": "Soft Ink 7.8:1",
+          "bg-s": "#FDF3F6",
+          "line-s": "#EBD3DC",
+          "line-hover-s": "#D8B6C3"
         },
         "mist": {
           "bg": "#EFF5FD",
@@ -967,7 +964,10 @@
           "surface": "#FFFFFF",
           "field-line": "#707070",
           "error": "#8F1F17",
-          "contrast": "Soft Ink 7.7:1"
+          "contrast": "Soft Ink 7.7:1",
+          "bg-s": "#EFF5FD",
+          "line-s": "#D3E0F2",
+          "line-hover-s": "#B5C9E6"
         },
         "cream": {
           "bg": "#FFF8E2",
@@ -980,7 +980,10 @@
           "surface": "#FFFFFF",
           "field-line": "#707070",
           "error": "#8F1F17",
-          "contrast": "Soft Ink 8:1"
+          "contrast": "Soft Ink 8:1",
+          "bg-s": "#FFF8E2",
+          "line-s": "#EDE2C0",
+          "line-hover-s": "#D9C99A"
         },
         "field": {
           "bg": "#2C5846",
@@ -995,7 +998,10 @@
           "error": "#FFE9E6",
           "ink-hover": "#FFFFFF",
           "ink-press": "#E6ECEA",
-          "contrast": "Ink 7.9:1, On Field 7.35:1"
+          "contrast": "Ink 7.9:1, On Field 7.35:1",
+          "bg-s": "#2C5846",
+          "line-s": "#7F9A91",
+          "line-hover-s": "#A9BDB5"
         },
         "berry": {
           "bg": "#8C1F50",
@@ -1010,7 +1016,10 @@
           "error": "#FFE9E6",
           "ink-hover": "#FFFFFF",
           "ink-press": "#F2E4EA",
-          "contrast": "Ink 8.4:1, On Berry 7.6:1"
+          "contrast": "Ink 8.4:1, On Berry 7.6:1",
+          "bg-s": "#8C1F50",
+          "line-s": "#BA7996",
+          "line-hover-s": "#D1A5B9"
         },
         "cobalt": {
           "bg": "#1D4A99",
@@ -1025,7 +1034,10 @@
           "error": "#FFE9E6",
           "ink-hover": "#FFFFFF",
           "ink-press": "#E2E9F5",
-          "contrast": "Ink 8.2:1, On Cobalt 7.5:1"
+          "contrast": "Ink 8.2:1, On Cobalt 7.5:1",
+          "bg-s": "#1D4A99",
+          "line-s": "#7792C2",
+          "line-hover-s": "#A5B7D6"
         }
       },
       "families": {
@@ -1103,7 +1115,8 @@
           "paper",
           "paper"
         ]
-      }
+      },
+      "snapTokens": "--bg-s, --line-s and --line-hover-s repeat each tone's --bg, --line and --line-hover but cross with the ink, so a button's fill, outline and label change at the same instant (the One Instant Rule)."
     },
     "shadows": [
       {
@@ -1134,9 +1147,14 @@
         "purpose": "Scale on :active (0.98 buttons, 0.97 Copy)."
       },
       {
+        "name": "control",
+        "value": "120ms",
+        "purpose": "Buttons (background, border and color together), the header pills and the Artifacts rows."
+      },
+      {
         "name": "fast",
         "value": "140ms",
-        "purpose": "Hover, press and color feedback."
+        "purpose": "Hover and color feedback on links, nav, Copy, pause buttons and fields."
       },
       {
         "name": "base",
@@ -1287,7 +1305,7 @@
       "motion": "reduced motion: tone blend 320ms, transforms removed, the brand swaps instantly, CSS animations cut, GSAP moments skipped, carousel starts paused, marquee becomes a still scrollable row, cost bars stand without rising, the grain holds still",
       "autoplay": "the carousel and the marquee hold on hover and keyboard focus and each has a 44px pause button (WCAG 2.2.2); inactive slides are inert; aria-roledescription carousel and slide",
       "steps": "the Process rail marks the current document with aria-current=\"step\"",
-      "header": "transparent, no fill, grain or rule of its own; no strokes, borders, dividers or rules in the header; keyboard focus rings remain (2px Ink, 3px outside)"
+      "header": "transparent above 760px, the page color at 760px and below; no grain of its own and no strokes, borders, dividers or rules; the two header pills are White with Ink text and pin their own ink; keyboard focus rings remain (2px, 3px outside)"
     },
     "content": {
       "source": "content/work/*.md, the Decap CMS collection shared with the Astro site",
@@ -1305,19 +1323,17 @@
         "kind",
         "slides"
       ],
-      "notes": "Drafts are skipped and items sort by order. featured marks the Home carousel (first three); thumbnail falls back to cover. Images live in images/work/<slug>/ and assets/img. Entries with kind: presentation (five, each with slides: N) render as their own Presentations section on Work after the case study grid and do not count as case studies or reach Home. Their 4:3 covers at images/work/<slug>/cover.jpg were composed locally from slide renders; the same layouts are in Figma file ZrwVuagVrhgJdR3s6K7xJG, page \"Portfolio thumbnails\", frames 5:3, 5:7, 5:11, 5:15, 5:19.",
-      "merch": "The Merch page reads its images from images/merch/<slug>.jpg (assets Lucas sent on 9 Oct 2026); the slugs and the campaign's wide and full shots are the MERCH constants in build.py, the captions live in the locales."
+      "notes": "Drafts are skipped and items sort by order. featured marks the Home carousel (first three); thumbnail falls back to cover. Images live in images/work/<slug>/ and assets/img. Entries with kind: presentation and slides: N render as their own Presentations section on Work after the case study grid and do not count as case studies or reach Home; three are published (Epic of Gilgamesh, Buen Camino, Vivenu). One entry per client: a client with a case study keeps only the case study, so the two TAPP decks are draft: true. Deck covers at images/work/<slug>/cover.jpg are 4:3, composed from slide renders.",
+      "merch": "The Merch page reads its images from images/merch/<slug>.jpg (assets Lucas sent on 9 Oct 2026); the slugs and the campaign's wide and full shots are the MERCH constants in build.py, the captions live in the locales.",
+      "artifacts": "artifacts.json: nine entries, one per client, each {title, group (portfolio, showcase, client), repo design-<name>, repo_url, pages_url (GitHub Pages), stack[], uses_claude_runtime, description {en, pt, es}}. build.py artifacts() renders the list by group; site.js swaps the viewer iframe."
     },
     "shareImage": {
-      "url": "https://lucastexr.com/assets/img/og.png",
+      "url": "https://lucastexr-portfolio.netlify.app/assets/img/og.png",
+      "siteUrl": "SITE_URL in build.py (https://lucastexr-portfolio.netlify.app/), the Netlify deploy",
       "size": "1200x630",
-      "pages": "og:image on every page",
-      "figma": {
-        "file": "lucastexr.com Open Graph",
-        "key": "zz6Nty7K3s8dkgoZHLUxle",
-        "frame": "1:2"
-      },
-      "composition": "Field Green ground; the monogram large, cropped off the right and bottom edges at 7% white as texture; the icon, the wordmark and the role line; five pale avatars with client initials, Cream stars, \"30+ clients · 5 countries\"."
+      "pages": "og:image on every page, with og:image:alt from the locale",
+      "source": "og-src/og.html, rendered with headless Chrome (--window-size=1200,630 --screenshot) to assets/img/og.png",
+      "composition": "Field Green ground; the monogram 1100px wide from 700px across, cropped off the right and bottom at 7% Paper as texture; the monogram as a 72px icon top left; the name in Inter 500 at 92px (-0.03em) and the role line at 30px in On Field; five DiceBear Notionists avatars (Zoish, CC0, og-src/av/) in 64px pale circles (Blush, Cream, Mist, Paper, Blush) overlapping 14px with 3px Field Green rings; five Cream stars and \"30+ clients · 5 countries\" at 26px 500."
     },
     "marks": {
       "source": "marks.py (from the files Lucas sent on 9 Oct 2026)",
@@ -1331,17 +1347,17 @@
       "name": "Solid Button",
       "kind": "button",
       "refersTo": "button-solid",
-      "description": "The one primary action in a view; drawn from the tone tokens, so it inverts on the three deeps.",
+      "description": "The one primary action in a view; drawn from the tone tokens, so it inverts on the three deeps. Its label reads the snap page color (--bg-s), so fill and label change at the same instant; hover moves background, border and color together in 120ms.",
       "html": "<div class=\"ds-tones\"><div class=\"ds-paper\"><button class=\"ds-btn ds-btn--solid\" type=\"button\">See the work<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button> <button class=\"ds-btn ds-btn--solid\" type=\"button\" disabled>Sending</button></div><div class=\"ds-green\"><button class=\"ds-btn ds-btn--solid\" type=\"button\">Get in touch<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button></div><div class=\"ds-berry\"><button class=\"ds-btn ds-btn--solid\" type=\"button\">Get in touch</button></div></div>",
-      "css": ".ds-tones { display: grid; gap: 0; } .ds-paper { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-green { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-berry { --bg: #8C1F50; --ink: #FCFCFC; --ink-2: #F7EEF2; --ink-3: #F7EEF2; --line: #BA7996; --line-hover: #D1A5B9; --tile: #6E173E; --surface: #6E173E; --field-line: #D1A5B9; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #F2E4EA; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-btn { font-family: Inter, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 28px; border-radius: 999px; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; cursor: pointer; border: 1px solid var(--line); color: var(--ink); background: transparent; transition: background-color 140ms cubic-bezier(0.25,1,0.5,1), border-color 140ms cubic-bezier(0.25,1,0.5,1), transform 80ms cubic-bezier(0.25,1,0.5,1); } .ds-btn svg { transition: transform 220ms cubic-bezier(0.25,1,0.5,1); } .ds-btn:hover { border-color: var(--line-hover); background: var(--tile); } .ds-btn:hover svg { transform: translateX(3px); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-btn--solid { background: var(--ink); border-color: var(--ink); color: var(--bg); } .ds-btn--solid:hover { background: var(--ink-hover); border-color: var(--ink-hover); } .ds-btn--solid:active { background: var(--ink-press); border-color: var(--ink-press); } .ds-btn:disabled { background: var(--tile); border-color: var(--line); color: var(--ink-2); cursor: not-allowed; transform: none; }"
+      "css": ".ds-tones { display: grid; gap: 0; } .ds-paper { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; --bg-s: #FCFCFC; --line-s: #E4E4E4; --line-hover-s: #C9C9C9; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-green { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; --bg-s: #2C5846; --line-s: #7F9A91; --line-hover-s: #A9BDB5; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-berry { --bg: #8C1F50; --ink: #FCFCFC; --ink-2: #F7EEF2; --ink-3: #F7EEF2; --line: #BA7996; --line-hover: #D1A5B9; --tile: #6E173E; --surface: #6E173E; --field-line: #D1A5B9; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #F2E4EA; --bg-s: #8C1F50; --line-s: #BA7996; --line-hover-s: #D1A5B9; background: var(--bg); padding: 20px; display: flex; gap: 12px; } .ds-btn { font-family: Inter, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 28px; border-radius: 999px; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; cursor: pointer; border: 1px solid var(--line-s); color: var(--ink); background: transparent; transition: background-color 120ms cubic-bezier(0.25,1,0.5,1), border-color 120ms cubic-bezier(0.25,1,0.5,1), color 120ms cubic-bezier(0.25,1,0.5,1), transform 80ms cubic-bezier(0.25,1,0.5,1); } .ds-btn svg { transition: transform 220ms cubic-bezier(0.25,1,0.5,1); } .ds-btn:hover { border-color: var(--line-hover-s); background: color-mix(in oklab, var(--ink) 8%, var(--bg-s)); } .ds-btn:hover svg { transform: translateX(3px); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-btn--solid { background: var(--ink); border-color: var(--ink); color: var(--bg-s); } .ds-btn--solid:hover { background: var(--ink-hover); border-color: var(--ink-hover); } .ds-btn--solid:active { background: var(--ink-press); border-color: var(--ink-press); } .ds-btn:disabled { background: var(--tile); border-color: var(--line); color: var(--ink-2); cursor: not-allowed; transform: none; }"
     },
     {
       "name": "Outline Button",
       "kind": "button",
       "refersTo": "button-outline",
-      "description": "Every secondary action; hover fills with the tone's tile.",
+      "description": "Every secondary action: a snap Hairline outline (--line-s); hover takes --line-hover-s and the tone's Ink at 8% mixed into the snap page color, all in 120ms.",
       "html": "<div class=\"ds-tones\"><div class=\"ds-paper\"><button class=\"ds-btn\" type=\"button\">Get in touch</button></div><div class=\"ds-green\"><button class=\"ds-btn\" type=\"button\">See the résumé<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button></div></div>",
-      "css": ".ds-tones { display: grid; } .ds-paper { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; background: var(--bg); padding: 20px; } .ds-green { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; background: var(--bg); padding: 20px; } .ds-btn { font-family: Inter, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 28px; border-radius: 999px; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; cursor: pointer; border: 1px solid var(--line); color: var(--ink); background: transparent; transition: background-color 140ms cubic-bezier(0.25,1,0.5,1), border-color 140ms cubic-bezier(0.25,1,0.5,1), transform 80ms cubic-bezier(0.25,1,0.5,1); } .ds-btn svg { transition: transform 220ms cubic-bezier(0.25,1,0.5,1); } .ds-btn:hover { border-color: var(--line-hover); background: var(--tile); } .ds-btn:hover svg { transform: translateX(3px); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-btn--solid { background: var(--ink); border-color: var(--ink); color: var(--bg); } .ds-btn--solid:hover { background: var(--ink-hover); border-color: var(--ink-hover); } .ds-btn--solid:active { background: var(--ink-press); border-color: var(--ink-press); } .ds-btn:disabled { background: var(--tile); border-color: var(--line); color: var(--ink-2); cursor: not-allowed; transform: none; }"
+      "css": ".ds-tones { display: grid; } .ds-paper { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --ink-3: #555555; --line: #E4E4E4; --line-hover: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; --field-line: #767676; --error: #8F1F17; --ink-hover: #2A2A2A; --ink-press: #000000; --bg-s: #FCFCFC; --line-s: #E4E4E4; --line-hover-s: #C9C9C9; background: var(--bg); padding: 20px; } .ds-green { --bg: #2C5846; --ink: #FCFCFC; --ink-2: #F1F4F9; --ink-3: #F1F4F9; --line: #7F9A91; --line-hover: #A9BDB5; --tile: #1F4334; --surface: #1F4334; --field-line: #A9BDB5; --error: #FFE9E6; --ink-hover: #FFFFFF; --ink-press: #E6ECEA; --bg-s: #2C5846; --line-s: #7F9A91; --line-hover-s: #A9BDB5; background: var(--bg); padding: 20px; } .ds-btn { font-family: Inter, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 28px; border-radius: 999px; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; cursor: pointer; border: 1px solid var(--line-s); color: var(--ink); background: transparent; transition: background-color 120ms cubic-bezier(0.25,1,0.5,1), border-color 120ms cubic-bezier(0.25,1,0.5,1), color 120ms cubic-bezier(0.25,1,0.5,1), transform 80ms cubic-bezier(0.25,1,0.5,1); } .ds-btn svg { transition: transform 220ms cubic-bezier(0.25,1,0.5,1); } .ds-btn:hover { border-color: var(--line-hover-s); background: color-mix(in oklab, var(--ink) 8%, var(--bg-s)); } .ds-btn:hover svg { transform: translateX(3px); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-btn--solid { background: var(--ink); border-color: var(--ink); color: var(--bg-s); } .ds-btn--solid:hover { background: var(--ink-hover); border-color: var(--ink-hover); } .ds-btn--solid:active { background: var(--ink-press); border-color: var(--ink-press); } .ds-btn:disabled { background: var(--tile); border-color: var(--line); color: var(--ink-2); cursor: not-allowed; transform: none; }"
     },
     {
       "name": "Text Field",
@@ -1355,9 +1371,9 @@
       "name": "Navigation",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "Header nav: seven items (Merch after Work, with a t-shirt icon), icons only before the page scrolls and words only after (hover the strip to see the scrolled state). Icon and word share one grid cell and cross over in about 200ms with no layout shift; the word stays in the DOM. Outline icons at rest, filled for the current page. No strokes, borders or rules in the header; hover is the only color change.",
-      "html": "<div class=\"ds-nav-wrap\"><nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg><span class=\"ds-nl\">Work</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M8.5 3.5 4 5.75 2.75 10l3 1.25V20.5h12.5V11.25l3-1.25L20 5.75 15.5 3.5c-.6 1.5-1.9 2.4-3.5 2.4s-2.9-.9-3.5-2.4Z\"/></svg><span class=\"ds-nl\">Merch</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"3.5\" y=\"3.5\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13.5\" y=\"13.5\" width=\"7\" height=\"7\" rx=\"1.5\"/><path d=\"M7 10.5v3a3 3 0 0 0 3 3h3.5\"/></svg><span class=\"ds-nl\">Process</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M6.5 3h7.5l4 4v13.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V3.5a.5.5 0 0 1 .5-.5Z\"/><path class=\"d\" d=\"M14 3v4h4M9 11.5h6M9 15h6M9 18.5h3.5\"/></svg><span class=\"ds-nl\">Writing</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M3.5 8.5A1.5 1.5 0 0 1 5 7h2.2l1.6-2.2h6.4L16.8 7H19a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5Z\"/><circle class=\"d\" cx=\"12\" cy=\"13\" r=\"3.25\"/></svg><span class=\"ds-nl\">Photography</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle class=\"s\" cx=\"12\" cy=\"8\" r=\"3.75\"/><path class=\"s\" d=\"M4.75 20.25c.7-3.9 3.6-6 7.25-6s6.55 2.1 7.25 6Z\"/></svg><span class=\"ds-nl\">About</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"3\" y=\"5.5\" width=\"18\" height=\"13\" rx=\"2\"/><path class=\"d\" d=\"m3.75 7.5 8.25 5.75 8.25-5.75\"/></svg><span class=\"ds-nl\">Contact</span></a></nav><button class=\"ds-menu\" type=\"button\">Menu</button></div>",
-      "css": ".ds-nav-wrap { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --line: #E4E4E4; --tile: #F2F2F2; --surface: #F2F2F2; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); display: flex; align-items: center; gap: 16px; padding: 12px 20px; } .ds-nav { display: flex; align-items: center; gap: 0; } .ds-nav a { display: inline-grid; place-items: center; min-height: 44px; min-width: 44px; padding: 0 8px; border-radius: 999px; font-size: 15px; letter-spacing: -0.01em; font-weight: 500; color: var(--ink-2); text-decoration: none; transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--ink); } .ds-nav a:focus-visible, .ds-menu:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-nav a > .ds-ni, .ds-nav a > .ds-nl { grid-area: 1 / 1; transition: opacity 200ms cubic-bezier(0.25,1,0.5,1), transform 260ms cubic-bezier(0.22,1,0.36,1); } .ds-nl { opacity: 0; transform: translateY(6px); white-space: nowrap; } .ds-nav-wrap:hover .ds-ni { opacity: 0; transform: translateY(-6px) scale(0.9); } .ds-nav-wrap:hover .ds-nl { opacity: 1; transform: none; transition-delay: 40ms; } .ds-ni { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-ni .s { fill: transparent; transition: fill 140ms cubic-bezier(0.25,1,0.5,1); } [aria-current=\"page\"] > .ds-ni .s { fill: currentColor; } [aria-current=\"page\"] > .ds-ni .d { stroke: var(--bg); } .ds-menu { appearance: none; border: 0; height: 44px; padding: 0 18px; border-radius: 999px; background: color-mix(in oklab, var(--ink) 9%, var(--bg)); color: var(--ink); font: inherit; font-size: 15px; letter-spacing: -0.01em; font-weight: 500; cursor: pointer; transition: background 140ms cubic-bezier(0.25,1,0.5,1); } .ds-menu:hover { background: color-mix(in oklab, var(--ink) 15%, var(--bg)); }"
+      "description": "Header nav: eight items (Work, Merch, Artifacts, Process, Writing, Photography, About, Contact), icons only before the page scrolls and words only after (hover the strip to see the scrolled state). Icon and word share one grid cell and cross over in about 200ms with no layout shift; the word stays in the DOM. Outline icons at rest, filled for the current page. The Menu button is a plain White pill with Ink text and a #F0F0F0 hover. No strokes, borders or rules in the header; hover is the only color change.",
+      "html": "<div class=\"ds-nav-wrap\"><nav class=\"ds-nav\" aria-label=\"Main\"><a href=\"#\" aria-current=\"page\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg><span class=\"ds-nl\">Work</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M8.5 3.5 4 5.75 2.75 10l3 1.25V20.5h12.5V11.25l3-1.25L20 5.75 15.5 3.5c-.6 1.5-1.9 2.4-3.5 2.4s-2.9-.9-3.5-2.4Z\"/></svg><span class=\"ds-nl\">Merch</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"3\" y=\"4.5\" width=\"18\" height=\"15\" rx=\"2\"/><path class=\"d\" d=\"M3.5 8.5h17M6.5 6.5h.01M9 6.5h.01\"/></svg><span class=\"ds-nl\">Artifacts</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"3.5\" y=\"3.5\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect class=\"s\" x=\"13.5\" y=\"13.5\" width=\"7\" height=\"7\" rx=\"1.5\"/><path d=\"M7 10.5v3a3 3 0 0 0 3 3h3.5\"/></svg><span class=\"ds-nl\">Process</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M6.5 3h7.5l4 4v13.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V3.5a.5.5 0 0 1 .5-.5Z\"/><path class=\"d\" d=\"M14 3v4h4M9 11.5h6M9 15h6M9 18.5h3.5\"/></svg><span class=\"ds-nl\">Writing</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path class=\"s\" d=\"M3.5 8.5A1.5 1.5 0 0 1 5 7h2.2l1.6-2.2h6.4L16.8 7H19a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5Z\"/><circle class=\"d\" cx=\"12\" cy=\"13\" r=\"3.25\"/></svg><span class=\"ds-nl\">Photography</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle class=\"s\" cx=\"12\" cy=\"8\" r=\"3.75\"/><path class=\"s\" d=\"M4.75 20.25c.7-3.9 3.6-6 7.25-6s6.55 2.1 7.25 6Z\"/></svg><span class=\"ds-nl\">About</span></a><a href=\"#\"><svg class=\"ds-ni\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect class=\"s\" x=\"3\" y=\"5.5\" width=\"18\" height=\"13\" rx=\"2\"/><path class=\"d\" d=\"m3.75 7.5 8.25 5.75 8.25-5.75\"/></svg><span class=\"ds-nl\">Contact</span></a></nav><button class=\"ds-menu\" type=\"button\">Menu</button></div>",
+      "css": ".ds-nav-wrap { --bg: #EFF5FD; --ink: #141414; --ink-2: #4D4D4D; --line: #D3E0F2; --tile: #FFFFFF; --surface: #FFFFFF; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); display: flex; align-items: center; gap: 16px; padding: 12px 20px; } .ds-nav { display: flex; align-items: center; gap: 0; } .ds-nav a { display: inline-grid; place-items: center; min-height: 44px; min-width: 44px; padding: 0 8px; border-radius: 999px; font-size: 15px; letter-spacing: -0.01em; font-weight: 500; color: var(--ink-2); text-decoration: none; transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--ink); } .ds-nav a:focus-visible, .ds-menu:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-nav a > .ds-ni, .ds-nav a > .ds-nl { grid-area: 1 / 1; transition: opacity 200ms cubic-bezier(0.25,1,0.5,1), transform 260ms cubic-bezier(0.22,1,0.36,1); } .ds-nl { opacity: 0; transform: translateY(6px); white-space: nowrap; } .ds-nav-wrap:hover .ds-ni { opacity: 0; transform: translateY(-6px) scale(0.9); } .ds-nav-wrap:hover .ds-nl { opacity: 1; transform: none; transition-delay: 40ms; } .ds-ni { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-ni .s { fill: transparent; transition: fill 140ms cubic-bezier(0.25,1,0.5,1); } [aria-current=\"page\"] > .ds-ni .s { fill: currentColor; } [aria-current=\"page\"] > .ds-ni .d { stroke: var(--bg); } .ds-menu { appearance: none; border: 0; height: 44px; padding: 0 18px; border-radius: 999px; background: #FFFFFF; color: #141414; font: inherit; font-size: 15px; letter-spacing: -0.01em; font-weight: 500; cursor: pointer; transition: background-color 120ms cubic-bezier(0.25,1,0.5,1); } .ds-menu:hover { background: #F0F0F0; }"
     },
     {
       "name": "Header Brand",
@@ -1379,8 +1395,8 @@
       "name": "Presentation Card",
       "kind": "card",
       "refersTo": null,
-      "description": "Work's Presentations section: CMS entries with kind: presentation and slides: N. Not a link. A 4:3 thumbnail (three slides cascading on a palette color) kept at 4:3 at every width, title, client · year, slide count as a Label, summary in Small Soft Ink at 52ch (four lines at 14px on phones).",
-      "html": "<article class=\"ds-deck\"><div class=\"ds-deck-frame\"><i></i><i></i><i></i></div><div class=\"ds-deck-row\"><div><h3>TAPP, investors round</h3><p class=\"ds-note\">TAPP · 2024</p></div><span class=\"ds-meta\">16 slides</span></div><p class=\"ds-deck-summary\">The 16 slide investors&#39; round pitch for TAPP, a private social network with shopping built in: the market, the problem with public feeds, the product, the revenue model and the team.</p></article>",
+      "description": "Work's Presentations section: three published CMS entries with kind: presentation and slides: N (Epic of Gilgamesh, Buen Camino, Vivenu); one entry per client, so decks of a client with a case study stay drafts. Not a link. A 4:3 thumbnail (three slides cascading on a palette color) kept at 4:3 at every width, title, client · year, slide count as a Label, summary in Small Soft Ink at 52ch (four lines at 14px on phones).",
+      "html": "<article class=\"ds-deck\"><div class=\"ds-deck-frame\"><i></i><i></i><i></i></div><div class=\"ds-deck-row\"><div><h3>Vivenu, embedded integration team</h3><p class=\"ds-note\">Vivenu</p></div><span class=\"ds-meta\">10 slides</span></div><p class=\"ds-deck-summary\">A 10 slide Fetchly proposal for Vivenu: one senior integration engineer embedded in their team, with a whole delivery organization behind them, scaled only when the work requires it.</p></article>",
       "css": ".ds-deck { font-family: Inter, system-ui, sans-serif; color: #141414; max-width: 420px; } .ds-deck-frame { position: relative; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #EFF5FD; } .ds-deck-frame i { position: absolute; width: 58%; aspect-ratio: 16 / 9; background: #FFFFFF; border-radius: 4px; outline: 1px solid #D3E0F2; } .ds-deck-frame i:nth-child(1) { left: 10%; top: 14%; } .ds-deck-frame i:nth-child(2) { left: 21%; top: 30%; } .ds-deck-frame i:nth-child(3) { left: 32%; top: 46%; } .ds-deck-row { margin-top: 20px; display: flex; justify-content: space-between; align-items: start; gap: 24px; } .ds-deck h3 { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.25; } .ds-note { margin: 6px 0 0; font-size: 15px; color: #4D4D4D; } .ds-meta { padding-top: 8px; flex-shrink: 0; font-size: 11px; letter-spacing: 0.14em; font-weight: 500; text-transform: uppercase; color: #4D4D4D; } .ds-deck-summary { margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #4D4D4D; max-width: 52ch; }"
     },
     {
@@ -1411,7 +1427,7 @@
       "name": "Grain",
       "kind": "custom",
       "refersTo": null,
-      "description": "Animated static after CodePen iceable/yLBrZOd (MIT): assets/img/noise.png (seven grays, evenly mixed) in overlay on a fixed layer under the content, 0.42 on the pales and 0.12 on the deeps. Jitters only while scrolling and for 3s after arrival (.is-live; hover the sample), never with reduced motion. Overlay is symmetric, so average color and contrast hold.",
+      "description": "Animated static after CodePen iceable/yLBrZOd (MIT): assets/img/noise.png (seven grays, evenly mixed) in overlay on a fixed layer under the content, 0.42 on the pales and 0.12 on the deeps. Jitters only while scrolling and for 3s after arrival (.is-live; hover the sample), never with reduced motion. Overlay is symmetric, so average color and contrast hold. The header carries none of its own: transparent above 760px, it shows the page's grain; at 760px and below its fill covers it.",
       "html": "<div class=\"ds-grain-pair\"><div class=\"ds-grain-swatch\" style=\"--bg:#EFF5FD;--grain:0.42\"><i></i><span>Mist, 0.42</span></div><div class=\"ds-grain-swatch\" style=\"--bg:#1D4A99;--grain:0.12;color:#FCFCFC\"><i></i><span>Cobalt, 0.12</span></div></div>",
       "css": ".ds-grain-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-family: Inter, system-ui, sans-serif; } .ds-grain-swatch { position: relative; overflow: hidden; isolation: isolate; height: 140px; border-radius: 10px; background: var(--bg); color: #141414; display: grid; align-items: end; padding: 14px; font-size: 15px; font-weight: 500; } .ds-grain-swatch i { position: absolute; inset: -50%; z-index: -1; pointer-events: none; mix-blend-mode: overlay; opacity: var(--grain); background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E\"); } .ds-grain-pair:hover .ds-grain-swatch i { animation: ds-jitter 0.2s infinite; } @keyframes ds-jitter { 0% { transform: translate(0,0); } 20% { transform: translate(-10%,5%); } 40% { transform: translate(-5%,15%); } 60% { transform: translate(15%,0); } 80% { transform: translate(-15%,0); } 100% { transform: translate(5%,0); } } @media (prefers-reduced-motion: reduce) { .ds-grain-pair:hover .ds-grain-swatch i { animation: none; } }"
     },
@@ -1498,16 +1514,24 @@
     {
       "name": "Language Picker",
       "kind": "nav",
-      "description": "One 44px filled pill with the current code (Control Fill, no border; Control Fill Hover on hover and while open). Hover, focus or tap morphs it (clip-path, 520ms) into a 264px panel in the tone's surface with the language panel shadow and no border: three rows with a gliding highlight and split flap codes. Escape, arrows, outside click.",
+      "description": "One 44px White pill with Ink text and the current code (no border, no effect; #F0F0F0 on hover and while open, 120ms). Hover, focus or tap morphs it (clip-path, 520ms) into a 264px White panel, 22px corners, with the language panel shadow and no border; the panel pins its own ink, Soft Ink, line and tile tokens so it reads the same on every tone. Three rows with a gliding highlight and split flap codes. Escape, arrows, outside click. Shown here on Field.",
       "html": "<div class=\"ds-lp\"><button class=\"ds-lp-trigger\" type=\"button\" aria-expanded=\"true\">EN <svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m7 10 5 5 5-5\"/></svg></button><nav class=\"ds-lp-panel\" aria-label=\"Language\"><a href=\"#\" aria-current=\"true\"><b>EN</b><span>English<small>United States</small></span></a><a href=\"#\"><b>PT</b><span>Português<small>Brasil</small></span></a><a href=\"#\"><b>ES</b><span>Español<small>Latinoamérica</small></span></a></nav></div>",
-      "css": ".ds-lp { --bg: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --line: #E4E4E4; --tile: #F2F2F2; --surface: #F2F2F2; font-family: Inter, system-ui, sans-serif; display: inline-grid; justify-items: end; gap: 8px; padding: 12px; background: var(--bg); } .ds-lp-trigger { appearance: none; border: 0; display: inline-flex; align-items: center; gap: 6px; height: 44px; min-width: 64px; padding: 0 12px 0 16px; border-radius: 999px; background: color-mix(in oklab, var(--ink) 9%, var(--bg)); color: var(--ink); font: inherit; font-size: 13px; letter-spacing: 0.02em; font-weight: 500; cursor: pointer; transition: background-color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-lp-trigger:hover, .ds-lp-trigger[aria-expanded=\"true\"] { background: color-mix(in oklab, var(--ink) 15%, var(--bg)); } .ds-lp-trigger:focus-visible, .ds-lp-panel a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-lp-panel { width: 264px; padding: 8px; display: grid; background: var(--surface); border-radius: 22px; box-shadow: 0 18px 40px rgba(15, 15, 20, 0.14), 0 2px 8px rgba(15, 15, 20, 0.06); } .ds-lp-panel a { display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 8px; min-height: 52px; padding: 6px 12px; border-radius: 14px; color: var(--ink); text-decoration: none; transition: background-color 140ms; } .ds-lp-panel a:hover, .ds-lp-panel a[aria-current=\"true\"] { background: color-mix(in srgb, var(--ink) 9%, transparent); } .ds-lp-panel b { font-size: 13px; font-weight: 500; letter-spacing: 0.02em; color: var(--ink-2); } .ds-lp-panel a[aria-current=\"true\"] b { color: var(--ink); } .ds-lp-panel span { display: grid; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.25; } .ds-lp-panel small { font-size: 13px; font-weight: 400; color: var(--ink-2); }"
+      "css": ".ds-lp { --bg: #2C5846; font-family: Inter, system-ui, sans-serif; display: inline-grid; justify-items: end; gap: 8px; padding: 12px; background: var(--bg); } .ds-lp-trigger { --ink: #141414; --ink-2: #4D4D4D; appearance: none; border: 0; display: inline-flex; align-items: center; gap: 6px; height: 44px; min-width: 64px; padding: 0 12px 0 16px; border-radius: 999px; background: #FFFFFF; color: #141414; font: inherit; font-size: 13px; letter-spacing: 0.02em; font-weight: 500; cursor: pointer; transition: background-color 120ms cubic-bezier(0.25,1,0.5,1); } .ds-lp-trigger:hover, .ds-lp-trigger[aria-expanded=\"true\"] { background: #F0F0F0; } .ds-lp-trigger:focus-visible, .ds-lp-panel a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-lp-panel { --ink: #141414; --ink-2: #4D4D4D; --tile: #F2F2F2; --surface: #FFFFFF; --line: #E4E4E4; width: 264px; padding: 8px; display: grid; background: #FFFFFF; color: #141414; border-radius: 22px; box-shadow: 0 18px 40px rgba(15, 15, 20, 0.14), 0 2px 8px rgba(15, 15, 20, 0.06); } .ds-lp-panel a { display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 8px; min-height: 52px; padding: 6px 12px; border-radius: 14px; color: var(--ink); text-decoration: none; transition: background-color 140ms; } .ds-lp-panel a:hover, .ds-lp-panel a[aria-current=\"true\"] { background: color-mix(in srgb, var(--ink) 9%, transparent); } .ds-lp-panel b { font-size: 13px; font-weight: 500; letter-spacing: 0.02em; color: var(--ink-2); } .ds-lp-panel a[aria-current=\"true\"] b { color: var(--ink); } .ds-lp-panel span { display: grid; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.25; } .ds-lp-panel small { font-size: 13px; font-weight: 400; color: var(--ink-2); }"
     },
     {
       "name": "Hero Facts",
       "kind": "content",
-      "description": "The close of the Home hero copy, 48px under the buttons: the three figures (years in design, designers led, clients served) in Title weight Ink over Small Soft Ink labels, then the companies Lucas worked at as their own marks in Soft Ink (Ink on hover), balanced by height; a PNG mark drawn through a CSS mask; a typeset name where no mark exists.",
-      "html": "<div class=\"ds-hf\"><ul class=\"ds-hf-figs\"><li><strong>12</strong> years in design</li><li><strong>14</strong> designers led</li><li><strong>40+</strong> clients served</li></ul><div class=\"ds-hf-worked\"><span>Worked at</span><ul><li>Fetchly</li><li>quarter.digital</li><li>Miscreants</li><li>SaaSMouth</li></ul></div></div>",
-      "css": ".ds-hf { --ink: #FCFCFC; --ink-2: #F1F4F9; background: #2C5846; color: var(--ink); font-family: Inter, system-ui, sans-serif; display: grid; gap: 22px; max-width: 36em; padding: 24px; } .ds-hf ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; } .ds-hf-figs { gap: 32px; } .ds-hf-figs li { display: flex; align-items: baseline; gap: 8px; font-size: 15px; color: var(--ink-2); } .ds-hf-figs strong { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.2; font-variant-numeric: tabular-nums; color: var(--ink); } .ds-hf-worked { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; } .ds-hf-worked > span { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); } .ds-hf-worked ul { gap: 12px 32px; } .ds-hf-worked li { font: 600 18px/1 Inter, system-ui, sans-serif; letter-spacing: -0.03em; color: var(--ink-2); transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-hf-worked li:hover { color: var(--ink); }"
+      "description": "The close of the Home hero copy, 48px under the buttons: the three figures (years in design, designers led, clients served) in Title weight Ink over Small Soft Ink labels, then the companies Lucas worked at as their own marks in Soft Ink (Ink on hover), balanced by height, with no visible label (the list is named \"Worked at\" for assistive tech); a PNG mark drawn through a CSS mask; a typeset name where no mark exists.",
+      "html": "<div class=\"ds-hf\"><ul class=\"ds-hf-figs\"><li><strong>12</strong> years in design</li><li><strong>14</strong> designers led</li><li><strong>40+</strong> clients served</li></ul><div class=\"ds-hf-worked\"><ul aria-label=\"Worked at\"><li>Fetchly</li><li>quarter.digital</li><li>Miscreants</li><li>SaaSMouth</li></ul></div></div>",
+      "css": ".ds-hf { --ink: #FCFCFC; --ink-2: #F1F4F9; background: #2C5846; color: var(--ink); font-family: Inter, system-ui, sans-serif; display: grid; gap: 22px; max-width: 36em; padding: 24px; } .ds-hf ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; } .ds-hf-figs { gap: 32px; } .ds-hf-figs li { display: flex; align-items: baseline; gap: 8px; font-size: 15px; color: var(--ink-2); } .ds-hf-figs strong { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.2; font-variant-numeric: tabular-nums; color: var(--ink); } .ds-hf-worked { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; } .ds-hf-worked ul { gap: 12px 32px; } .ds-hf-worked li { font: 600 18px/1 Inter, system-ui, sans-serif; letter-spacing: -0.03em; color: var(--ink-2); transition: color 140ms cubic-bezier(0.25,1,0.5,1); } .ds-hf-worked li:hover { color: var(--ink); }"
+    },
+    {
+      "name": "Artifacts List and Viewer",
+      "kind": "custom",
+      "refersTo": "art-item",
+      "description": "Artifacts page (Paper): a 4fr list by group (Label headings) of row links with name, description and stack chips, beside a sticky 8fr viewer with the title, two compact outline buttons and a White iframe frame min(76vh, 880px). The chosen row carries aria-current and the surface fill; JavaScript swaps the iframe, without it every row is a plain link. Stacks at 900px. One entry per client.",
+      "html": "<div class=\"ds-art\"><nav class=\"ds-art-list\" aria-label=\"All artifacts\"><h3 class=\"ds-meta\">Client work</h3><ul><li><a class=\"ds-art-item\" href=\"#\" aria-current=\"true\"><span class=\"ds-art-name\">Spyderco 2.0 Roadmap</span><span class=\"ds-art-desc\">A design timeline for the Spyderco 2.0 store in two week sprints, from MVP pages in October 2026 to final design approval in March 2027.</span><span class=\"ds-art-stack\"><span>HTML, CSS, vanilla JS</span><span>Light and dark themes</span></span></a></li><li><a class=\"ds-art-item\" href=\"#\"><span class=\"ds-art-name\">Hive Access Model</span><span class=\"ds-art-desc\">The HIVE platform&#39;s access architecture: tenant scoped login, three verticals and a permissions matrix for nine roles.</span><span class=\"ds-art-stack\"><span>HTML, CSS, no JavaScript</span><span>Inline SVG diagrams</span></span></a></li></ul></nav><div class=\"ds-art-viewer\"><div class=\"ds-art-bar\"><p class=\"ds-art-now\">Spyderco 2.0 Roadmap</p><div class=\"ds-art-links\"><a class=\"ds-btn\" href=\"#\">Open in a new tab</a><a class=\"ds-btn\" href=\"#\">Repository</a></div></div><div class=\"ds-art-frame\"></div></div></div>",
+      "css": ".ds-art { --bg: #FCFCFC; --bg-s: #FCFCFC; --ink: #141414; --ink-2: #4D4D4D; --line-s: #E4E4E4; --line-hover-s: #C9C9C9; --tile: #F2F2F2; --surface: #F2F2F2; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, sans-serif; display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 28px; padding: 20px; align-items: start; } .ds-meta { margin: 0; font-size: 11px; letter-spacing: 0.14em; font-weight: 500; text-transform: uppercase; color: var(--ink-2); } .ds-art-list ul { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 2px; } .ds-art-item { display: grid; gap: 6px; padding: 14px 16px; border-radius: 10px; color: var(--ink); text-decoration: none; transition: background-color 120ms cubic-bezier(0.25,1,0.5,1); } .ds-art-item:hover { background: var(--tile); } .ds-art-item[aria-current=\"true\"] { background: var(--surface); } .ds-art-item:focus-visible, .ds-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; } .ds-art-name { font-size: 16px; font-weight: 500; letter-spacing: -0.01em; } .ds-art-desc { font-size: 15px; line-height: 1.5; color: var(--ink-2); } .ds-art-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; } .ds-art-stack span { font-size: 12px; line-height: 1.4; padding: 3px 9px; border-radius: 999px; background: color-mix(in oklab, var(--ink) 7%, var(--bg)); color: var(--ink-2); } .ds-art-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; } .ds-art-now { margin: 0; font-size: 22px; font-weight: 500; letter-spacing: -0.015em; } .ds-art-links { display: flex; gap: 8px; flex-wrap: wrap; } .ds-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line-s); color: var(--ink); text-decoration: none; font-size: 15px; font-weight: 500; transition: background-color 120ms cubic-bezier(0.25,1,0.5,1), border-color 120ms cubic-bezier(0.25,1,0.5,1), color 120ms cubic-bezier(0.25,1,0.5,1); } .ds-btn:hover { border-color: var(--line-hover-s); background: color-mix(in oklab, var(--ink) 8%, var(--bg-s)); } .ds-art-frame { height: 320px; border-radius: 10px; background: #FFFFFF; outline: 1px solid #E4E4E4; }"
     },
     {
       "name": "Merch Grid",
@@ -1520,16 +1544,17 @@
   ],
   "narrative": {
     "northStar": "The Quiet Portfolio",
-    "overview": "Ink on one color at a time, and the work. The interface is a grid that steps back so client screens, identities and photographs carry the detail, while the page itself changes tone as the reader moves through it: it opens on a deep tone or a pale one, settles into the pales (Blush, Mist, Cream) or Paper while it explains and proves, and closes deep, in Field unless the page names Berry or Cobalt, before the footer brings it back to Paper. Only one tone fills the screen at any moment. There are no colored blocks and no sheets laid over each other; the change is a slow blend of the whole page under a fine grain that moves only while the page does. The header is transparent, so the page shows through it. It carries Lucas's two marks in one place, the ibis at the top of the page and the texr wordmark once the page scrolls, and no lines at all. Type does the hierarchy alone: one large, tightly tracked display voice, a calm reading size, and small uppercase labels kept for short facts (a year, a field name). The nav reads in sentence case.\n\nThe components should feel mature and useful, and quietly show product and front end dexterity: every control is snappy, has all of its states, and meets WCAG 2.1 AAA on all seven tones. The craft is in what a visitor never has to think about: targets never smaller than a fingertip, contrast that holds while the page changes color, text that never fades through its own background, errors that name the fix, a phone menu that locks the page behind it, and copy results spoken to screen readers.\n\nTwo authored moments carry the personality. Athos Bulcão's tiles, the ones that line Brasília, appear as a full wall spelling LUCAS on About and as a two row ribbon on every other page (at the foot of the opening section, or of the closing one on Home), in one color only: Ink letters on a light ceramic panel on the wall, the page's own ink on the ribbon. The footer badge builds itself as it scrolls into view. Two quieter layers sit around them as texture. Blocos close most sections: a short strip of Bulcão's dove from the Igrejinha, drawn as a line in the page's own ink, and on one or two sections a page the dove or Lucas's ibis blown up behind the content. A grain of animated static, after the CodePen iceable/yLBrZOd, lies under the content on every tone and jitters only while the page scrolls and for a moment after arrival. Everything else is still: sections do not animate in. Two quieter movements live in the Home hero: a carousel that crossfades between three featured projects, and a slow marquee of the tools Lucas works in. Both are plain CSS, both hold on hover or focus, and both carry a pause button.\n\nThe Process page tells how the team works from three documents (BRS, SRS, SDD) through the same funnel of tones, with a step rail that follows the reader through the documents and a cost figure that rises once. The Merch page shows a Fetchly merch line from the brand book out, as image grids on Paper and the pales in nearly square frames.\n\nDensity is generous. Sections breathe at 72px to 128px, cards sit on a 32px gutter, and boxes appear only around images, the paper objects (business card, résumé), the surface cards (voices, the About stats cards, contact form), the document chips on Process and the footer tab. The site ships in English, Brazilian Portuguese and Latin American Spanish from one set of templates.",
+    "overview": "Ink on one color at a time, and the work. The interface is a grid that steps back so client screens, identities and photographs carry the detail, while the page itself changes tone as the reader moves through it: it opens on a deep tone or a pale one, settles into the pales (Blush, Mist, Cream) or Paper while it explains and proves, and closes deep, in Field unless the page names Berry or Cobalt, before the footer brings it back to Paper. Only one tone fills the screen at any moment. There are no colored blocks and no sheets laid over each other; the change is a slow blend of the whole page under a fine grain that moves only while the page does. The header is transparent on wider screens, so the page shows through it, and takes the page color on phones. It carries Lucas's two marks in one place, the ibis at the top of the page and the texr wordmark once the page scrolls, two plain white control pills, and no lines at all. Type does the hierarchy alone: one large, tightly tracked display voice, a calm reading size, and small uppercase labels kept for short facts (a year, a field name). The nav reads in sentence case.\n\nThe components should feel mature and useful, and quietly show product and front end dexterity: every control is snappy, has all of its states, and meets WCAG 2.1 AAA on all seven tones. The craft is in what a visitor never has to think about: targets never smaller than a fingertip, contrast that holds while the page changes color, text that never fades through its own background, errors that name the fix, a phone menu that locks the page behind it, and copy results spoken to screen readers.\n\nTwo authored moments carry the personality. Athos Bulcão's tiles, the ones that line Brasília, appear as a full wall spelling LUCAS on About and as a two row ribbon on every other page (at the foot of the opening section, or of the closing one on Home), in one color only: Ink letters on a light ceramic panel on the wall, the page's own ink on the ribbon. The footer badge builds itself as it scrolls into view. Two quieter layers sit around them as texture. Blocos close most sections: a short strip of Bulcão's dove from the Igrejinha, drawn as a line in the page's own ink, and on one or two sections a page the dove or Lucas's ibis blown up behind the content. A grain of animated static, after the CodePen iceable/yLBrZOd, lies under the content on every tone and jitters only while the page scrolls and for a moment after arrival. Everything else is still: sections do not animate in. Two quieter movements live in the Home hero: a carousel that crossfades between three featured projects, and a slow marquee of the tools Lucas works in. Both are plain CSS, both hold on hover or focus, and both carry a pause button.\n\nThe Process page tells how the team works from three documents (BRS, SRS, SDD) through the same funnel of tones, with a step rail that follows the reader through the documents and a cost figure that rises once. The Merch page shows a Fetchly merch line from the brand book out, as image grids on Paper and the pales in nearly square frames. The Artifacts page lists what Lucas has built with Claude, one entry per client, beside a live viewer that opens each one in place.\n\nDensity is generous. Sections breathe at 72px to 128px, cards sit on a 32px gutter, and boxes appear only around images, the paper objects (business card, résumé), the surface cards (voices, the About stats cards, contact form), the document chips on Process, the Artifacts viewer and the footer tab. The site ships in English, Brazilian Portuguese and Latin American Spanish from one set of templates.",
     "keyCharacteristics": [
       "Scroll driven tone: seven tones (Paper, the pales Blush, Mist and Cream with black text, the deeps Field, Berry and Cobalt with white text), one at a time, blended over 800ms. Every page closes deep and ends on the Paper footer.",
       "One typeface, Inter, with its optical size axis on so display sizes tighten and small sizes open.",
       "Hairline rules instead of cards. A 1px Ink rule marks the top of an indexed column.",
       "Pill buttons, 10px image frames (2px on Merch), 14px business card, a 48px footer tab.",
-      "No underlines on any link. The header has no strokes, borders, dividers or rules; its controls carry a fill and hover is its only color change. Elsewhere hover shifts color to Soft Ink or moves an arrow.",
-      "Lucas's marks share one cell in a transparent header: the ibis stands large at the top of the page and gives way on the first scroll to the texr wordmark at 20px. The ibis is also on the business card and the favicon.",
+      "No underlines on any link. The header has no strokes, borders, dividers or rules; its two controls are plain white pills, and hover is its only color change. Elsewhere hover shifts color to Soft Ink or moves an arrow.",
+      "Lucas's marks share one cell in the header: the ibis stands large at the top of the page and gives way on the first scroll to the texr wordmark at 20px. The ibis is also on the business card and the favicon.",
       "WCAG 2.1 AAA as a floor: 7:1 text on every tone, 44px targets, 1.5 line spacing in running text, expanded abbreviations.",
-      "Snappy CSS motion (140ms hover and press, 220ms icons and menus); GSAP for the two authored moments and the blocos only.",
+      "Snappy CSS motion (120ms for buttons, header pills and list rows, 140ms for other hover and color changes, 220ms icons and menus); GSAP for the two authored moments and the blocos only.",
+      "A button changes all at once: fill, outline and label read snap tokens that cross with the ink, so no part of it lags the others.",
       "An animated grain under the content on every tone: seven grays in overlay, 0.42 on the pales and 0.12 on the deeps, jittering only while scrolling and for 3s after arrival, never with reduced motion.",
       "Blocos in outline: a 2 by 8 strip of Bulcão's dove in the page's ink at the end of most sections, and on one or two sections a page the dove or the ibis blown up behind the content.",
       "Anything that moves on its own (the carousel, the marquee) holds on hover or focus and has a 44px pause button."
@@ -1553,6 +1578,11 @@
       {
         "name": "The Ink Never Fades Rule",
         "body": "Surfaces (`--bg`, `--line`, `--line-hover`, `--tile`, `--surface`) blend over the full tone time; the ink tokens hold, then cross in one step at 42% of the blend. A page turning from Field to light would otherwise carry the text through the background's own luminance and blank it. With reduced motion the blend shortens to 320ms and the same 42% rule applies.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Instant Rule",
+        "body": "A button's fill, outline and label change at the same instant. Buttons draw their page color and lines from the snap tokens (`--bg-s`, `--line-s`, `--line-hover-s`), which cross in one step with the ink at 42% of the tone time instead of blending, and their hover moves background, border and color together over 120ms. A button never shows a new label on an old fill, or an outline that drifts behind its text.",
         "section": "colors"
       },
       {
@@ -1587,28 +1617,33 @@
       "Do check every new text color on all seven tones: 7:1, or 4.5:1 for large text. If it cannot pass on all of them, give the element fixed colors of its own.",
       "Do draw new chrome from the tone tokens (`--bg`, `--ink`, `--ink-2`, `--line`, `--tile`, `--surface`) so it changes with the page.",
       "Do make every control at least 44 by 44px and give it hover, focus, active and disabled states before it ships.",
-      "Do keep hover and press feedback at 140ms or faster, and state motion under 420ms; the tone blend (800ms), the ribbon's dimming, the stats bars and split bar, the cost bars, the carousel's crossfade and settle, the sky on the card, the two GSAP moments, the brand swap (ibis 480ms, texr 420ms), the grain and the blocos are the exceptions.",
+      "Do keep hover and press feedback at 140ms or faster (120ms for buttons, header pills and list rows), and state motion under 420ms; the tone blend (800ms), the ribbon's dimming, the stats bars and split bar, the cost bars, the carousel's crossfade and settle, the sky on the card, the two GSAP moments, the brand swap (ibis 480ms, texr 420ms), the grain and the blocos are the exceptions.",
       "Do give anything that moves on its own a 44px pause button, and hold it on hover and keyboard focus (WCAG 2.2.2).",
       "Do honour reduced motion: the tone blend shortens to 320ms, transforms go, the brand swaps instantly, the tiles and badge stay still, the carousel starts paused, the marquee becomes a still row that scrolls, and the grain holds still.",
       "Do write labels as two or three words; anything longer is a sentence case note.",
       "Do expand an abbreviation the first time it appears on a page.",
       "Do add copy to all three locale files together.",
       "Do keep strips after a section's content and quieter than the type, and keep bursts under every piece of content, as a line or a watermark that leaves text at 7:1.",
-      "Do keep the grain under the content: anything that should cover it carries its own opaque fill."
+      "Do keep the grain under the content: anything that should cover it carries its own opaque fill.",
+      "Do draw a button's fill, outline and label from the snap tokens (`--bg-s`, `--line-s`, `--line-hover-s`) with the ink, so all three change at the same instant (the One Instant Rule).",
+      "Do keep one entry per client, in Work and in Artifacts. A client with a case study shows the case study only; its other decks or builds stay drafts.",
+      "Do keep the header controls as plain White pills with Ink text and a #F0F0F0 hover, pinning their own ink, on every tone."
     ],
     "donts": [
       "Don't underline links or abbreviations. Hover is a color shift or a moving arrow.",
-      "Don't draw strokes, borders, dividers or rules anywhere in the header (Lucas, 9 Oct 2026). Its controls carry a fill, hover is its only color change, and keyboard focus rings stay.",
+      "Don't draw strokes, borders, dividers or rules anywhere in the header (Lucas, 9 Oct 2026). Its controls are White pills, hover is its only color change, and keyboard focus rings stay.",
+      "Don't put liquid glass, blur or translucency on the header pills or panels. It was tried and removed; the pills stay plain White.",
       "Don't put a small uppercase label above a heading. The heading speaks for itself.",
       "Don't repeat the same figures on one page.",
       "Don't add icons to service lists or project cards; icons belong to the nav, contact facts and actions.",
-      "Don't add soft shadows beyond the open language panel, painted gradients or translucent blurred chrome. The header is transparent, with no fill or effect of its own. The marquee's edge fade is a mask on the row, not a color, and stays the only one.",
+      "Don't add soft shadows beyond the open language panel, painted gradients or translucent blurred chrome. The header has no effect of its own: transparent above 760px, the page color at 760px and below. The marquee's edge fade is a mask on the row, not a color, and stays the only one.",
       "Don't fade ink with the background; it crosses in one step.",
       "Don't put a deep band (Field, Berry, Cobalt) in the middle of a page; the deeps open or close it. About's questions, after the Field résumé stage, are the one band past the close.",
       "Don't add a mid pink, a mid blue or a second green page tone. Pink and blue are very light with black text or deep with white text; green is Field.",
       "Don't glaze the ribbon, the blocos or the wall in palette colors. The ribbon and blocos are the page's own ink and the wall is Ink on its ceramic panel.",
       "Don't put a burst on the opening section, on Paper, or on a closing or action band.",
-      "Don't animate section entrances. Stillness is what makes the badge and the tiles land."
+      "Don't animate section entrances. Stillness is what makes the badge and the tiles land.",
+      "Don't show photographs or likenesses of real strangers as social proof. Faces in proof are illustrated (the share image uses CC0 DiceBear Notionists)."
     ]
   }
 }

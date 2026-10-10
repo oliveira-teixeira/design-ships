@@ -49,8 +49,7 @@ colors:
   tile-grout: "#D9D9D6"
   tile-faint: "#DEDEDB"
   sky-arc: "#9A9A9A"
-  control-fill: "#E4E4E4"
-  control-fill-hover: "#D4D4D4"
+  control-hover: "#F0F0F0"
 typography:
   display:
     fontFamily: "Inter, system-ui, sans-serif"
@@ -137,6 +136,11 @@ typography:
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: "0.04em"
+  chip:
+    fontFamily: "Inter, system-ui, sans-serif"
+    fontSize: "0.75rem"
+    fontWeight: 400
+    lineHeight: 1.4
   label:
     fontFamily: "Inter, system-ui, sans-serif"
     fontSize: "0.6875rem"
@@ -153,6 +157,8 @@ rounded:
   field: "8px"
   frame: "10px"
   card: "14px"
+  panel-row: "14px"
+  panel: "22px"
   tab-phone: "28px"
   tab: "48px"
   pill: "999px"
@@ -173,6 +179,8 @@ spacing:
   texr: "20px"
   texr-phone: "18px"
   marquee-gap: "clamp(40px, 4.5vw, 64px)"
+  art-frame: "min(76vh, 880px)"
+  art-frame-stacked: "72vh"
 components:
   button-solid:
     backgroundColor: "{colors.ink}"
@@ -201,7 +209,7 @@ components:
     padding: "0 28px"
     height: "48px"
   button-outline-hover:
-    backgroundColor: "{colors.tile}"
+    backgroundColor: "color-mix(in oklab, var(--ink) 8%, var(--bg-s))"
   button-outline-deep:
     backgroundColor: "transparent"
     textColor: "{colors.deep-ink}"
@@ -239,22 +247,33 @@ components:
     width: "44px"
     height: "44px"
   lang-trigger:
-    backgroundColor: "{colors.control-fill}"
+    backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
     rounded: "{rounded.pill}"
     padding: "0 12px 0 16px"
     height: "44px"
   lang-trigger-hover:
-    backgroundColor: "{colors.control-fill-hover}"
+    backgroundColor: "{colors.control-hover}"
+  lang-panel:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.panel}"
+    padding: "52px 8px 8px"
+    width: "264px"
+  lang-panel-row:
+    textColor: "{colors.ink}"
+    rounded: "{rounded.panel-row}"
+    padding: "6px 12px"
+    height: "52px"
   menu-button:
-    backgroundColor: "{colors.control-fill}"
+    backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
     typography: "{typography.nav}"
     rounded: "{rounded.pill}"
     padding: "0 18px"
     height: "44px"
   menu-button-hover:
-    backgroundColor: "{colors.control-fill-hover}"
+    backgroundColor: "{colors.control-hover}"
   image-frame:
     backgroundColor: "{colors.tile}"
     rounded: "{rounded.frame}"
@@ -385,6 +404,31 @@ components:
   document-mark:
     textColor: "{colors.ink}"
     typography: "{typography.document-mark}"
+  art-item:
+    backgroundColor: "transparent"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.frame}"
+    padding: "14px 16px"
+  art-item-hover:
+    backgroundColor: "{colors.tile}"
+  art-item-current:
+    backgroundColor: "{colors.tile}"
+  art-stack-chip:
+    backgroundColor: "color-mix(in oklab, var(--ink) 7%, var(--bg))"
+    textColor: "{colors.ink-soft}"
+    typography: "{typography.chip}"
+    rounded: "{rounded.pill}"
+    padding: "3px 9px"
+  art-link-button:
+    backgroundColor: "transparent"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    padding: "0 16px"
+    height: "44px"
+  art-frame:
+    backgroundColor: "{colors.white}"
+    rounded: "{rounded.frame}"
+    height: "{spacing.art-frame}"
 ---
 # Design System: lucastexr.com
 
@@ -392,25 +436,26 @@ components:
 
 **Creative North Star: "The Quiet Portfolio"**
 
-Ink on one color at a time, and the work. The interface is a grid that steps back so client screens, identities and photographs carry the detail, while the page itself changes tone as the reader moves through it: it opens on a deep tone or a pale one, settles into the pales (Blush, Mist, Cream) or Paper while it explains and proves, and closes deep, in Field unless the page names Berry or Cobalt, before the footer brings it back to Paper. Only one tone fills the screen at any moment. There are no colored blocks and no sheets laid over each other; the change is a slow blend of the whole page under a fine grain that moves only while the page does. The header is transparent, so the page shows through it. It carries Lucas's two marks in one place, the ibis at the top of the page and the texr wordmark once the page scrolls, and no lines at all. Type does the hierarchy alone: one large, tightly tracked display voice, a calm reading size, and small uppercase labels kept for short facts (a year, a field name). The nav reads in sentence case.
+Ink on one color at a time, and the work. The interface is a grid that steps back so client screens, identities and photographs carry the detail, while the page itself changes tone as the reader moves through it: it opens on a deep tone or a pale one, settles into the pales (Blush, Mist, Cream) or Paper while it explains and proves, and closes deep, in Field unless the page names Berry or Cobalt, before the footer brings it back to Paper. Only one tone fills the screen at any moment. There are no colored blocks and no sheets laid over each other; the change is a slow blend of the whole page under a fine grain that moves only while the page does. The header is transparent on wider screens, so the page shows through it, and takes the page color on phones. It carries Lucas's two marks in one place, the ibis at the top of the page and the texr wordmark once the page scrolls, two plain white control pills, and no lines at all. Type does the hierarchy alone: one large, tightly tracked display voice, a calm reading size, and small uppercase labels kept for short facts (a year, a field name). The nav reads in sentence case.
 
 The components should feel mature and useful, and quietly show product and front end dexterity: every control is snappy, has all of its states, and meets WCAG 2.1 AAA on all seven tones. The craft is in what a visitor never has to think about: targets never smaller than a fingertip, contrast that holds while the page changes color, text that never fades through its own background, errors that name the fix, a phone menu that locks the page behind it, and copy results spoken to screen readers.
 
 Two authored moments carry the personality. Athos Bulcão's tiles, the ones that line Brasília, appear as a full wall spelling LUCAS on About and as a two row ribbon on every other page (at the foot of the opening section, or of the closing one on Home), in one color only: Ink letters on a light ceramic panel on the wall, the page's own ink on the ribbon. The footer badge builds itself as it scrolls into view. Two quieter layers sit around them as texture. Blocos close most sections: a short strip of Bulcão's dove from the Igrejinha, drawn as a line in the page's own ink, and on one or two sections a page the dove or Lucas's ibis blown up behind the content. A grain of animated static, after the CodePen iceable/yLBrZOd, lies under the content on every tone and jitters only while the page scrolls and for a moment after arrival. Everything else is still: sections do not animate in. Two quieter movements live in the Home hero: a carousel that crossfades between three featured projects, and a slow marquee of the tools Lucas works in. Both are plain CSS, both hold on hover or focus, and both carry a pause button.
 
-The Process page tells how the team works from three documents (BRS, SRS, SDD) through the same funnel of tones, with a step rail that follows the reader through the documents and a cost figure that rises once. The Merch page shows a Fetchly merch line from the brand book out, as image grids on Paper and the pales in nearly square frames.
+The Process page tells how the team works from three documents (BRS, SRS, SDD) through the same funnel of tones, with a step rail that follows the reader through the documents and a cost figure that rises once. The Merch page shows a Fetchly merch line from the brand book out, as image grids on Paper and the pales in nearly square frames. The Artifacts page lists what Lucas has built with Claude, one entry per client, beside a live viewer that opens each one in place.
 
-Density is generous. Sections breathe at 72px to 128px, cards sit on a 32px gutter, and boxes appear only around images, the paper objects (business card, résumé), the surface cards (voices, the About stats cards, contact form), the document chips on Process and the footer tab. The site ships in English, Brazilian Portuguese and Latin American Spanish from one set of templates.
+Density is generous. Sections breathe at 72px to 128px, cards sit on a 32px gutter, and boxes appear only around images, the paper objects (business card, résumé), the surface cards (voices, the About stats cards, contact form), the document chips on Process, the Artifacts viewer and the footer tab. The site ships in English, Brazilian Portuguese and Latin American Spanish from one set of templates.
 
 **Key Characteristics:**
 - Scroll driven tone: seven tones (Paper, the pales Blush, Mist and Cream with black text, the deeps Field, Berry and Cobalt with white text), one at a time, blended over 800ms. Every page closes deep and ends on the Paper footer.
 - One typeface, Inter, with its optical size axis on so display sizes tighten and small sizes open.
 - Hairline rules instead of cards. A 1px Ink rule marks the top of an indexed column.
 - Pill buttons, 10px image frames (2px on Merch), 14px business card, a 48px footer tab.
-- No underlines on any link. The header has no strokes, borders, dividers or rules; its controls carry a fill and hover is its only color change. Elsewhere hover shifts color to Soft Ink or moves an arrow.
-- Lucas's marks share one cell in a transparent header: the ibis stands large at the top of the page and gives way on the first scroll to the texr wordmark at 20px. The ibis is also on the business card and the favicon.
+- No underlines on any link. The header has no strokes, borders, dividers or rules; its two controls are plain white pills, and hover is its only color change. Elsewhere hover shifts color to Soft Ink or moves an arrow.
+- Lucas's marks share one cell in the header: the ibis stands large at the top of the page and gives way on the first scroll to the texr wordmark at 20px. The ibis is also on the business card and the favicon.
 - WCAG 2.1 AAA as a floor: 7:1 text on every tone, 44px targets, 1.5 line spacing in running text, expanded abbreviations.
-- Snappy CSS motion (140ms hover and press, 220ms icons and menus); GSAP for the two authored moments and the blocos only.
+- Snappy CSS motion (120ms for buttons, header pills and list rows, 140ms for other hover and color changes, 220ms icons and menus); GSAP for the two authored moments and the blocos only.
+- A button changes all at once: fill, outline and label read snap tokens that cross with the ink, so no part of it lags the others.
 - An animated grain under the content on every tone: seven grays in overlay, 0.42 on the pales and 0.12 on the deeps, jittering only while scrolling and for 3s after arrival, never with reduced motion.
 - Blocos in outline: a 2 by 8 strip of Bulcão's dove in the page's ink at the end of most sections, and on one or two sections a page the dove or the ibis blown up behind the content.
 - Anything that moves on its own (the carousel, the marquee) holds on hover or focus and has a 44px pause button.
@@ -441,13 +486,13 @@ Two families around Paper. The pales carry most of a page and take black text; t
 - **Error** (#8F1F17 on Paper and the pales; Deep Error #FFE9E6 on the deeps): field error borders and messages only.
 - **Tile Ground** (#FCFCFC), **Tile Grout** (#D9D9D6) and **Tile Faint** (#DEDEDB): the About wall, which keeps these on every tone. The letters are Ink; every other tile is Tile Faint.
 - **Sky Arc** (#9A9A9A): the dotted arc the sun and moon ride on the business card. Decorative, on White only.
-- **Control Fill** (#E4E4E4) and **Control Fill Hover** (#D4D4D4): the filled header controls, the language trigger and the Menu button. These are the Paper values of a mix, the tone's Ink at 9% (15% on hover) into the tone's background (`color-mix(in oklab, var(--ink) 9%, var(--bg))`), so the fill follows every tone.
+- **Control Hover** (#F0F0F0): the hover and open fill of the header's white pills (the Menu button and the language trigger). At rest they are White with Ink text on every tone; they do not follow the page.
 - **Bloco ink:** the strip's doves are the page's own Ink at 0.5 opacity on the tone's Hairline grout, the dove burst is Ink at 0.2, and both follow the tone. No glazes, and no text sits on a bloco.
 - **Watermark** (`--wm`): the ibis burst, the tone's background with 3.5% Ink mixed in on the pales and 16% black on the deeps. Chosen so the type over it keeps its contrast: Soft Ink stays above 7.1:1 on the pale watermarks and the deep inks above 9.7:1.
 
 ### The seven tones
 
-Each section is a band that names its tone in `data-tone`. The root carries the tone, and these custom properties change with it (`--bg`, the inks, the lines, `--tile` and `--surface` are registered with `@property` as colors so they can blend; `--field-line` and `--error` switch with the tone). Every ratio below is noted in the CSS comments at the top of `site.css` and checked:
+Each section is a band that names its tone in `data-tone`. The root carries the tone, and these custom properties change with it (`--bg`, the inks, the lines, `--tile` and `--surface` are registered with `@property` as colors so they can blend; `--field-line` and `--error` switch with the tone). Three more registered colors, `--bg-s`, `--line-s` and `--line-hover-s`, repeat the tone's `--bg`, `--line` and `--line-hover` as snap copies for buttons. Every ratio below is noted in the CSS comments at the top of `site.css` and checked:
 
 | Tone | `--bg` | `--ink` | `--ink-2` | `--line` | `--line-hover` | `--tile` / `--surface` | `--field-line` | `--error` | AAA ratios |
 |---|---|---|---|---|---|---|---|---|---|
@@ -467,9 +512,11 @@ On the three deeps the solid button inverts (a #FCFCFC fill with the tone as its
 
 **The AIDA Tone Rule.** Every page runs the AIDA funnel in tones, and the colors vary by page. Attention is a deep tone or a pale one, chosen per page; Interest and Desire use the pales; Action is Field by default (the closing band, `action(..., tone=)`, takes Berry on Writing and Cobalt on Photography); and the Paper footer is always the last stop (the footer's own tone stop is `paper`). Paper stays under photographs, project grids, long prose and forms, so the work and the inputs sit on a neutral ground. A stage a page does not need is skipped, never filled with another color.
 
-Current sequences: Home field, mist, cream, blush, field (Action). About berry, blush, blush, mist, mist, cream, field (the résumé), blush (questions). Work mist, paper (case studies), paper (presentations), blush, field. The case study cream, paper, mist, field. Process cobalt, mist, paper (the documents), cream, blush, field. Writing cream, paper, blush, berry (close). The essay blush, paper, field. Photography mist, paper, cream, cobalt (close). Contact blush, mist, cream, paper (form), paper (questions). Merch cream, paper (brand book), mist (surfaces), paper (the line), cream (first round, final round), paper (campaign), field. Every sequence then turns to the Paper footer.
+Current sequences: Home field, mist, cream, blush, field (Action). About berry, blush, blush, mist, mist, cream, field (the résumé), blush (questions). Work mist, paper (case studies), paper (presentations), blush, field. The case study cream, paper, mist, field. Process cobalt, mist, paper (the documents), cream, blush, field. Writing cream, paper, blush, berry (close). The essay blush, paper, field. Photography mist, paper, cream, cobalt (close). Contact blush, mist, cream, paper (form), paper (questions). Merch cream, paper (brand book), mist (surfaces), paper (the line), cream (first round, final round), paper (campaign), field. Artifacts cobalt, paper (the list and viewer), field. Every sequence then turns to the Paper footer.
 
 **The Ink Never Fades Rule.** Surfaces (`--bg`, `--line`, `--line-hover`, `--tile`, `--surface`) blend over the full tone time; the ink tokens hold, then cross in one step at 42% of the blend. A page turning from Field to light would otherwise carry the text through the background's own luminance and blank it. With reduced motion the blend shortens to 320ms and the same 42% rule applies.
+
+**The One Instant Rule.** A button's fill, outline and label change at the same instant. Buttons draw their page color and lines from the snap tokens (`--bg-s`, `--line-s`, `--line-hover-s`), which cross in one step with the ink at 42% of the tone time instead of blending, and their hover moves background, border and color together over 120ms. A button never shows a new label on an old fill, or an outline that drifts behind its text.
 
 ## Typography
 
@@ -500,9 +547,10 @@ One family, hierarchy by size and weight. Display and headline sit at 400 with n
 
 - Container 1376px max, gutter fluid from 16px to 32px. Sticky header 80px (72px on phones), respecting the safe area insets.
 - Sections are full bleed bands with 72px to 128px above them; the first band starts closer (40px to 72px) and a closing band leaves half the usual room before the footer.
-- Home: Field hero in two columns, copy 5 parts and the showcase carousel 6 parts, vertically centered. The copy is the Display title, the lead (32px below), the two buttons (40px below), then the hero facts (48px below, 36em wide; 36px below on phones): the three figures in a row and the worked at logos under them, 22px apart (18px on phones). Under the columns, 64px to 112px down, the tools marquee runs full bleed: a container row with its note and pause button, then the moving row. Mist cases (featured case at 16:9, a two column grid of 4:3 cards). Cream "What I do" in the intro grid format, its button leading to Process. Blush "What changed" ledger and two recommendation voices. Field Action with the business card, and the tile ribbon at its foot.
+- Home: Field hero in two columns, copy 5 parts and the showcase carousel 6 parts, vertically centered. The copy is the Display title, the lead (32px below), the two buttons (40px below), then the hero facts (48px below, 36em wide; 36px below on phones): the three figures in a row and the logos of the companies Lucas worked at under them, 22px apart (18px on phones), with no visible label. Under the columns, 64px to 112px down, the tools marquee runs full bleed: a container row with its note and pause button, then the moving row. Mist cases (featured case at 16:9, a two column grid of 4:3 cards). Cream "What I do" in the intro grid format, its button leading to Process. Blush "What changed" ledger and two recommendation voices. Field Action with the business card, and the tile ribbon at its foot.
 - Process: Cobalt page head (title at 11em, lead, document chips, buttons). Mist "Why we write it down": the large quote (6 parts) beside the cost figure (5 parts), vertically centered, then the architect paragraph 64px below at 62ch. Paper "Three documents, one thread": the intro grid, then 72px down a two column layout, the sticky step rail in 3 parts and the three document articles in 9 parts, 72px to 120px apart. Cream "How it works in practice": the intro grid and four rules as a four column trio. Blush "What it changes": a ledger and a three column trio. The Field closing band.
 - Work: Mist page head (its count covers case studies only), Paper case study grid, then a second Paper section, Presentations: the intro grid (heading and a statement) over the same two column grid, 48px down, of presentation cards. Then Blush outcomes and the Field close.
+- Artifacts: Cobalt page head (Display title, lead, then the artifact count and the kinds on one row) with the ribbon at its foot. Paper list and viewer: the list in 4 parts and the viewer in 8, 28px to 56px apart. The list runs by group, each under a Label heading; the viewer is sticky 12px under the header. At 900px and below they stack, the viewer static under the list with its frame at 72vh. Then the Field close.
 - Merch: Cream page head (Display title, lead, then the product count and the kinds on one row) with the ribbon at its foot. Paper brand book: the intro grid, then 48px down a 2 by 2 grid of 16:9 frames. Mist surfaces: four squares in a row. Paper line: 16 products in four columns at 4:5 (three at 1100px and below). Cream "First round, final round": three pairs side by side, each a Title over its first and final round at 4:5, 10px apart (one pair per row, 640px wide, at 1100px and below). Paper campaign: a three column mosaic at 4:5 that packs densely, the wide shots spanning two columns and filling the row's height, the last shot across the full width at 12:5. Then the Field close. The grids sit 32px by 20px apart (the pairs 40px by 28px); on phones they go two up, 24px by 12px apart, with the wide shots and the last one spanning the row at 3:2. Every image comes from `images/merch/<slug>.jpg`.
 - Intro grid: heading in the left 5 parts, the thesis and a button in the right 7 parts, a four column services index below.
 - Ledger: figure in 4 parts, meaning in 8, hairline between rows.
@@ -510,21 +558,21 @@ One family, hierarchy by size and weight. Display and headline sit at 400 with n
 - Closing band (every other page except Contact): centered, Field unless the page names another tone (Berry on Writing, Cobalt on Photography), a Display title, a lead and the actions; left aligned on phones.
 - Case study and essay pages use a 300px facts column beside a 68ch prose column.
 - Project grids are two equal columns at 32px, 48px between rows.
-- Breakpoints: **1100px** (hero, intro and the Process quote and cost figure stack; the Action grid narrows to 1 to 0.8 but keeps two columns; the ibis stands at 2.5 at the top of the page instead of 2.8; services go to two columns; the Merch line goes to three columns and its pairs to one per row; steps and three column trios stack; the four rules go to two columns; proof goes to two columns), **1080px** (the nav and the language switcher give way to the Menu button, only when JavaScript runs; without it the header wraps), **900px** (the Process step rail leaves its column and becomes a sticky three column bar under the header, and the documents take the full width; the About stats cards stack; the Action grid stacks with its paper object centered), **760px** (phone: single column grids, two column facts, carousel images go from 3:2 to 4:3, a document's checklist and facts stack, the rules go to one column, the cost plot drops from 240px to 210px, the footer tab goes wide, the ibis base drops to 30px at scale 2.5 and texr to 18px).
+- Breakpoints: **1100px** (hero, intro and the Process quote and cost figure stack; the Action grid narrows to 1 to 0.8 but keeps two columns; the ibis stands at 2.5 at the top of the page instead of 2.8; services go to two columns; the Merch line goes to three columns and its pairs to one per row; steps and three column trios stack; the four rules go to two columns; proof goes to two columns), **1080px** (the nav and the language switcher give way to the Menu button, only when JavaScript runs; without it the header wraps), **900px** (the Process step rail leaves its column and becomes a sticky three column bar under the header, and the documents take the full width; the About stats cards stack; the Action grid stacks with its paper object centered; the Artifacts list and viewer stack), **760px** (phone: the header takes the page color, single column grids, two column facts, carousel images go from 3:2 to 4:3, a document's checklist and facts stack, the rules go to one column, the cost plot drops from 240px to 210px, the footer tab goes wide, the ibis base drops to 30px at scale 2.5 and texr to 18px).
 - Languages: English at the root, Brazilian Portuguese in `pt-br/`, Latin American Spanish in `es/`, each page with hreflang alternates. Copy lives in `locales/en.py`, `pt.py` and `es.py`; a tiny script, the first thing in the head, sets the language, the first tone and the visitor's saved or browser language.
 
 **The Two Up Rule.** On a phone (760px and below), nothing stacks one card per row. Project cards, About proofs, essays, photographs, the services index, every three up list, the contact steps, the Process rules, the Merch grids and the paired recommendations show two side by side (two `minmax(0, 1fr)` columns, 14px apart). A last item left alone on an odd count spans the full row, so a grid never ends on a hole; the lead photograph and the last card take a wider 16:10 frame, the others go 4:5. Inside the narrow columns titles drop to 17px and running text to 14px at 1.55 line spacing. Between 761 and 1100px the three up lists are two up as well. Set by the owner on 8 Oct 2026. The one exception is the About stats pair: its cards are dashboards, not list items, so they stack at 900px and below and the charts stay one per row on phones. Presentation thumbnails keep their own crop: they were composed at 4:3 and stay 4:3 at every width, while the other cards go 4:5.
 
 ## Elevation & Depth
 
-Flat, with one floating panel. Depth comes from tone, from surface cards one step off the tone, from two paper objects that sit on the page, and from the open language panel, the one thing that casts a soft shadow. The header is transparent: it has no fill, no grain of its own and no rule, so the page and its grain show through it, and it draws no strokes, borders, dividers or rules at any scroll position (Lucas, 9 Oct 2026). Under 900px the Process step rail, stuck under the header, draws a hairline along its own foot (`box-shadow: 0 1px 0 var(--line)`), a rule rather than elevation.
+Flat, with one floating panel. Depth comes from tone, from surface cards one step off the tone, from two paper objects that sit on the page, and from the open language panel, the one thing that casts a soft shadow. Above 760px the header is transparent: it has no fill, no grain of its own and no rule, so the page and its grain show through it. At 760px and below it takes the page color (`var(--bg)`) so it stays legible over what scrolls under it. At no width does it draw strokes, borders, dividers or rules (Lucas, 9 Oct 2026), and nothing in it carries a blur or glass effect. Under 900px the Process step rail, stuck under the header, draws a hairline along its own foot (`box-shadow: 0 1px 0 var(--line)`), a rule rather than elevation.
 
 The paper objects are stacked, not lifted: the business card (White, turned -2°) sits on a deeper sheet turned 4° and offset 10px and 12px; the résumé (White, turned -1.5°) sits on a deeper sheet turned 3° and offset 8px and 10px. The deeper sheet is the tone itself darkened (`color-mix(in oklab, var(--bg), #000 24%)`), so it follows the page: today Field under both, the card on Home and the résumé on About. On hover or focus the paper straightens and rises 4px.
 
 Two layers sit under the content. The grain is a fixed layer at the bottom of the stack: `main` and the footer stand above it, and anything with an opaque fill (cards, images, the footer field) covers it. Bursts sit at z-index -1 inside `main`, over the grain and under every piece of content, and may run past their own section; only the sides of the page crop them.
 
 ### Shadow Vocabulary
-- **Language panel** (`box-shadow: 0 18px 40px rgba(15, 15, 20, 0.14), 0 2px 8px rgba(15, 15, 20, 0.06)`): the language picker's open panel, which floats over the header and the page. It has no border.
+- **Language panel** (`box-shadow: 0 18px 40px rgba(15, 15, 20, 0.14), 0 2px 8px rgba(15, 15, 20, 0.06)`): the language picker's open panel, White, which floats over the header and the page. It has no border.
 - **Stuck rail rule** (`box-shadow: 0 1px 0 var(--line)`): the Process step rail stuck under the header below 900px. A rule, not elevation.
 
 **The One Float Rule.** Only the open language panel casts a soft shadow. Everything else shows state with fill, color and position.
@@ -533,7 +581,7 @@ Two layers sit under the content. The grain is a fixed layer at the bottom of th
 
 ## Shapes
 
-- Image frames and surface cards 10px (the Merch frames 2px, nearly square), the business card 14px, inputs 8px, focus rings and the résumé 4px, buttons, nav items, language links, the menu button, the document chips and the 44px pause buttons fully round (pill).
+- Image frames and surface cards 10px (the Merch frames 2px, nearly square), the business card 14px, inputs 8px, focus rings and the résumé 4px, the language panel 22px with 14px rows, buttons, nav items, language links, the menu button, the document chips, the Artifacts stack chips and the 44px pause buttons fully round (pill). The Artifacts rows and frame take the 10px of image frames.
 - The footer tab has 48px top corners (28px on phones) and square bottom corners, so it joins the field.
 - Dividers are 1px Hairline. Indexed columns (services, steps, trios, figures) open with a 1px Ink rule.
 - Diamonds (an 8px square turned 45°) are the one bullet: the Action checks and the key milestones on About, and at 7px the "What goes in" checklists on Process.
@@ -548,9 +596,10 @@ Every control is at least 44 by 44px, shows a visible 2px focus ring 3px outside
 
 ### Buttons
 - **Shape:** fully round pill, 48px tall, 28px side padding, Small 500 label, optional 16px arrow.
-- **Solid:** the tone's Ink fill with the tone's background as text. One per view.
-- **Outline:** transparent with a Hairline border; on hover a Tile fill and Hairline Hover border.
-- **Hover / Active:** fill shifts to Ink Hover in 140ms and the arrow slides 3px right (2px down for in page anchors); pressing scales to 0.98 and fills Ink Press.
+- **Solid:** the tone's Ink fill and border with the snap page color (`--bg-s`) as its label. One per view.
+- **Outline:** transparent with a 1px border in the snap Hairline (`--line-s`) and an Ink label; on hover the border takes the snap Hairline Hover (`--line-hover-s`) and the fill becomes the tone's Ink at 8% mixed into the snap page color (#E7E7E7 on Paper).
+- **Hover / Active:** background, border and label move together over 120ms; the solid fill shifts to Ink Hover and the arrow slides 3px right (2px down for in page anchors) over 220ms; pressing scales to 0.98 in 80ms and fills Ink Press. See the One Instant Rule.
+- **Compact:** in the Artifacts viewer bar, 44px tall with 16px side padding and a 14px external arrow.
 - **Disabled:** Tile fill, Soft Ink text, no motion, not-allowed cursor.
 
 ### Links
@@ -559,7 +608,7 @@ Every control is at least 44 by 44px, shows a visible 2px focus ring 3px outside
 ### Cards / Containers
 - **Project card:** the whole card is one link, no box. Cards, the Home case studies and the carousel all come from the work collection (`content/work/*.md`), with real images under `images/work/<slug>/`. A 10px Tile frame, then title, a services note and the year 20px below. On hover the image eases to 1.015 over 420ms and the title turns Soft Ink.
 - **Surface card** (voices, the About stats cards, contact form): the tone's surface color, 10px corners, 20px to 40px padding, no border.
-- **Presentation card** (Work): five CMS entries marked `kind: presentation` with a `slides` count (`content/work/*.md`), in their own Paper section after the case study grid; they do not count as case studies and never reach Home. Not a link. A 10px frame holding a 4:3 thumbnail (`images/work/<slug>/cover.jpg`: three slides cascading on a palette color), kept at 4:3 at every width; then the title in Title with client · year as a note, the slide count as a Label on the right, and the summary in Small Soft Ink at 52ch (four lines at 14px on phones). The thumbnails were composed locally from slide renders; the same layouts live in Figma (file ZrwVuagVrhgJdR3s6K7xJG, page "Portfolio thumbnails", frames 5:3, 5:7, 5:11, 5:15, 5:19) for sharper exports later.
+- **Presentation card** (Work): three published CMS entries marked `kind: presentation` with a `slides` count (`content/work/*.md`): Epic of Gilgamesh, Buen Camino and Vivenu. They sit in their own Paper section after the case study grid; they do not count as case studies and never reach Home. A client with a case study keeps only the case study, so its decks stay `draft: true` (the two TAPP decks). Not a link. A 10px frame holding a 4:3 thumbnail (`images/work/<slug>/cover.jpg`: three slides cascading on a palette color, composed from slide renders), kept at 4:3 at every width; then the title in Title with client · year as a note, the slide count as a Label on the right, and the summary in Small Soft Ink at 52ch (four lines at 14px on phones).
 
 ### Inputs / Fields
 - **Style:** the tone's background, 1px Field Line border, 8px corners, 48px tall (textarea 160px), label above in Small 500.
@@ -568,14 +617,16 @@ Every control is at least 44 by 44px, shows a visible 2px focus ring 3px outside
 - **Disabled:** Tile fill and Soft Ink text.
 
 ### Navigation
-- **Desktop:** seven links (Work, Merch, Process, Writing, Photography, About, Contact) in one tight, centered group between the brand and the language picker, each a 44px pill target with 8px side padding and no gap between items. Before the page scrolls each shows only its 18px icon (24 viewBox, 1.5 stroke); once the header is scrolled (past 8px) each shows only its word in the Nav style. Icon and word share one grid cell as wide as the word, so nothing shifts: the icon fades and lifts 6px as the word fades in from 6px below, opacity over 200ms and movement over 260ms, the word 40ms behind. The word stays in the DOM, so screen readers always hear it. At rest the icon is an outline and the word Soft Ink; for the current page the icon's shapes fill, its detail strokes knock out in the tone's background, and the word turns Ink. Hover turns it Ink.
+- **Desktop:** eight links (Work, Merch, Artifacts, Process, Writing, Photography, About, Contact) in one tight, centered group between the brand and the language picker, each a 44px pill target with 8px side padding and no gap between items. Before the page scrolls each shows only its 18px icon (24 viewBox, 1.5 stroke); once the header is scrolled (past 8px) each shows only its word in the Nav style. Icon and word share one grid cell as wide as the word, so nothing shifts: the icon fades and lifts 6px as the word fades in from 6px below, opacity over 200ms and movement over 260ms, the word 40ms behind. The word stays in the DOM, so screen readers always hear it. At rest the icon is an outline and the word Soft Ink; for the current page the icon's shapes fill, its detail strokes knock out in the tone's background, and the word turns Ink. Hover turns it Ink.
 - **Brand:** Lucas's two marks in one grid cell, both in Ink and drawn with `<use>` from a sprite defined once per page: the ibis (from yawara.svg, the same ibis as the Yawará logomark in his case study) and the texr wordmark. At the top of the page the ibis stands at scale 2.8 (2.5 at 1100px and below and on phones) on a 34px base (30px on phones), hanging into the opening section's top margin, while texr waits hidden 8px low. Once the header is scrolled (past 8px) the ibis shrinks to 0.7 and fades, and texr rises into place at 20px tall (18px on phones). The ibis moves over 480ms on cubic-bezier(0.22, 1, 0.36, 1) and fades over 240ms; texr rises over 420ms on the same curve and fades in over 260ms, 120ms behind, so the two are never at full strength together. Back at the top, the ibis returns 60ms after texr starts to leave. The swap only animates once the first tone is set, so arriving mid page does not play it; with reduced motion it is instant. Hover changes only the color, to Soft Ink.
-- **No lines:** nothing in the header draws a stroke, border, divider or rule. Hover is the only color change. Keyboard focus rings (2px Ink, 3px outside) stay, for WCAG.
+- **No lines:** nothing in the header draws a stroke, border, divider or rule. Hover is the only color change. Keyboard focus rings (2px, 3px outside) stay, for WCAG; on the White pills the ring takes the page's own ink (`--ring`, captured on the header), so it shows on deep tones too.
 - **Merch icon:** a t-shirt outline drawn as one shape, so it takes the fill on the current page.
+- **Artifacts icon:** a window, a rounded 18 by 15 rectangle that takes the fill, with a title bar line and two dots as detail strokes that knock out on the current page.
 - **Process icon:** two rounded 7px squares, top left and bottom right, joined by an elbow connector. The squares take the fill; the connector is a plain stroke (neither a shape nor a knockout), so it stays drawn in the label color when the icon fills.
-- **Language picker:** closed, one 44px pill with the current code (13px, 0.02em) and a chevron, filled with the Control Fill and no border; hover and the open state take Control Fill Hover. Hover, focus or a tap opens it: a 264px panel in the tone's surface, with the Language panel shadow and no border, grows out of the pill (a clip-path morph from the pill's own rectangle, 520ms), the three rows (code, language name, region, a check on the current one) arrive 45ms apart from a 3px blur, a soft ink highlight glides to the row under the pointer or the focused row (520ms, ease-out-quint, transform only), and each code rolls its letters like a split flap board. Choosing a language rolls the trigger to the new code and folds the panel back before the page changes (360ms). Escape closes and returns focus, arrows move between rows, a click outside closes. Without JavaScript the panel opens on hover and focus; with reduced motion it simply appears. No globe.
-- **Menu button (up to 1080px):** a 44px pill in the Control Fill, no border, reading Menu or Close in the Nav style. Hover takes Control Fill Hover (15%).
-- **Phone menu:** full screen in the tone's background under the header. Menu sized links with 28px icons and no dividers, staggered in by 25ms each over 220ms; the full language names (the current one on a Tile pill) and the email at the foot. While open, the page behind is inert and does not scroll; Escape closes it from anywhere and returns focus to the button.
+- **Header pills:** the Menu button and the language trigger are plain White pills with Ink text on every tone, no border and no effect; hover (and the open picker) takes Control Hover over 120ms. Each pins its own `--ink` and `--ink-2` to the Paper values, so its contents stay dark on a deep page.
+- **Language picker:** closed, one 44px header pill with the current code (13px, 0.02em) and a chevron. Hover, focus or a tap opens it: a 264px White panel with 22px corners, the Language panel shadow and no border, which pins its own ink, Soft Ink, line and tile tokens to the Paper values so it reads the same on every tone. It grows out of the pill (a clip-path morph from the pill's own rectangle, 520ms), the three rows (code, language name, region, a check on the current one) arrive 45ms apart from a 3px blur, a soft ink highlight glides to the row under the pointer or the focused row (520ms, ease-out-quint, transform only), and each code rolls its letters like a split flap board. Choosing a language rolls the trigger to the new code and folds the panel back before the page changes (360ms). Escape closes and returns focus, arrows move between rows, a click outside closes. Without JavaScript the panel opens on hover and focus; with reduced motion it simply appears. No globe.
+- **Menu button (up to 1080px):** a 44px header pill, 18px side padding, reading Menu or Close in the Nav style.
+- **Phone menu:** full screen in the page color (`var(--bg)`) under the header. Menu sized links with 28px icons and no dividers, staggered in by 25ms each over 220ms; the full language names (the current one on a Tile pill) and the email at the foot. While open, the page behind is inert and does not scroll; Escape closes it from anywhere and returns focus to the button.
 
 ### Showcase Carousel (Home hero)
 - **Character:** one project at a time from the first three featured items of the work collection, each slide a link to its project. Built for a glance, not for browsing.
@@ -622,7 +673,7 @@ A White card with fixed paper colors (it is an object, not part of the tone), on
 - **Character:** animated static noise after the CodePen iceable/yLBrZOd (Mathieu S., MIT). A fixed `.noise` layer, twice the viewport each way, under the content, tiling `assets/img/noise.png`, made for this site from the pen's seven grays, evenly mixed. Decorative and hidden from assistive tech.
 - **Blend:** overlay, at `--grain` 0.42 on Paper and the pales and 0.12 on the deeps; the strength follows the tone over the tone time. See the Even Grain Rule.
 - **Motion:** while `.is-live` the layer jumps through ten offsets every 0.2s. It is live for 3s after arrival and while scrolling (each scroll keeps it live 420ms more); otherwise it holds still. Never with reduced motion.
-- **Header:** the header is transparent and carries no grain of its own; the page's grain shows through it.
+- **Header:** the header carries no grain of its own. Above 760px it is transparent and the page's grain shows through it; at 760px and below its page color fill covers the grain.
 
 ### Blocos (most sections)
 - **Character:** one tile pattern, in outline: Athos Bulcão's dove from the Igrejinha, drawn as a line in the page's own Ink so it follows every tone. Texture, never content.
@@ -657,11 +708,22 @@ A White card with fixed paper colors (it is an object, not part of the tone), on
 The ibis in Paper on a Field Green rounded square (`assets/img/favicon.svg`, written by `build.py`).
 
 ### Share Image (every page)
-Every page sets `og:image` to the same 1200 by 630 image (`assets/img/og.png`), designed in the Figma file "lucastexr.com Open Graph" (frame 1:2). Field Green ground, with the monogram set large and cropped off the right and bottom edges at 7% White as texture; the icon, the wordmark and the role line; five pale avatars with client initials, Cream stars and "30+ clients · 5 countries".
+- **Source:** every page sets `og:image` to the same 1200 by 630 image at `SITE_URL` (`https://lucastexr-portfolio.netlify.app/`, the Netlify deploy) plus `assets/img/og.png`. The PNG is a headless Chrome screenshot of `og-src/og.html` at a 1200 by 630 window.
+- **Composition:** a Field Green ground; the monogram set 1100px wide from 700px across, cropped off the right and bottom edges at 7% Paper as texture; the monogram again as a 72px icon at the top left; the name in Inter 500 at 92px (tracking -0.03em) and the role line at 30px in On Field.
+- **Proof row:** five illustrated avatars (DiceBear Notionists by Zoish, CC0, in `og-src/av/`) in 64px pale circles (Blush, Cream, Mist, Paper, Blush) overlapping by 14px, each ringed 3px in Field Green; beside them five Cream stars and "30+ clients · 5 countries" at 26px, 500.
 
 ### Hero Facts (Home hero)
 - **Figures:** the three figures (years in design, designers led, clients served) in a row 32px apart, each number in Title weight Ink with its label in Small Soft Ink.
-- **Worked at marks:** a Label, then the companies Lucas worked at as their own marks, all in Soft Ink (Ink on hover), balanced by height: Fetchly 22px, Quarter Digital and Miscreants 17px, Future Needs 30px (its stacked mark, a PNG drawn through a CSS mask so it takes the ink), and SaaSMouth as a typeset name (18px, 600, -0.03em) because no mark of it survives online. Each mark is an image with its company name.
+- **Worked at marks:** no visible label; the list's accessible name says "Worked at". The companies Lucas worked at appear as their own marks, all in Soft Ink (Ink on hover), balanced by height: Fetchly 22px, Quarter Digital and Miscreants 17px, Future Needs 30px (its stacked mark, a PNG drawn through a CSS mask so it takes the ink), and SaaSMouth as a typeset name (18px, 600, -0.03em) because no mark of it survives online. Each mark is an image with its company name.
+
+### Artifacts List and Viewer (Artifacts)
+- **Character:** a working shelf, not a gallery. The list on the left names each artifact and what it is built with; the viewer on the right runs the chosen one live.
+- **Data:** `artifacts.json`, one entry per client (nine today: Ships, Sobrado do Alpendre, Fetchly Supply, Nomad Motion Flow, Spyderco 2.0 Roadmap, Hive Access Model, Qorably Redesign, Froogle kickoff, Meneses 1998), each with a title, a group, a description in English, Portuguese and Spanish, a stack list, and a public repository `design-<name>` served by GitHub Pages.
+- **Groups:** a Label heading per group (Portfolio and personal, Fetchly showcase, Client work), 10px above its rows, groups 32px apart.
+- **Row:** the whole row is a link, 14px by 16px padding with 10px corners: the name in Body 500 (tracking -0.01em), the description in Small Soft Ink at line height 1.5, then the stack as chips. Hover takes the tone's Tile over 120ms; the chosen row takes the tone's surface and carries `aria-current="true"`.
+- **Stack chips:** pills in the Chip style (12px, line height 1.4), 3px by 9px padding, 6px apart, Ink on the tone's Ink mixed 7% into the page color, so the label clears the Seven To One Rule on Paper and every pale. Facts, not controls.
+- **Viewer:** sticky 12px under the header. A bar with the current title in Title and two compact outline buttons, "Open in a new tab" and "Repository", each with an external arrow; then a White frame with 10px corners, `min(76vh, 880px)` tall, holding a borderless iframe titled "<name>, live"; a Small Soft Ink note at 60ch under it says some artifacts lose claude.ai only features outside it.
+- **Behavior:** a click on a row swaps the iframe source, the title, both buttons and `aria-current`; at 900px and below it also scrolls the viewer into view. Modified clicks still open a new tab. Without JavaScript every row is a plain link to the live page in a new tab.
 
 ### Merch Grids (Merch)
 - **Character:** the work shown as objects, so the frames are nearly square (2px corners, by Lucas's call on 9 Oct 2026) instead of the 10px of the rest of the site. Each figure is a Tile frame holding its image and a Small Soft Ink caption 10px below (14px on phones).
@@ -682,7 +744,7 @@ Native details rows with a Title question and a plus icon that turns 45° in 220
 - **Do** check every new text color on all seven tones: 7:1, or 4.5:1 for large text. If it cannot pass on all of them, give the element fixed colors of its own.
 - **Do** draw new chrome from the tone tokens (`--bg`, `--ink`, `--ink-2`, `--line`, `--tile`, `--surface`) so it changes with the page.
 - **Do** make every control at least 44 by 44px and give it hover, focus, active and disabled states before it ships.
-- **Do** keep hover and press feedback at 140ms or faster, and state motion under 420ms; the tone blend (800ms), the ribbon's dimming, the stats bars and split bar, the cost bars, the carousel's crossfade and settle, the sky on the card, the two GSAP moments, the brand swap (ibis 480ms, texr 420ms), the grain and the blocos are the exceptions.
+- **Do** keep hover and press feedback at 140ms or faster (120ms for buttons, header pills and list rows), and state motion under 420ms; the tone blend (800ms), the ribbon's dimming, the stats bars and split bar, the cost bars, the carousel's crossfade and settle, the sky on the card, the two GSAP moments, the brand swap (ibis 480ms, texr 420ms), the grain and the blocos are the exceptions.
 - **Do** give anything that moves on its own a 44px pause button, and hold it on hover and keyboard focus (WCAG 2.2.2).
 - **Do** honour reduced motion: the tone blend shortens to 320ms, transforms go, the brand swaps instantly, the tiles and badge stay still, the carousel starts paused, the marquee becomes a still row that scrolls, and the grain holds still.
 - **Do** write labels as two or three words; anything longer is a sentence case note.
@@ -690,17 +752,22 @@ Native details rows with a Title question and a plus icon that turns 45° in 220
 - **Do** add copy to all three locale files together.
 - **Do** keep strips after a section's content and quieter than the type, and keep bursts under every piece of content, as a line or a watermark that leaves text at 7:1.
 - **Do** keep the grain under the content: anything that should cover it carries its own opaque fill.
+- **Do** draw a button's fill, outline and label from the snap tokens (`--bg-s`, `--line-s`, `--line-hover-s`) with the ink, so all three change at the same instant (the One Instant Rule).
+- **Do** keep one entry per client, in Work and in Artifacts. A client with a case study shows the case study only; its other decks or builds stay drafts.
+- **Do** keep the header controls as plain White pills with Ink text and a #F0F0F0 hover, pinning their own ink, on every tone.
 
 ### Don't:
 - **Don't** underline links or abbreviations. Hover is a color shift or a moving arrow.
-- **Don't** draw strokes, borders, dividers or rules anywhere in the header (Lucas, 9 Oct 2026). Its controls carry a fill, hover is its only color change, and keyboard focus rings stay.
+- **Don't** draw strokes, borders, dividers or rules anywhere in the header (Lucas, 9 Oct 2026). Its controls are White pills, hover is its only color change, and keyboard focus rings stay.
+- **Don't** put liquid glass, blur or translucency on the header pills or panels. It was tried and removed; the pills stay plain White.
 - **Don't** put a small uppercase label above a heading. The heading speaks for itself.
 - **Don't** repeat the same figures on one page.
 - **Don't** add icons to service lists or project cards; icons belong to the nav, contact facts and actions.
-- **Don't** add soft shadows beyond the open language panel, painted gradients or translucent blurred chrome. The header is transparent, with no fill or effect of its own. The marquee's edge fade is a mask on the row, not a color, and stays the only one.
+- **Don't** add soft shadows beyond the open language panel, painted gradients or translucent blurred chrome. The header has no effect of its own: transparent above 760px, the page color at 760px and below. The marquee's edge fade is a mask on the row, not a color, and stays the only one.
 - **Don't** fade ink with the background; it crosses in one step.
 - **Don't** put a deep band (Field, Berry, Cobalt) in the middle of a page; the deeps open or close it. About's questions, after the Field résumé stage, are the one band past the close.
 - **Don't** add a mid pink, a mid blue or a second green page tone. Pink and blue are very light with black text or deep with white text; green is Field.
 - **Don't** glaze the ribbon, the blocos or the wall in palette colors. The ribbon and blocos are the page's own ink and the wall is Ink on its ceramic panel.
 - **Don't** put a burst on the opening section, on Paper, or on a closing or action band.
 - **Don't** animate section entrances. Stillness is what makes the badge and the tiles land.
+- **Don't** show photographs or likenesses of real strangers as social proof. Faces in proof are illustrated (the share image uses CC0 DiceBear Notionists).

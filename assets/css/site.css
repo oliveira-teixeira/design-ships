@@ -274,6 +274,8 @@ abbr[title] { text-decoration: none; cursor: help; }  /* the expansion is in the
    ink; it is the one element in the header with a soft shadow, to lift it off the page. */
 .menu-button, .lang-trigger { --ink: #141414; --ink-2: #4D4D4D; background: #FFFFFF; color: #141414; transition: background-color 120ms var(--ease-out); }
 .menu-button:hover, .lang-trigger:hover, .lang-picker.is-open .lang-trigger { background: #F0F0F0; }
+.site-header { --ring: var(--ink); }   /* the page's ink, captured before the pills pin their own */
+.menu-button:focus-visible, .lang-trigger:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
 .lang-panel {
   --ink: #141414; --ink-2: #4D4D4D; --tile: #F2F2F2; --surface: #FFFFFF; --line: #E4E4E4;
   background: #FFFFFF; color: #141414; box-shadow: 0 18px 40px rgba(15, 15, 20, 0.14), 0 2px 8px rgba(15, 15, 20, 0.06);
@@ -311,11 +313,8 @@ abbr[title] { text-decoration: none; cursor: help; }  /* the expansion is in the
 :root.tone-ready .site-header.is-scrolled .brand-texr { transition-delay: 120ms; }
 :root.tone-ready .site-header:not(.is-scrolled) .brand-ibis { transition-delay: 60ms; }
 .brand:hover > svg { color: var(--ink-2); }
-.brand-mark { height: 28px; width: auto; display: block; flex-shrink: 0; }
-/* The name alone, set in the site's own Inter until a drawn wordmark exists */
-.wordmark { font-size: 1.0625rem; font-weight: 500; letter-spacing: -0.02em; line-height: 1; white-space: nowrap; }
 
-/* the six items sit together, tight and centered between the ibis and the language picker */
+/* the eight items sit together, tight and centered between the brand and the language picker */
 .nav { display: flex; align-items: center; justify-content: center; gap: 0; flex: 1 1 auto; margin: 0 clamp(12px, 2.5vw, 40px); }
 .nav a {
   /* sentence case with tight tracking, by Lucas's call (9 Oct 2026): no all caps in the nav */
@@ -547,14 +546,8 @@ a:hover .frame img { transform: scale(1.015); }
 .marquee-track svg { height: clamp(22px, 2.2vw, 28px); width: auto; max-width: 132px; display: block; }
 @keyframes marquee { to { transform: translateX(-100%); } }
 
-/* ---------- Home: facts strip ---------- */
+/* ---------- Home: the figures and the worked-at logos (in the hero, .hero-facts) ---------- */
 
-.facts { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: calc(var(--space-section) * -0.5); }
-.facts .container {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 16px 40px; flex-wrap: wrap;
-  padding-top: 18px; padding-bottom: 18px;
-}
 .facts-items { display: flex; gap: 32px; margin: 0; padding: 0; list-style: none; flex-wrap: wrap; }
 .facts-items li { display: flex; align-items: baseline; gap: 8px; font-size: var(--step-small); color: var(--ink-2); }
 .facts-items strong {
@@ -653,10 +646,10 @@ a:hover .frame img { transform: scale(1.015); }
 .cv-status:empty { display: none; }
 
 /* ---------- Footer (adapted from the lucastexr.com Framer footer) ----------
-   A green field with a rounded tab rising into the page. The tab carries the email line, the badge
-   sits centered on the field, name and region hold the two bottom corners. The green is the page's
-   own Field Green, so when the scroll reaches the footer the page and the footer become one field.
-   Footer text passes AAA: On Field 7.35:1, the pink email 5.4:1 at its large bold size. */
+   A Paper field with a rounded tab rising into the page (inverted from green on 9 Oct 2026). The tab
+   carries the email line, the badge sits centered on the field, name and region hold the two bottom
+   corners. The footer's tone stop is Paper, so the page and the footer become one field. Footer text
+   passes AAA: Ink 18:1, the Berry email 8.4:1. */
 
 .site-footer {
   /* Inverted on Lucas's call (9 Oct 2026): a Paper field and tab with Ink type, after the closing band */
@@ -1068,7 +1061,7 @@ main { overflow-x: clip; }
 .art-name { font-size: var(--step-body); font-weight: 500; letter-spacing: -0.01em; }
 .art-desc { font-size: var(--step-small); line-height: 1.5; color: var(--ink-2); }
 .art-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
-.art-stack span { font-size: 0.75rem; line-height: 1.4; padding: 3px 9px; border-radius: var(--pill); background: color-mix(in oklab, var(--ink) 7%, var(--bg)); color: var(--ink-2); }
+.art-stack span { font-size: 0.75rem; line-height: 1.4; padding: 3px 9px; border-radius: var(--pill); background: color-mix(in oklab, var(--ink) 7%, var(--bg)); color: var(--ink); }
 .art-viewer { position: sticky; top: calc(var(--header-h) + 12px); }
 .art-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
 .art-now { font-size: var(--step-h3); font-weight: 500; letter-spacing: -0.015em; }
@@ -1259,7 +1252,6 @@ html:not(.js) .lp-row { opacity: 1; transform: none; filter: none; }
   .hero-facts { margin-top: 36px; gap: 18px; }
   .show-slide .frame { aspect-ratio: 4 / 3; }
 
-  .facts .container { flex-direction: column; align-items: flex-start; }
   .facts-items { gap: 12px 24px; }
 
   .grid-2 { grid-template-columns: 1fr; gap: 40px; }
