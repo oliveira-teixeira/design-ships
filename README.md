@@ -2,7 +2,7 @@
 
 The portfolio of Lucas Teixeira, Director of Design at Fetchly Labs, as a working prototype in English, Brazilian Portuguese and Latin American Spanish.
 
-Live: https://lucastexr-portfolio.netlify.app (also https://oliveira-teixeira.github.io/design-ships/)
+Live: https://lucastexr.com (Netlify site lucastexr-portfolio; also https://oliveira-teixeira.github.io/design-ships/)
 
 ## Stack
 
@@ -12,7 +12,7 @@ Live: https://lucastexr-portfolio.netlify.app (also https://oliveira-teixeira.gi
 - Scroll driven color: registered CSS custom properties (`@property`) that blend as each section reaches the middle of the screen
 - GSAP 3.12.5 and ScrollTrigger (cdnjs) for the footer badge and the Athos Bulcão tile ribbons
 - Inter from Google Fonts
-- Data snapshots from the GitHub CLI and Claude Code session logs (`github_snapshot.py`, `claude_snapshot.py`)
+- Data snapshots from the GitHub CLI and Claude Code session logs (`github_snapshot.py`, `claude_snapshot.py`), refreshed at 08:00 and 20:00 by a launchd job (`scripts/install_stats_job.sh`) that commits them to main; the About page reads the latest from there (`assets/js/stats.js`)
 - Design system recorded in `DESIGN.md`
 - WCAG 2.1 AAA as the target: 7:1 text contrast, 44px targets, reduced motion respected
 

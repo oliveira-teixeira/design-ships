@@ -58,10 +58,14 @@
   const stops = [...document.querySelectorAll('main [data-tone], footer[data-tone]')];
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const header = document.querySelector('.site-header');
+  // Once the header turns white on scroll, the browser bar follows it; at the top it takes the tone.
+  const paintTheme = () => {
+    if (themeMeta) themeMeta.content = header?.classList.contains('is-scrolled') ? '#FFFFFF' : TONES[root.dataset.tone] || TONES.paper;
+  };
   const setTone = (tone) => {
     if (!tone || root.dataset.tone === tone) return;
     root.dataset.tone = tone;
-    if (themeMeta) themeMeta.content = TONES[tone];
+    paintTheme();
   };
   let ticking = false;
   let current = -1;
@@ -80,8 +84,10 @@
       if (down > current) current = down;
       else if (up < current) current = up;
     }
+    const scrolled = scrollY > 8;   // the ibis settles and the bar turns white
+    if (header && header.classList.contains('is-scrolled') !== scrolled) header.classList.toggle('is-scrolled', scrolled);
     setTone(stops[current].dataset.tone);
-    header?.classList.toggle('is-scrolled', scrollY > 8);   // the ibis settles, the nav turns from icons to words
+    paintTheme();
   };
   const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
   if (stops.length) {

@@ -267,7 +267,7 @@ main:has(> .band.closing:last-child) + .site-footer { margin-top: 0; }
 abbr[title] { text-decoration: none; cursor: help; }  /* the expansion is in the title; no underline, by request */
 .note { font-size: var(--step-small); line-height: 1.5; color: var(--ink-2); }
 
-/* ---------- Header: transparent, no fill, no rule, no effect (Lucas, 9 Oct 2026) ---------- */
+/* ---------- Header: transparent at the top, white once the page scrolls (Lucas, 16 Oct 2026) ---------- */
 
 /* The Menu button and the language picker are plain white pills in Ink, on every tone, with no effect
    (Lucas, 9 Oct 2026, after trying liquid glass). The language panel is white too, so it pins its own
@@ -286,9 +286,20 @@ abbr[title] { text-decoration: none; cursor: help; }  /* the expansion is in the
 
 .site-header {
   position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
-  background: transparent;   /* no fill, no effect (Lucas, 9 Oct 2026): the page shows through */
+  background: transparent;   /* at the top the page shows through */
   color: var(--ink);
 }
+/* After the first scroll the bar turns white with a hairline under it and pins its own ink, so it
+   reads the same over every tone, Field and Cobalt included. The pills step down to a light gray. */
+.site-header.is-scrolled {
+  --bg: #FFFFFF; --ink: #141414; --ink-2: #4D4D4D;
+  background: #FFFFFF;
+  box-shadow: 0 1px 0 #E4E4E4;
+}
+.site-header.is-scrolled .menu-button, .site-header.is-scrolled .lang-trigger { background: #F2F2F2; }
+.site-header.is-scrolled .menu-button:hover, .site-header.is-scrolled .lang-trigger:hover,
+.site-header.is-scrolled .lang-picker.is-open .lang-trigger { background: #E8E8E8; }
+:root.tone-ready .site-header { transition: background-color 200ms var(--ease-out), box-shadow 200ms var(--ease-out); }
 .site-header .container {
   height: var(--header-h);
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
@@ -323,20 +334,15 @@ abbr[title] { text-decoration: none; cursor: help; }  /* the expansion is in the
   font-weight: 500;
   text-transform: none;
   color: var(--ink-2);
-  display: inline-grid; place-items: center;
+  display: inline-flex; align-items: center; gap: 6px;
   min-height: 44px; min-width: 44px; padding: 0 8px;
   border-radius: var(--pill);
   transition: color var(--fast) var(--ease-out);
 }
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); }
-/* Icons before the page scrolls, words after, never both: icon and word share one grid cell (the
-   cell is as wide as the word, so nothing shifts) and cross over in under a quarter second. The word
-   stays in the page for screen readers the whole time. */
-.nav a > .ni, .nav a > .nl { grid-area: 1 / 1; transition: opacity 200ms var(--ease-out), transform 260ms cubic-bezier(0.22, 1, 0.36, 1); }
-.nav a > .nl { opacity: 0; transform: translateY(6px); white-space: nowrap; }
-.site-header.is-scrolled .nav a > .ni { opacity: 0; transform: translateY(-6px) scale(0.9); }
-.site-header.is-scrolled .nav a > .nl { opacity: 1; transform: none; transition-delay: 40ms; }
+/* Icon and word together, always (Lucas, 16 Oct 2026) */
+.nav a > .nl { white-space: nowrap; }
 
 /* Nav icons: outline at rest, filled for the current page */
 .ni {
@@ -1052,6 +1058,9 @@ main { overflow-x: clip; }
 }
 
 /* ---------- Artifacts: the list with its stacks, and one live iframe ---------- */
+/* On the Work page, after the presentations (16 Oct 2026): the heading pair, the count, then the browser */
+.art-count { margin-top: 48px; }
+.art-count + .art-layout { margin-top: 24px; }
 .art-layout { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 40px clamp(28px, 4vw, 56px); align-items: start; }
 .art-group + .art-group { margin-top: 32px; }
 .art-list ul { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 2px; }
@@ -1217,7 +1226,7 @@ html:not(.js) .lp-row { opacity: 1; transform: none; filter: none; }
 .lang-picker.is-open .lp-blob.is-on { opacity: 1; }
 @media (prefers-reduced-motion: reduce) {
   .lang-panel, .lang-picker.is-open .lang-panel, .lp-row, .lp-blob, .flap > span, .lang-chev { transition-duration: 0.01ms !important; transition-delay: 0s !important; }
-  .brand > svg, .nav a > .ni, .nav a > .nl { transition-duration: 0.01ms !important; transition-delay: 0s !important; }
+  .brand > svg, .site-header { transition-duration: 0.01ms !important; transition-delay: 0s !important; }
 }
 
 /* ---------- Adapt: nav gives way to the menu ---------- */

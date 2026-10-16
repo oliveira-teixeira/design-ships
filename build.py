@@ -32,7 +32,7 @@ LANGS = [
     {"code": "es", "html": "es-419", "dir": "es/", "short": "ES", "name": "Español", "region": "Latinoamérica", "full": "Español (Latinoamérica)", "t": es.T},
 ]
 
-NAV = [("work", "work.html"), ("merch", "merch.html"), ("artifacts", "artifacts.html"), ("process", "process.html"), ("writing", "writing.html"), ("photography", "photography.html"),
+NAV = [("work", "work.html"), ("merch", "merch.html"), ("process", "process.html"), ("writing", "writing.html"), ("photography", "photography.html"),
        ("about", "about.html"), ("contact", "contact.html")]
 
 # Nav icons. Outline when the page is not current; filled when it is. Shapes (class s) take the
@@ -48,7 +48,6 @@ NAV_ICONS = {
                    '<circle class="d" cx="12" cy="13" r="3.25"/>',
     "about": '<circle class="s" cx="12" cy="8" r="3.75"/><path class="s" d="M4.75 20.25c.7-3.9 3.6-6 7.25-6s6.55 2.1 7.25 6Z"/>',
     "contact": '<rect class="s" x="3" y="5.5" width="18" height="13" rx="2"/><path class="d" d="m3.75 7.5 8.25 5.75 8.25-5.75"/>',
-    "artifacts": '<rect class="s" x="3" y="4.5" width="18" height="15" rx="2"/><path class="d" d="M3.5 8.5h17M6.5 6.5h.01M9 6.5h.01"/>',
     "merch": '<path class="s" d="M8.5 3.5 4 5.75 2.75 10l3 1.25V20.5h12.5V11.25l3-1.25L20 5.75 15.5 3.5c-.6 1.5-1.9 2.4-3.5 2.4s-2.9-.9-3.5-2.4Z"/>',
 }
 # The Lucas Teixeira monogram, seven paths, in the order the mark is built.
@@ -327,8 +326,9 @@ LANG_SCRIPT = """<script>
 
 
 # Share image (designed in Figma, file "lucastexr.com Open Graph", frame 1:2). Social scrapers need an
-# absolute address, so it points at the Netlify deploy (lucastexr-portfolio) until lucastexr.com moves over.
-SITE_URL = "https://lucastexr-portfolio.netlify.app/"
+# absolute address. lucastexr.com is the Netlify site's primary domain, so canonical, og:url, og:image
+# and hreflang all point there; the netlify.app and GitHub Pages copies defer to it (16 Oct 2026).
+SITE_URL = "https://lucastexr.com/"
 
 
 # Lucas's marks (marks.py), defined once per page and drawn with <use>: the ibis and the texr wordmark.
@@ -347,8 +347,8 @@ OG_IMAGE = "assets/img/og.jpg?v=3"                          # bump v= when the i
 
 
 def page_url(L, file):
-    """Absolute address of a page on the deployed site, folders without index.html."""
-    return SITE_URL + L["dir"] + ("" if file == "index.html" else file)
+    """Absolute address of a page as Netlify serves it: folders without index.html, pages without .html."""
+    return SITE_URL + L["dir"] + ("" if file == "index.html" else file.removesuffix(".html"))
 
 
 def head(c, title, description, tone, css=(), js=(), body_class=""):
@@ -453,7 +453,7 @@ def lang_picker(c):
 def header(c):
     t = c.t
     cur = lambda key: ' aria-current="page"' if key == c.current else ""
-    # Icons before the page scrolls, words after: both live in one grid cell and cross over (site.css)
+    # Icon and word side by side, at the top of the page and after it scrolls (site.css)
     links = "".join(f'<a href="{href}"{cur(key)}>{nav_icon(key)}<span class="nl">{t["nav"][key]}</span></a>' for key, href in NAV)
     menu = "".join(
         f'<li style="--i:{i}"><a href="{href}"{cur(key)}>{nav_icon(key)}<span>{t["nav"][key]}</span></a></li>'
@@ -706,6 +706,7 @@ def work(c):
     <div class="grid-2 decks">{decks}</div>
   </div>
 </section>
+{artifact_browser(c)}
 <section class="band" data-tone="blush" aria-labelledby="outcomes-title">
   <div class="container">
     <h2 class="h2" id="outcomes-title">{t['work_changed']}</h2>
@@ -1015,7 +1016,7 @@ def tile_wall(label, word="LUCAS", cols=16, rows=5):
 # tiles as the About wall, in the page's own ink. Each page turns the pattern its own way, so
 # every page has a slightly different wall. Decorative and pointer only (motion.js).
 RIBBON_TURN = {"index.html": 0, "process.html": 1, "work.html": 2, "case-fetchly-website.html": 1, "writing.html": 3,
-               "essay-on-thinking-systems.html": 2, "photography.html": 1, "contact.html": 3, "merch.html": 2, "artifacts.html": 1}
+               "essay-on-thinking-systems.html": 2, "photography.html": 1, "contact.html": 3, "merch.html": 2}
 
 
 def ribbon(c, cols=48):
@@ -1127,6 +1128,11 @@ def claude_mark():
 
 
 SPLIT_TOP = 3  # tools named in the split; the rest are "Other"
+# The page is built with the snapshots in this folder; assets/js/stats.js then swaps in the latest ones
+# from main, which scripts/refresh_stats.sh commits twice a day, so the numbers stay current between deploys.
+STATS_SRC = "https://raw.githubusercontent.com/oliveira-teixeira/design-ships/main/"
+STATS_KEYS = ["date", "months", "months_short", "cc_span", "cc_peak", "cc_day_title", "cc_chart_label",
+              "cc_tool_names", "cc_other", "gh_peak", "gh_week_title", "gh_chart_label"]
 
 
 def stats_pair(c):
@@ -1162,13 +1168,16 @@ def stats_pair(c):
     gh_label = t["gh_chart_label"].format(start=fmt_date(t, gh["from"]), end=fmt_date(t, gh["to"]),
                                           peak_week=fmt_date(t, weeks[gh_pi]["start"]), peak=gh_peak)
     g = t["gh_figs"]
-    gh_figs = figs([(gh["commits"], g[0]), (gh["pull_requests"], g[1])])
+    gh_figs = figs([(f'{gh["commits"]:,}'.replace(",", sep), g[0]), (f'{gh["pull_requests"]:,}'.replace(",", sep), g[1])])
     gh_from = date.fromisoformat(gh["from"])
     gh_to = date.fromisoformat(gh["to"])
 
     public = f'<a href="{gh["public_repo"]["url"]}" rel="noopener">{t["gh_public"]}{EXTERNAL}</a>'
-    note = t["stats_note"].format(date=fmt_date(t, cc["to"]), public=public)
-    return f"""<div class="stats-pair">
+    note = t["stats_note"].format(date=f'<time datetime="{cc["to"]}" data-stats-date>{fmt_date(t, cc["to"])}</time>', public=public)
+    live = {"src": {"cc": STATS_SRC + "claude_snapshot.json", "gh": STATS_SRC + "github_snapshot.json"},
+            "built": {"cc": [cc["to"], cc["actions"]], "gh": [gh["to"], gh["commits"]]},
+            "sep": sep, "top": SPLIT_TOP, "t": {k: t[k] for k in STATS_KEYS}}
+    return f"""<div class="stats-pair" data-stats="{escape(json.dumps(live, ensure_ascii=False))}">
       <section class="sc sc--cc" aria-labelledby="sc-cc">
         <header class="sc-head"><span class="sc-mark sc-mark--claude">{claude_mark()}</span><h3 class="sc-name" id="sc-cc">Claude Code</h3><span class="sc-span">{t['cc_span'].format(start=short_date(t, cc['from']))}</span></header>
         <dl class="sc-figs">{cc_figs}</dl>
@@ -1303,7 +1312,7 @@ def about(c):
     <ul class="faq">{faq}</ul>
   </div>
 </section>"""
-    write_page(c, t["about_title"], t["about_desc"], main, css=("assets/css/about.css",), js=("assets/js/tiles.js",), body_class="page-about", tiles=False)
+    write_page(c, t["about_title"], t["about_desc"], main, css=("assets/css/about.css",), js=("assets/js/tiles.js", "assets/js/stats.js"), body_class="page-about", tiles=False)
 
 
 # ---------------------------------------------------------------- Contact
@@ -1429,8 +1438,9 @@ def merch(c):
 
 # ---------------------------------------------------------------- Artifacts
 # Every claude.ai artifact Lucas built, each exported to its own public repo (design-<name>) and served
-# with GitHub Pages; artifacts.json holds the list. The page lists them by group with their stack and
-# opens the chosen one in an iframe; without JavaScript each entry is a plain link to the live page.
+# with GitHub Pages; artifacts.json holds the list. They sit on the Work page, after the presentations
+# (Lucas, 16 Oct 2026): listed by group with their stack, the chosen one opens in an iframe; without
+# JavaScript each entry is a plain link to the live page. This portfolio is not one of them.
 ART_GROUPS = ["portfolio", "showcase", "client", "internal"]
 
 
@@ -1439,9 +1449,11 @@ def load_artifacts():
     return json.loads(f.read_text()) if f.exists() else []
 
 
-def artifacts(c):
+def artifact_browser(c):
     t = c.t
     items = load_artifacts()
+    if not items:
+        return ""
     code = c.L["code"]
     groups = []
     for g in ART_GROUPS:
@@ -1456,29 +1468,41 @@ def artifacts(c):
             f'<span class="art-stack">{"".join(f"<span>{escape(s)}</span>" for s in x["stack"])}</span></a></li>'
             for x in rows)
         groups.append(f'<div class="art-group"><h3 class="meta">{t["art_groups"][g]}</h3><ul>{lis}</ul></div>')
-    first = items[0] if items else None
+    first = items[0]
     viewer = (f'<div class="art-viewer" data-art-viewer data-frame-label="{escape(t["art_frame_label"])}">'
-              f'<div class="art-bar"><p class="art-now" data-art-now>{escape(first["title"]) if first else ""}</p>'
-              f'<div class="art-links"><a class="btn" data-art-open href="{first["pages_url"] if first else "#"}" target="_blank" rel="noopener">{t["art_open"]}{EXTERNAL}</a>'
-              f'<a class="btn" data-art-repo href="{first["repo_url"] if first else "#"}" target="_blank" rel="noopener">{t["art_repo"]}{EXTERNAL}</a></div></div>'
-              f'<div class="art-frame"><iframe data-art-frame title="{escape(t["art_frame_label"].format(title=first["title"])) if first else ""}" '
-              f'src="{first["pages_url"] if first else "about:blank"}" loading="lazy" referrerpolicy="no-referrer"></iframe></div>'
+              f'<div class="art-bar"><p class="art-now" data-art-now>{escape(first["title"])}</p>'
+              f'<div class="art-links"><a class="btn" data-art-open href="{first["pages_url"]}" target="_blank" rel="noopener">{t["art_open"]}{EXTERNAL}</a>'
+              f'<a class="btn" data-art-repo href="{first["repo_url"]}" target="_blank" rel="noopener">{t["art_repo"]}{EXTERNAL}</a></div></div>'
+              f'<div class="art-frame"><iframe data-art-frame title="{escape(t["art_frame_label"].format(title=first["title"]))}" '
+              f'src="{first["pages_url"]}" loading="lazy" referrerpolicy="no-referrer"></iframe></div>'
               f'<p class="note art-note">{t["art_note"]}</p></div>')
-    main = f"""<section class="band page-head" data-tone="cobalt">
+    return f"""<section class="band" data-tone="paper" id="artifacts" aria-labelledby="art-title">
   <div class="container">
-    <h1 class="display">{t['art_h1']}</h1>
-    <p class="lead">{t['art_lead']}</p>
-    <div class="row"><p class="meta">{t['art_count'].format(n=len(items))}</p><p class="note">{t['art_kinds']}</p></div>
-  </div>
-</section>
-<section class="band" data-tone="paper" aria-labelledby="art-list-title">
-  <div class="container">
-    <h2 class="sr" id="art-list-title">{t['art_list_h']}</h2>
+    <div class="intro-grid"><h2 class="h2" id="art-title">{t['art_h']}</h2><p class="big">{t['art_lead']}</p></div>
+    <p class="meta art-count">{t['art_count'].format(n=len(items))}</p>
     <div class="art-layout"><nav class="art-list" aria-label="{t['art_list_h']}">{"".join(groups)}</nav>{viewer}</div>
   </div>
-</section>
-{action(c, t['art_close'], t['art_close_lead'], btn(t['get_in_touch'], 'contact.html', solid=True) + btn(t['see_work'], 'work.html'))}"""
-    write_page(c, t["art_title"], t["art_desc"], main)
+</section>"""
+
+
+def artifacts(c):
+    """The old Artifacts address forwards to the section on the Work page, so shared links keep working."""
+    target = "work.html#artifacts"
+    html = f"""<!doctype html>
+<html lang="{c.L['html']}">
+<head>
+<meta charset="utf-8">
+<title>{escape(c.t['art_h'])}, Lucas Teixeira</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{page_url(c.L, 'work.html')}">
+<meta http-equiv="refresh" content="0; url={target}">
+<script>location.replace("{target}");</script>
+</head>
+<body><a href="{target}">{escape(c.t['art_h'])}</a></body>
+</html>
+"""
+    out = ROOT / c.L["dir"] / c.file
+    out.write_text(html, encoding="utf-8")
 
 
 PAGES = [

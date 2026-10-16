@@ -1,18 +1,250 @@
 {
-  "from": "2026-09-03",
-  "to": "2026-10-09",
-  "sessions": 35,
-  "active_days": 15,
-  "requests": 131,
-  "actions": 3122,
+  "from": "2026-07-07",
+  "to": "2026-10-16",
+  "sessions": 213,
+  "active_days": 70,
+  "requests": 1491,
+  "actions": 29034,
   "daily": [
     {
+      "date": "2026-07-07",
+      "actions": 20
+    },
+    {
+      "date": "2026-07-08",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-09",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-10",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-11",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-12",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-13",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-14",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-15",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-16",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-17",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-18",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-19",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-20",
+      "actions": 91
+    },
+    {
+      "date": "2026-07-21",
+      "actions": 53
+    },
+    {
+      "date": "2026-07-22",
+      "actions": 142
+    },
+    {
+      "date": "2026-07-23",
+      "actions": 120
+    },
+    {
+      "date": "2026-07-24",
+      "actions": 366
+    },
+    {
+      "date": "2026-07-25",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-26",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-27",
+      "actions": 0
+    },
+    {
+      "date": "2026-07-28",
+      "actions": 157
+    },
+    {
+      "date": "2026-07-29",
+      "actions": 411
+    },
+    {
+      "date": "2026-07-30",
+      "actions": 216
+    },
+    {
+      "date": "2026-07-31",
+      "actions": 139
+    },
+    {
+      "date": "2026-08-01",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-02",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-03",
+      "actions": 14
+    },
+    {
+      "date": "2026-08-04",
+      "actions": 52
+    },
+    {
+      "date": "2026-08-05",
+      "actions": 109
+    },
+    {
+      "date": "2026-08-06",
+      "actions": 144
+    },
+    {
+      "date": "2026-08-07",
+      "actions": 382
+    },
+    {
+      "date": "2026-08-08",
+      "actions": 8
+    },
+    {
+      "date": "2026-08-09",
+      "actions": 28
+    },
+    {
+      "date": "2026-08-10",
+      "actions": 197
+    },
+    {
+      "date": "2026-08-11",
+      "actions": 180
+    },
+    {
+      "date": "2026-08-12",
+      "actions": 472
+    },
+    {
+      "date": "2026-08-13",
+      "actions": 85
+    },
+    {
+      "date": "2026-08-14",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-15",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-16",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-17",
+      "actions": 310
+    },
+    {
+      "date": "2026-08-18",
+      "actions": 292
+    },
+    {
+      "date": "2026-08-19",
+      "actions": 150
+    },
+    {
+      "date": "2026-08-20",
+      "actions": 1
+    },
+    {
+      "date": "2026-08-21",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-22",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-23",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-24",
+      "actions": 239
+    },
+    {
+      "date": "2026-08-25",
+      "actions": 388
+    },
+    {
+      "date": "2026-08-26",
+      "actions": 549
+    },
+    {
+      "date": "2026-08-27",
+      "actions": 479
+    },
+    {
+      "date": "2026-08-28",
+      "actions": 130
+    },
+    {
+      "date": "2026-08-29",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-30",
+      "actions": 0
+    },
+    {
+      "date": "2026-08-31",
+      "actions": 73
+    },
+    {
+      "date": "2026-09-01",
+      "actions": 54
+    },
+    {
+      "date": "2026-09-02",
+      "actions": 186
+    },
+    {
       "date": "2026-09-03",
-      "actions": 387
+      "actions": 424
     },
     {
       "date": "2026-09-04",
-      "actions": 590
+      "actions": 46
     },
     {
       "date": "2026-09-05",
@@ -28,11 +260,11 @@
     },
     {
       "date": "2026-09-08",
-      "actions": 427
+      "actions": 30
     },
     {
       "date": "2026-09-09",
-      "actions": 98
+      "actions": 380
     },
     {
       "date": "2026-09-10",
@@ -40,7 +272,7 @@
     },
     {
       "date": "2026-09-11",
-      "actions": 147
+      "actions": 178
     },
     {
       "date": "2026-09-12",
@@ -48,27 +280,27 @@
     },
     {
       "date": "2026-09-13",
-      "actions": 0
+      "actions": 161
     },
     {
       "date": "2026-09-14",
-      "actions": 0
+      "actions": 72
     },
     {
       "date": "2026-09-15",
-      "actions": 0
+      "actions": 22
     },
     {
       "date": "2026-09-16",
-      "actions": 0
+      "actions": 197
     },
     {
       "date": "2026-09-17",
-      "actions": 242
+      "actions": 193
     },
     {
       "date": "2026-09-18",
-      "actions": 65
+      "actions": 613
     },
     {
       "date": "2026-09-19",
@@ -76,31 +308,31 @@
     },
     {
       "date": "2026-09-20",
-      "actions": 0
+      "actions": 130
     },
     {
       "date": "2026-09-21",
-      "actions": 0
+      "actions": 326
     },
     {
       "date": "2026-09-22",
-      "actions": 0
+      "actions": 102
     },
     {
       "date": "2026-09-23",
-      "actions": 0
+      "actions": 4071
     },
     {
       "date": "2026-09-24",
-      "actions": 0
+      "actions": 3992
     },
     {
       "date": "2026-09-25",
-      "actions": 0
+      "actions": 3210
     },
     {
       "date": "2026-09-26",
-      "actions": 0
+      "actions": 824
     },
     {
       "date": "2026-09-27",
@@ -108,11 +340,11 @@
     },
     {
       "date": "2026-09-28",
-      "actions": 0
+      "actions": 534
     },
     {
       "date": "2026-09-29",
-      "actions": 248
+      "actions": 235
     },
     {
       "date": "2026-09-30",
@@ -120,76 +352,104 @@
     },
     {
       "date": "2026-10-01",
-      "actions": 1
+      "actions": 68
     },
     {
       "date": "2026-10-02",
-      "actions": 0
+      "actions": 223
     },
     {
       "date": "2026-10-03",
-      "actions": 0
+      "actions": 83
     },
     {
       "date": "2026-10-04",
-      "actions": 0
+      "actions": 363
     },
     {
       "date": "2026-10-05",
-      "actions": 80
+      "actions": 1016
     },
     {
       "date": "2026-10-06",
-      "actions": 206
+      "actions": 440
     },
     {
       "date": "2026-10-07",
-      "actions": 0
+      "actions": 459
     },
     {
       "date": "2026-10-08",
-      "actions": 389
+      "actions": 677
     },
     {
       "date": "2026-10-09",
-      "actions": 242
+      "actions": 0
+    },
+    {
+      "date": "2026-10-10",
+      "actions": 13
+    },
+    {
+      "date": "2026-10-11",
+      "actions": 6
+    },
+    {
+      "date": "2026-10-12",
+      "actions": 0
+    },
+    {
+      "date": "2026-10-13",
+      "actions": 1106
+    },
+    {
+      "date": "2026-10-14",
+      "actions": 911
+    },
+    {
+      "date": "2026-10-15",
+      "actions": 1124
+    },
+    {
+      "date": "2026-10-16",
+      "actions": 568
     }
   ],
   "tools": [
     {
       "name": "Terminal",
-      "actions": 989,
-      "share": 0.3168
-    },
-    {
-      "name": "Figma",
-      "actions": 593,
-      "share": 0.1899
-    },
-    {
-      "name": "Browser",
-      "actions": 519,
-      "share": 0.1662
+      "actions": 13715,
+      "share": 0.4724
     },
     {
       "name": "Code and files",
-      "actions": 506,
-      "share": 0.1621
+      "actions": 5301,
+      "share": 0.1826
     },
     {
-      "name": "Google Workspace",
-      "actions": 114,
-      "share": 0.0365
+      "name": "Browser",
+      "actions": 2821,
+      "share": 0.0972
     },
     {
-      "name": "Claude Docs",
-      "actions": 104,
-      "share": 0.0333
+      "name": "Figma",
+      "actions": 2349,
+      "share": 0.0809
     },
     {
-      "name": "Webflow",
-      "actions": 84,
-      "share": 0.0269
+      "name": "Other connectors",
+      "actions": 981,
+      "share": 0.0338
+    },
+    {
+      "name": "Shopify",
+      "actions": 483,
+      "share": 0.0166
+    },
+    {
+      "name": "Agents",
+      "actions": 438,
+      "share": 0.0151
     }
   ]
 }

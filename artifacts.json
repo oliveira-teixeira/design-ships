@@ -1,25 +1,5 @@
 [
  {
-  "title": "Ships",
-  "group": "portfolio",
-  "repo": "design-ships",
-  "repo_url": "https://github.com/oliveira-teixeira/design-ships",
-  "pages_url": "https://oliveira-teixeira.github.io/design-ships/",
-  "stack": [
-   "Python static generator",
-   "HTML, CSS, vanilla JS",
-   "GSAP 3.12.5",
-   "Decap CMS content",
-   "Inter"
-  ],
-  "uses_claude_runtime": false,
-  "description": {
-   "en": "This portfolio as a working prototype in three languages, built from one template set.",
-   "pt": "Este portfólio como protótipo funcional em três idiomas, gerado a partir de um só conjunto de templates.",
-   "es": "Este portafolio como prototipo funcional en tres idiomas, generado desde un solo conjunto de plantillas."
-  }
- },
- {
   "title": "Sobrado do Alpendre",
   "group": "portfolio",
   "repo": "design-sobrado-do-alpendre",
