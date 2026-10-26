@@ -1,19 +1,15 @@
 {
   "login": "oliveira-teixeira",
   "url": "https://github.com/oliveira-teixeira",
-  "from": "2025-10-27",
-  "to": "2026-10-25",
-  "commits": 254,
+  "from": "2025-11-03",
+  "to": "2026-10-26",
+  "commits": 255,
   "pull_requests": 57,
   "pull_requests_merged": 52,
   "repositories": 43,
   "private_repositories": 17,
   "active_weeks": 16,
   "weeks": [
-    {
-      "start": "2025-10-27",
-      "commits": 0
-    },
     {
       "start": "2025-11-03",
       "commits": 0
@@ -216,7 +212,11 @@
     },
     {
       "start": "2026-10-19",
-      "commits": 13
+      "commits": 14
+    },
+    {
+      "start": "2026-10-26",
+      "commits": 0
     }
   ],
   "public_repo": {
