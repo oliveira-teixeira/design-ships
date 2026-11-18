@@ -1,10 +1,10 @@
 {
   "from": "2026-07-07",
-  "to": "2026-11-17",
+  "to": "2026-11-18",
   "sessions": 341,
-  "active_days": 92,
-  "requests": 2032,
-  "actions": 36945,
+  "active_days": 93,
+  "requests": 2033,
+  "actions": 36958,
   "daily": [
     {
       "date": "2026-07-07",
@@ -541,13 +541,17 @@
     {
       "date": "2026-11-17",
       "actions": 826
+    },
+    {
+      "date": "2026-11-18",
+      "actions": 13
     }
   ],
   "tools": [
     {
       "name": "Terminal",
-      "actions": 16481,
-      "share": 0.4461
+      "actions": 16489,
+      "share": 0.4462
     },
     {
       "name": "Code and files",
@@ -556,12 +560,12 @@
     },
     {
       "name": "Other connectors",
-      "actions": 4166,
-      "share": 0.1128
+      "actions": 4167,
+      "share": 0.1127
     },
     {
       "name": "Browser",
-      "actions": 3730,
+      "actions": 3734,
       "share": 0.101
     },
     {
