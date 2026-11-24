@@ -1,10 +1,10 @@
 {
   "from": "2026-07-07",
   "to": "2026-11-24",
-  "sessions": 354,
-  "active_days": 96,
-  "requests": 2119,
-  "actions": 38277,
+  "sessions": 360,
+  "active_days": 97,
+  "requests": 2138,
+  "actions": 38506,
   "daily": [
     {
       "date": "2026-07-07",
@@ -568,44 +568,44 @@
     },
     {
       "date": "2026-11-24",
-      "actions": 0
+      "actions": 229
     }
   ],
   "tools": [
     {
       "name": "Terminal",
-      "actions": 16984,
-      "share": 0.4437
+      "actions": 17081,
+      "share": 0.4436
     },
     {
       "name": "Code and files",
-      "actions": 5715,
-      "share": 0.1493
+      "actions": 5718,
+      "share": 0.1485
     },
     {
       "name": "Other connectors",
-      "actions": 4698,
-      "share": 0.1227
+      "actions": 4806,
+      "share": 0.1248
     },
     {
       "name": "Browser",
       "actions": 3816,
-      "share": 0.0997
+      "share": 0.0991
     },
     {
       "name": "Figma",
-      "actions": 2416,
-      "share": 0.0631
+      "actions": 2420,
+      "share": 0.0628
     },
     {
       "name": "Agents",
-      "actions": 538,
-      "share": 0.0141
+      "actions": 541,
+      "share": 0.014
     },
     {
       "name": "Shopify",
       "actions": 483,
-      "share": 0.0126
+      "share": 0.0125
     }
   ]
 }
